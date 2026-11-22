@@ -3,8 +3,8 @@
 | Phase | Status | Date |
 |---|---|---|
 | 1 — Interview / brief | ✅ Approved | 2026-11-22 |
-| 2 — Research | ⏸ Awaiting approval | 2026-11-22 |
-| 3 — Creative direction & canvases | — | |
+| 2 — Research | ✅ Approved | 2026-11-22 |
+| 3 — Creative direction & canvases | ⏸ Awaiting artboard picks | 2026-11-22 |
 | 4–7 — Build | — | |
 | 8 — Ship (repo `Hon.JKdemo`, public) | — | |
 

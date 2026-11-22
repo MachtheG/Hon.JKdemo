@@ -27,6 +27,8 @@ The theme line is **"Back to work for Bomet's women" / "Mama Arudi Kazini"**. Th
 | `--tea` | `#1F4D3A` | Primary brand: header, the chart's main series |
 | `--leaf` | `#3E7D5A` | Secondary series, hover states |
 | `--laterite` | `#B4532A` | Red-earth highlight: emphasis, "pending" states, second chart series |
+| `--laterite-ink` | `#9A4220` | Laterite for small text on paper (≈5.9:1; base laterite ≈4.4:1 fails AA) |
+| `--muted` | `#4A5A50` | Secondary text on paper (≈6.5:1) |
 | `--mist` | `#D9DED8` | Mau-forest mist: dividers, quiet fills |
 | `--paper` | `#F6F1E7` | Page background (light) |
 | `--accent` | `#F5C400` | **UDA yellow.** Used only for CTAs, the countdown pill and the map areas where she led. *Approximated; confirm the party's brand hex.* |
@@ -69,3 +71,7 @@ Data-driven and modern. Short sentences, active verbs, and numbers first. Roles 
 3. **Record and Projects:** filters, timeline, funds-by-year chart, by-sector chart, project card. Projects show "awaiting documents" states.
 4. **Election map:** "Where we led in 2017". County result now, with constituency drill-down states and an accessible table.
 5. **The Plan:** 3 DRAFT promises.
+
+## 9. Canvas
+
+Published (private): https://claude.ai/artifact/EDdN8VC22NkJSBac3hwf1A — 8 artboards.
