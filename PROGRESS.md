@@ -8,8 +8,12 @@
 | 4 — Scaffold, design system, shell, /styleguide | ✅ Quality gate passed | 2026-11-24 |
 | 5 — Home (Hero A, as approved) | ✅ Quality gate passed | 2026-11-24 |
 | 6 — Record, Projects, Map, Plan, all tabs, county + constituency pages | ✅ Quality gate passed | 2026-11-24 |
-| 7 — Forms, SEO, a11y, Lighthouse, review agents | ⏸ Done — waiting for /review and /security-review (Lighthouse perf < 95, see below) | 2026-11-24 |
-| 8 — Ship (repo `Hon.JKdemo`, public) | — | |
+| 7 — Forms, SEO, a11y, Lighthouse, review agents | ✅ Done (Lighthouse perf 82–91 < 95 — see docs/LIGHTHOUSE.md) | 2026-11-24 |
+| 8 — Ship: https://github.com/MachtheG/Hon.JKdemo (public) | ✅ CI green | 2026-11-24 |
+
+### Phase 8 — ship (2026-11-24)
+- Code review (6 findings) and security review (docs/SECURITY-REVIEW.md) fixed before push; npm audit 0; secret scan of tree + history clean; commits attributed to the GitHub no-reply address.
+- First CI runs failed on one test: a 1px sideways scroll on /en/styleguide at 768px under Linux fonts, caused by the source tick's invisible hit area. Fixed in 3550d3f; CI green: https://github.com/MachtheG/Hon.JKdemo/actions/runs/45441477191
 
 ### Phase 7 quality gate (2026-11-24)
 - **Checks:** lint ✅ · typecheck ✅ · unit 27/27 ✅ · build ✅ · sources ✅ (72 refs) · translations ✅ (17 namespaces × en/sw)
