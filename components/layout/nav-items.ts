@@ -9,7 +9,7 @@ export const primaryNav: NavEntry[] = [
   {
     key: "county",
     children: [
-      { key: "countyPage", href: "/bomet/bomet-central" },
+      { key: "countyPage", href: "/bomet-central" },
       { key: "countyAll", href: "/bomet" },
       { key: "map", href: "/map" },
       { key: "projects", href: "/projects" },

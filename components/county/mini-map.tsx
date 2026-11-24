@@ -14,7 +14,7 @@ function bbox(d: string) {
  * to that constituency and draws its wards. Label sizes are set relative to the
  * viewBox so they stay at least ~12px on a 375px screen.
  */
-export function MiniMap({ highlight, label }: { highlight?: string; label: string }) {
+export function MiniMap({ highlight, ward, label }: { highlight?: string; ward?: string; label: string }) {
   const focus = highlight ? bometMap.constituencies.find((c) => c.slug === highlight) : undefined;
   const wards = highlight ? bometMap.wards.filter((w) => w.constituency === highlight) : [];
   let viewBox: string = bometMap.viewBox;
@@ -45,7 +45,7 @@ export function MiniMap({ highlight, label }: { highlight?: string; label: strin
         );
       })}
       {wards.map((w) => (
-        <path key={w.slug} d={w.d} fill="none" stroke="#F5C400" strokeWidth="1.5" vectorEffect="non-scaling-stroke" aria-hidden />
+        <path key={w.slug} d={w.d} fill={w.slug === ward ? "#D4A62A" : "none"} fillOpacity={w.slug === ward ? 0.9 : 0} stroke="#D4A62A" strokeWidth={w.slug === ward ? 3 : 1.5} vectorEffect="non-scaling-stroke" aria-hidden />
       ))}
       {(highlight ? wards : bometMap.constituencies).map((a) => (
         <text
@@ -54,8 +54,8 @@ export function MiniMap({ highlight, label }: { highlight?: string; label: strin
           y={a.label[1]}
           textAnchor="middle"
           aria-hidden
-          className="pointer-events-none fill-paper font-sans font-semibold"
-          style={{ fontSize, paintOrder: "stroke", stroke: "#14201A", strokeWidth: fontSize / 6 }}
+          className={a.slug === ward ? "pointer-events-none fill-ink font-sans font-bold" : "pointer-events-none fill-paper font-sans font-semibold"}
+          style={{ fontSize, paintOrder: "stroke", stroke: a.slug === ward ? "#FFFFFF" : "#0C3320", strokeWidth: fontSize / 6 }}
         >
           {a.name}
         </text>

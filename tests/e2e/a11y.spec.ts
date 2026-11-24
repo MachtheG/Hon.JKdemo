@@ -11,6 +11,8 @@ const paths = [
   "/en/story",
   "/en/bomet",
   "/en/bomet/konoin",
+  "/en/bomet-central",
+  "/en/bomet-central/singorwet",
   "/en/gallery",
   "/en/news",
   "/en/get-involved",

@@ -32,6 +32,7 @@ export const namespaces = [
   "credits",
   "forms",
   "donate",
+  "constituency",
 ] as const;
 export type Namespace = (typeof namespaces)[number];
 

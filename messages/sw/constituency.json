@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "title": "Bomet Central"
+  },
+  "kicker": "Eneo bunge · Bomet Central",
+  "title": "Bomet Central: wadi tano, sauti moja Bungeni.",
+  "intro": "Silibwet Township, Ndaraweta, Singorwet, Chesoen na Mutarakwa. Joyce alianza maisha yake ya uongozi hapa, kama diwani na kisha MCA wa wadi ya Singorwet. Mwaka 2027 anaomba Bomet Central imtume Bunge la Kitaifa.",
+  "stats": {
+    "title": "Bomet Central kwa takwimu",
+    "population": "watu (Sensa 2019)",
+    "voters2022": "wapiga kura waliosajiliwa (2022)",
+    "voters2017": "wapiga kura waliosajiliwa (2017)",
+    "stations": "vituo vya kupigia kura (2017)",
+    "wards": "wadi za bunge la kaunti"
+  },
+  "wards": {
+    "title": "Wadi tano",
+    "voters": "wapiga kura {n} waliosajiliwa (2022)",
+    "open": "Fungua {name}"
+  },
+  "ngcdf": {
+    "title": "NG-CDF: kile Bomet Central inapokea",
+    "lead": "Kila eneo bunge hupokea mgao wa kila mwaka kutoka Hazina ya Maendeleo ya Maeneo Bunge (NG-CDF) kwa basari, shule, usalama na miradi ya eneo. Hivi ndivyo viwango vilivyoidhinishwa kwa Bomet Central na Bodi ya NG-CDF.",
+    "chart": "Mgao ulioidhinishwa wa NG-CDF kwa Bomet Central (KSh)",
+    "empty": "Hakuna takwimu",
+    "table": "Onyesha kama jedwali",
+    "year": "Mwaka wa fedha",
+    "amount": "Mgao ulioidhinishwa (KSh)",
+    "latest": "iliyoidhinishwa kwa {fy}",
+    "note": "Mgao ni fedha zilizoidhinishwa, si fedha zilizotumika. Zilisimamiwa chini ya wabunge wa wakati huo; zinaonyeshwa hapa kwa uwazi, si kama kazi ya Joyce.",
+    "promise": "Ahadi ya Joyce: kuchapisha kila basari na mradi wa NG-CDF wa Bomet Central, wadi kwa wadi.",
+    "planLink": "Soma mpango wake"
+  },
+  "projects": {
+    "title": "Miradi iliyoorodheshwa na NG-CDF Bomet Central",
+    "lead": "Tovuti rasmi ya NG-CDF Bomet Central inaorodhesha miradi hii iliyokamilika. Haichapishi viwango wala wadi za miradi hiyo — pengo ambalo Joyce ameahidi kuziba.",
+    "complete": "Umekamilika",
+    "fyUnknown": "Mwaka haujatajwa",
+    "view": "Tazama kwenye tovuti ya NG-CDF"
+  },
+  "ward": {
+    "kicker": "Wadi ya {name} · Bomet Central",
+    "title": "{name}",
+    "intro": "Mojawapo ya wadi tano za bunge la kaunti katika eneo bunge la Bomet Central.",
+    "singorwet": "Singorwet ndipo maisha ya uongozi ya Joyce yalipoanzia: alikuwa diwani wake aliyechaguliwa (2007–2013) na kisha MCA wake (2013–2017), alipokuwa pia Naibu Spika wa Bunge la Kaunti ya Bomet.",
+    "stats": "{name} kwa takwimu",
+    "map": "Ramani ya wadi ya {name} ndani ya Bomet Central",
+    "resultTitle": "Matokeo ya 2017 katika {name}",
+    "resultBody": "Matokeo pekee ya Joyce katika uchaguzi mkuu ni ya Mwakilishi wa Wanawake 2017, ambayo IEBC inachapisha kwa ngazi ya kaunti pekee: alipata {share}% ya kura halali katika Kaunti ya Bomet. Takwimu za {name} zitaongezwa kutoka Fomu 37A baada ya kuthibitishwa — hatukadirii.",
+    "ngcdfTitle": "NG-CDF katika {name}",
+    "ngcdfBody": "Kwa sasa NG-CDF haichapishi miradi yake ya Bomet Central wadi kwa wadi. Joyce ameahidi kuwa itachapishwa.",
+    "pledge": "Ahidi kura yako katika {name}",
+    "back": "Bomet Central yote",
+    "others": "Wadi nyingine",
+    "pledgeCta": "Ahidi sasa",
+    "hub": "Fungua ukurasa wa Bomet Central"
+  }
+}

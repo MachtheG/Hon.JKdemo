@@ -54,11 +54,17 @@
 ## Race corrected to MP, Bomet Central (2026-11-24)
 - All titles, hero, share card, calendar invite, footer, nav (Bomet Central dropdown), county and donate copy switched to MP, Bomet Central (EN/SW). Past Woman Rep record kept as history.
 - Plan rewritten for an MP; still DRAFT until the campaign signs off.
-- Follow-up offered: one page per Bomet Central ward (brief's MP structure) and NG-CDF Bomet Central allocations research.
+- Follow-up offered: one page per Bomet Central ward (brief's MP structure) and NG-CDF Bomet Central allocations research. Done — see below.
+
+## Bomet Central hub, ward pages and NG-CDF (2026-11-24)
+- **/bomet-central** hub: constituency figures, five ward cards, NG-CDF allocations chart + table, NG-CDF-listed projects. Nav "Bomet Central" now points here.
+- **/bomet-central/[ward]** for Silibwet Township, Ndaraweta, Singorwet, Chesoen and Mutarakwa: 2022 and 2017 registered voters, 2017 polling stations, locator map (ward in gold), pledge call to action. Singorwet carries Joyce's councillor/MCA record.
+- **Sources:** IEBC registered voters per ward 2022 (`iebc-rov-caw-2022`) and 2017 (`iebc-rov-caw-2017`); NG-CDF Board allocations for constituency 197, FY 2013/14–2026/27 (`ngcdf-allocations-197`; KSh 192.6m approved for 2026/27); NG-CDF Bomet Central project list (`ngcdf-bomet-central-projects`). Ward sums are unit-tested against the constituency totals.
+- Allocations are shown as approved amounts managed under the MPs of the day, not as Joyce's work. NG-CDF does not publish projects by ward or amount; ward results still wait on Forms 37A (register item 2). Nothing is estimated.
 
 ## Client redesign (2026-11-24)
 - Rebuilt to the campaign's reference layout: white base, UDA green + gold, Outfit/Inter type, Senate seal + wordmark, pill navigation with dropdowns, gold Donate button, hero with photo + green scrim + sign-up form, live countdown (days/hours/minutes/seconds), real photographs in every slot (no placeholders).
-- **Public vs review build:** the public build omits every unverified item (no visible [[TO CONFIRM]] markers, and claims that depend on them are left out). Set  for an internal review build that shows them. The register below is unchanged.
+- **Public vs review build:** the public build omits every unverified item (no visible [[TO CONFIRM]] markers, and claims that depend on them are left out). Set `NEXT_PUBLIC_SHOW_TO_CONFIRM=true` for an internal review build that shows them. The register below is unchanged.
 - Photos: 3 press/official photos of Joyce (credited; permission to confirm) + 1 official portrait + 3 openly licensed Bomet landscapes (CC BY-SA 4.0, credited on /credits).
 
 ## [[TO CONFIRM]] register

@@ -54,7 +54,7 @@ export function BarChart({
               onMouseLeave={() => setActive(null)}
               onFocus={() => setActive(b.key)}
               onBlur={() => setActive(null)}
-              className="group relative flex h-full flex-1 items-end justify-center"
+              className="group relative flex h-full min-w-0 flex-1 items-end justify-center"
             >
               <span aria-hidden className="w-full max-w-16 rounded-t bg-tea group-hover:bg-leaf" style={{ height: `${h}%` }} />
               {active === b.key ? (
@@ -71,7 +71,7 @@ export function BarChart({
       </div>
       <div className="flex gap-0.5 font-mono text-[11px] sm:text-xs">
         {bars.map((b) => (
-          <span key={b.key} className="flex-1 truncate text-center">
+          <span key={b.key} className="min-w-0 flex-1 truncate text-center">
             {b.label}
           </span>
         ))}

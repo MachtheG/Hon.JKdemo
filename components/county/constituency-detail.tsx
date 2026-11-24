@@ -13,6 +13,7 @@ import { MiniMap } from "./mini-map";
 
 export function ConstituencyDetail({ slug, name }: { slug: string; name: string }) {
   const t = useTranslations("county");
+  const tc = useTranslations("constituency");
   const ctx = populationByConstituency2019.find((c) => c.name === name)!;
   const wards = wardsByConstituency[name as keyof typeof wardsByConstituency];
   const projects = filterProjects(allProjects, { constituency: slug });
@@ -23,6 +24,11 @@ export function ConstituencyDetail({ slug, name }: { slug: string; name: string 
         <Link href="/bomet" className="inline-flex min-h-11 items-center self-start">
           ← {t("page.back")}
         </Link>
+        {slug === "bomet-central" ? (
+          <Link href="/bomet-central" className="inline-flex min-h-12 w-fit items-center rounded-md bg-tea px-6 font-semibold text-white no-underline hover:bg-leaf">
+            {tc("ward.hub")} →
+          </Link>
+        ) : null}
       </PageHeader>
       <Container className="flex flex-col gap-14">
         <div className="grid items-start gap-10 lg:grid-cols-[3fr_2fr]">

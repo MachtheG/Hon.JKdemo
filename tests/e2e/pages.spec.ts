@@ -20,6 +20,8 @@ const pages = [
   "story",
   "bomet",
   "bomet/sotik",
+  "bomet-central",
+  "bomet-central/singorwet",
   "gallery",
   "news",
   "get-involved",
@@ -123,4 +125,22 @@ test("header shows the Senate seal beside her name", async ({ page }) => {
   const banner = page.getByRole("banner");
   await expect(banner.locator("img[src*='senate-seal']").first()).toBeVisible();
   await expect(banner.getByText("Joyce Korir", { exact: true })).toBeVisible();
+});
+
+test("Bomet Central hub links to all five ward pages, each with official figures", async ({ page }) => {
+  await page.goto("/en/bomet-central");
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("Bomet Central");
+  // (Source popovers repeat some figures in hidden text, so assert on the visible main content.)
+  await expect(page.locator("main")).toContainText("71,409");
+  await expect(page.locator("main")).toContainText("KSh 192.6m");
+  for (const [slug, voters] of [["silibwet-township", "17,882"], ["ndaraweta", "12,233"], ["singorwet", "12,483"], ["chesoen", "17,516"], ["mutarakwa", "11,295"]]) {
+    const res = await page.request.get(`/en/bomet-central/${slug}`);
+    expect(res.status(), slug).toBe(200);
+    expect(await res.text(), slug).toContain(voters);
+  }
+});
+
+test("Singorwet ward page tells Joyce's local story", async ({ page }) => {
+  await page.goto("/en/bomet-central/singorwet");
+  await expect(page.getByText(/councillor \(2007–2013\)/).first()).toBeVisible();
 });

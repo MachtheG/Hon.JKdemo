@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { projects } from "@/data/projects";
 import { locales } from "@/i18n/routing";
+import { bometCentralWards } from "@/data/bomet-central";
 import { CONSTITUENCIES } from "@/lib/projects";
 import { SITE_URL } from "@/lib/site";
 
@@ -11,6 +12,8 @@ const paths = [
   "/map",
   "/plan",
   "/story",
+  "/bomet-central",
+  ...bometCentralWards.map((w) => `/bomet-central/${w.slug}`),
   "/bomet",
   ...CONSTITUENCIES.map((c) => `/bomet/${c.slug}`),
   ...projects.map((p) => `/projects/${p.id}`),

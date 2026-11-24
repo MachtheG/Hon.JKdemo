@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "title": "Bomet Central"
+  },
+  "kicker": "The constituency · Bomet Central",
+  "title": "Bomet Central: five wards, one voice in Parliament.",
+  "intro": "Silibwet Township, Ndaraweta, Singorwet, Chesoen and Mutarakwa. Joyce began her public life here, as councillor and then MCA for Singorwet ward. In 2027 she is asking Bomet Central to send her to the National Assembly.",
+  "stats": {
+    "title": "Bomet Central in numbers",
+    "population": "people (2019 Census)",
+    "voters2022": "registered voters (2022)",
+    "voters2017": "registered voters (2017)",
+    "stations": "polling stations (2017)",
+    "wards": "county assembly wards"
+  },
+  "wards": {
+    "title": "The five wards",
+    "voters": "{n} registered voters (2022)",
+    "open": "Open {name}"
+  },
+  "ngcdf": {
+    "title": "NG-CDF: what Bomet Central receives",
+    "lead": "Every constituency receives an annual allocation from the National Government Constituencies Development Fund for bursaries, schools, security and local projects. These are the amounts approved for Bomet Central by the NG-CDF Board.",
+    "chart": "NG-CDF approved allocations to Bomet Central (KSh)",
+    "empty": "No figures",
+    "table": "Show as table",
+    "year": "Financial year",
+    "amount": "Approved allocation (KSh)",
+    "latest": "approved for {fy}",
+    "note": "Allocations are amounts approved, not money spent. They were managed under the MPs of the day; shown here for transparency, not as Joyce's work.",
+    "promise": "Joyce's promise: publish every NG-CDF bursary and project in Bomet Central, ward by ward.",
+    "planLink": "Read her plan"
+  },
+  "projects": {
+    "title": "Projects listed by NG-CDF Bomet Central",
+    "lead": "The official NG-CDF Bomet Central website lists these completed projects. It does not publish amounts or wards for them — the kind of gap Joyce has promised to close.",
+    "complete": "Completed",
+    "fyUnknown": "Year not stated",
+    "view": "View on the NG-CDF site"
+  },
+  "ward": {
+    "kicker": "{name} ward · Bomet Central",
+    "title": "{name}",
+    "intro": "One of the five county assembly wards of Bomet Central constituency.",
+    "singorwet": "Singorwet is where Joyce's public life began: she served as its elected councillor (2007–2013) and then as its MCA (2013–2017), when she was also Deputy Speaker of the Bomet County Assembly.",
+    "stats": "{name} in numbers",
+    "map": "Map of {name} ward within Bomet Central",
+    "resultTitle": "2017 result in {name}",
+    "resultBody": "Joyce's only general-election result is the 2017 Woman Rep race, which IEBC publishes at county level only: she won {share}% of valid votes across Bomet County. {name}'s own figures will be added from Form 37A once verified — nothing is estimated.",
+    "ngcdfTitle": "NG-CDF in {name}",
+    "ngcdfBody": "NG-CDF does not currently publish its Bomet Central projects ward by ward. Joyce has promised that it will.",
+    "pledge": "Pledge your vote in {name}",
+    "back": "All of Bomet Central",
+    "others": "Other wards",
+    "pledgeCta": "Pledge now",
+    "hub": "Open the Bomet Central hub"
+  }
+}
