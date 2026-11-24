@@ -14,7 +14,8 @@ export type FormResult =
  * POST, so everything is re-validated here regardless of the client.
  */
 export async function submitForm(kind: FormKind, locale: string, input: unknown): Promise<FormResult> {
-  if (!(kind in schemas)) return { ok: false, code: "invalid" };
+  // Own keys only: `in` would also accept inherited names like "constructor" from a crafted POST.
+  if (typeof kind !== "string" || !Object.hasOwn(schemas, kind)) return { ok: false, code: "invalid" };
 
   const parsed = schemas[kind].safeParse(input);
   if (!parsed.success) {

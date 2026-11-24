@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useLocale } from "next-intl";
+import { photoFiles } from "@/data/photo-files.generated";
 import { photoById, type PhotoId, type Ratio } from "@/data/photos";
 import { cn } from "@/lib/utils";
 
@@ -36,9 +37,18 @@ export function Photo({
   const box = fill ? "absolute inset-0" : ratioClass[p.ratio];
 
   if (p.file) {
+    const f = photoFiles[p.file];
     return (
       <div className={cn("relative overflow-hidden bg-tea", box, className)}>
-        <Image src={p.file} alt={alt} fill sizes={sizes} priority={priority} className="object-cover" />
+        <Image
+          src={p.file}
+          alt={alt}
+          fill
+          sizes={sizes}
+          priority={priority}
+          className="object-cover"
+          {...(f ? { placeholder: "blur" as const, blurDataURL: f.blurDataURL } : {})}
+        />
       </div>
     );
   }

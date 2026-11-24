@@ -64,5 +64,6 @@ const supabaseAdapter: FormAdapter = {
 
 export function getAdapter(): FormAdapter | null {
   const chosen = process.env.FORM_ADAPTER ?? (process.env.NODE_ENV === "production" ? "" : "console");
-  return { console: consoleAdapter, resend: resendAdapter, supabase: supabaseAdapter }[chosen] ?? null;
+  const adapters: Record<string, FormAdapter> = { console: consoleAdapter, resend: resendAdapter, supabase: supabaseAdapter };
+  return Object.hasOwn(adapters, chosen) ? adapters[chosen] : null;
 }
