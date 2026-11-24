@@ -1,5 +1,17 @@
 import { expect, test } from "@playwright/test";
 
+/** Elements sticking out past the viewport — named in the failure message so CI shows the culprit. */
+async function overflowReport(page: import("@playwright/test").Page) {
+  return page.evaluate(() => {
+    const over = document.documentElement.scrollWidth - window.innerWidth;
+    const culprits = [...document.querySelectorAll("body *")]
+      .filter((el) => el.getBoundingClientRect().right > window.innerWidth + 0.5)
+      .slice(0, 5)
+      .map((el) => `${el.tagName.toLowerCase()}.${String(el.className).slice(0, 60)} → right ${Math.round(el.getBoundingClientRect().right)}`);
+    return { over, culprits: culprits.join(" | ") };
+  });
+}
+
 const pages = [
   "record",
   "projects",
@@ -26,8 +38,8 @@ for (const p of pages) {
     await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
     await page.waitForLoadState("networkidle");
     expect(errors).toEqual([]);
-    const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
-    expect(overflow).toBeLessThanOrEqual(0);
+    const { over, culprits } = await overflowReport(page);
+    expect(over, culprits).toBeLessThanOrEqual(0);
     await page.screenshot({ path: `docs/screenshots/phase-7/${p.replace("/", "-")}-${info.project.name}.png`, fullPage: true });
   });
 }

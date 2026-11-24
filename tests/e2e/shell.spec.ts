@@ -1,5 +1,17 @@
 import { expect, test } from "@playwright/test";
 
+/** Elements sticking out past the viewport — named in the failure message so CI shows the culprit. */
+async function overflowReport(page: import("@playwright/test").Page) {
+  return page.evaluate(() => {
+    const over = document.documentElement.scrollWidth - window.innerWidth;
+    const culprits = [...document.querySelectorAll("body *")]
+      .filter((el) => el.getBoundingClientRect().right > window.innerWidth + 0.5)
+      .slice(0, 5)
+      .map((el) => `${el.tagName.toLowerCase()}.${String(el.className).slice(0, 60)} → right ${Math.round(el.getBoundingClientRect().right)}`);
+    return { over, culprits: culprits.join(" | ") };
+  });
+}
+
 const pages = [
   { name: "home-en", path: "/en" },
   { name: "home-sw", path: "/sw" },
@@ -16,8 +28,8 @@ for (const p of pages) {
     // Countdown pill hydrates to a day count.
     await expect(page.getByRole("link", { name: /^(\d+ days|Siku \d+) · 10\.08\.2027 (until the election|hadi uchaguzi)$/ })).toBeVisible();
 
-    const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
-    expect(overflow).toBeLessThanOrEqual(0);
+    const { over, culprits } = await overflowReport(page);
+    expect(over, culprits).toBeLessThanOrEqual(0);
 
     await page.screenshot({
       path: `docs/screenshots/phase-7/${p.name}-${info.project.name}.png`,

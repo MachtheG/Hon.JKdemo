@@ -19,7 +19,7 @@ export function MotifSamples() {
           {steps.map((s, i) => (
             <li
               key={s}
-              className="flex min-w-0 flex-1 items-end bg-tea p-2 text-xs break-words text-paper hyphens-auto"
+              className="flex min-w-0 flex-1 items-end overflow-hidden bg-tea p-1.5 text-[11px] leading-tight text-paper [overflow-wrap:anywhere] hyphens-auto sm:p-2 sm:text-xs"
               style={{ height: `${40 + i * 30}px` }}
             >
               {t(`ladderSteps.${s}`)}
