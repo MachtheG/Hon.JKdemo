@@ -1,8 +1,10 @@
 {
-  "meta": { "title": "Miradi (NGAAF)" },
+  "meta": {
+    "title": "Miradi (NGAAF)"
+  },
   "kicker": "Miradi · NGAAF 2017–2022",
   "title": "Kila shilingi, kwa kila wadi.",
-  "intro": "Akiwa Mwakilishi wa Wanawake, Joyce alisimamia Hazina ya Serikali ya Kitaifa ya Usawazishaji (NGAAF) Bomet. Kila mradi unaonyesha jukumu lake na kama kiasi ni mgao, malipo au matumizi.",
+  "intro": "Wawakilishi wa Wanawake husimamia Hazina ya Serikali ya Kitaifa ya Usawazishaji (NGAAF) katika kaunti zao [[TO CONFIRM: official source for the Woman Rep's NGAAF role]]. Kila mradi unaonyesha jukumu la Joyce na kama kiasi ni mgao, malipo au matumizi.",
   "filters": {
     "label": "Chuja miradi",
     "sector": "Sekta",
@@ -55,9 +57,23 @@
     "source": "Chanzo",
     "view": "Tazama mradi"
   },
-  "kinds": { "allocation": "mgao", "disbursement": "malipo", "expenditure": "matumizi" },
-  "statuses": { "approved": "umeidhinishwa", "ongoing": "unaendelea", "complete": "umekamilika" },
-  "roleNames": { "sponsored": "alidhamini", "lobbied": "alipigania", "allocated": "alitenga", "oversaw": "alisimamia", "delivered": "alitekeleza" },
+  "kinds": {
+    "allocation": "mgao",
+    "disbursement": "malipo",
+    "expenditure": "matumizi"
+  },
+  "statuses": {
+    "approved": "umeidhinishwa",
+    "ongoing": "unaendelea",
+    "complete": "umekamilika"
+  },
+  "roleNames": {
+    "sponsored": "alidhamini",
+    "lobbied": "alipigania",
+    "allocated": "alitenga",
+    "oversaw": "alisimamia",
+    "delivered": "alitekeleza"
+  },
   "detail": {
     "back": "Miradi yote",
     "facts": "Taarifa za mradi",

@@ -18,9 +18,9 @@ export function MapPreview() {
 
   return (
     <section aria-labelledby="map-title" className="mx-auto grid max-w-[1312px] items-center gap-10 px-4 py-16 sm:py-20 lg:grid-cols-2 lg:gap-12">
-      <ul className="m-0 grid list-none grid-cols-3 gap-1.5 p-0 sm:gap-2" aria-label={t("schematic")}>
+      <ul className="m-0 grid list-none grid-cols-3 gap-1.5 p-0 outline-[3px] outline-offset-4 outline-accent outline-solid sm:gap-2" aria-label={t("schematic")}>
         {populationByConstituency2019.map((c) => (
-          <li key={c.code} className="hatch flex h-24 flex-col justify-end bg-accent p-2 text-ink sm:h-36 sm:p-2.5">
+          <li key={c.code} className="hatch flex h-24 flex-col justify-end bg-tea p-2 text-paper sm:h-36 sm:p-2.5">
             <span className="text-xs font-semibold sm:text-base">{c.name}</span>
             <span className="font-mono text-[11px] sm:text-xs">{t("tile", { share })}</span>
           </li>

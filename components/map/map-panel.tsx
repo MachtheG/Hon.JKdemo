@@ -49,7 +49,7 @@ export function MapPanel({ level, selected, onReset }: { level: Level; selected:
           </div>
         ))}
       </dl>
-      {area ? <p className="m-0 text-sm text-mist">{t("pendingNote")}</p> : <p className="m-0 font-mono text-xs text-mist">IEBC 2017 Data Report · p.137, p.19</p>}
+      {area ? <p className="m-0 text-sm text-mist">{t("pendingNote")}</p> : <p className="m-0 font-mono text-[13px] text-mist">IEBC 2017 Data Report · p.137, p.19</p>}
       {area && ctx ? (
         <dl className="m-0 grid grid-cols-[1fr_auto] gap-x-4 gap-y-2 border-t border-mist/30 pt-3 text-sm">
           <dt className="col-span-2 font-semibold">{t("context")} · {ctx.name}</dt>

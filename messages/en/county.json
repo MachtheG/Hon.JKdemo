@@ -1,8 +1,10 @@
 {
-  "meta": { "title": "Bomet County" },
+  "meta": {
+    "title": "Bomet County"
+  },
   "kicker": "Bomet County",
   "title": "Five constituencies. Twenty-five wards. One county.",
-  "intro": "As Woman Representative, Joyce represents all of Bomet County in the National Assembly. Here is the county she serves, in official numbers.",
+  "intro": "As Woman Representative from 2017 to 2022, Joyce represented all of Bomet County in the National Assembly. This is the county she is asking to serve again, in official numbers.",
   "stats": {
     "title": "Bomet in numbers",
     "population": "people (2019 Census)",

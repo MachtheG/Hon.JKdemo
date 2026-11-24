@@ -1,21 +1,51 @@
 import { bometMap } from "@/data/geo/bomet-paths";
 import { Link } from "@/i18n/navigation";
 
-/** Static locator map: constituencies as links; optional highlight with its wards drawn. */
+/** Bounding box of an SVG path made of M/L/Z with absolute "x,y" pairs. */
+function bbox(d: string) {
+  const nums = d.match(/-?\d+(\.\d+)?/g)!.map(Number);
+  const xs = nums.filter((_, i) => i % 2 === 0);
+  const ys = nums.filter((_, i) => i % 2 === 1);
+  return { minX: Math.min(...xs), minY: Math.min(...ys), maxX: Math.max(...xs), maxY: Math.max(...ys) };
+}
+
+/**
+ * Static locator map: constituencies are links. With `highlight`, the view zooms
+ * to that constituency and draws its wards. Label sizes are set relative to the
+ * viewBox so they stay at least ~12px on a 375px screen.
+ */
 export function MiniMap({ highlight, label }: { highlight?: string; label: string }) {
+  const focus = highlight ? bometMap.constituencies.find((c) => c.slug === highlight) : undefined;
   const wards = highlight ? bometMap.wards.filter((w) => w.constituency === highlight) : [];
+  let viewBox: string = bometMap.viewBox;
+  let fontSize = 36;
+  if (focus) {
+    const b = bbox(focus.d);
+    const pad = Math.max(b.maxX - b.minX, b.maxY - b.minY) * 0.08;
+    const w = b.maxX - b.minX + pad * 2;
+    viewBox = `${(b.minX - pad).toFixed(0)} ${(b.minY - pad).toFixed(0)} ${w.toFixed(0)} ${(b.maxY - b.minY + pad * 2).toFixed(0)}`;
+    fontSize = Math.round(w / 26);
+  }
+
   return (
-    <svg viewBox={bometMap.viewBox} role="group" aria-label={label} className="h-auto w-full bg-mist">
+    <svg viewBox={viewBox} role="group" aria-label={label} className="h-auto w-full bg-mist">
       {bometMap.constituencies.map((c) => {
         const on = c.slug === highlight;
         return (
           <Link key={c.slug} href={`/bomet/${c.slug}`} aria-label={c.name}>
-            <path d={c.d} fill={on ? "#1F4D3A" : highlight ? "#B5D0BE" : "#3E7D5A"} stroke="#F6F1E7" strokeWidth="3" className="hover:opacity-85" />
+            <path
+              d={c.d}
+              fill={on || !highlight ? "#1F4D3A" : "#B5D0BE"}
+              stroke="#F6F1E7"
+              strokeWidth={highlight ? 2 : 3}
+              vectorEffect="non-scaling-stroke"
+              className="hover:opacity-85"
+            />
           </Link>
         );
       })}
       {wards.map((w) => (
-        <path key={w.slug} d={w.d} fill="none" stroke="#F5C400" strokeWidth="1.5" aria-hidden />
+        <path key={w.slug} d={w.d} fill="none" stroke="#F5C400" strokeWidth="1.5" vectorEffect="non-scaling-stroke" aria-hidden />
       ))}
       {(highlight ? wards : bometMap.constituencies).map((a) => (
         <text
@@ -25,7 +55,7 @@ export function MiniMap({ highlight, label }: { highlight?: string; label: strin
           textAnchor="middle"
           aria-hidden
           className="pointer-events-none fill-paper font-sans font-semibold"
-          style={{ fontSize: highlight ? 24 : 30, paintOrder: "stroke", stroke: "#14201A", strokeWidth: 4 }}
+          style={{ fontSize, paintOrder: "stroke", stroke: "#14201A", strokeWidth: fontSize / 6 }}
         >
           {a.name}
         </text>

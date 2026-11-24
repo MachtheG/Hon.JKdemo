@@ -12,7 +12,8 @@ const ratioClass: Record<Ratio, string> = {
 
 /**
  * Renders a manifest photo, or its designed placeholder until the file exists.
- * `fill` makes it cover its parent (for full-bleed heroes).
+ * `fill` makes it cover its parent (for full-bleed heroes). `labelPosition="top"`
+ * keeps a placeholder's slot tag clear of overlays at the bottom.
  */
 export function Photo({
   id,
@@ -20,12 +21,14 @@ export function Photo({
   sizes = "100vw",
   priority,
   className,
+  labelPosition = "bottom",
 }: {
   id: PhotoId;
   fill?: boolean;
   sizes?: string;
   priority?: boolean;
   className?: string;
+  labelPosition?: "top" | "bottom";
 }) {
   const locale = useLocale() as "en" | "sw";
   const p = photoById[id];
@@ -41,8 +44,13 @@ export function Photo({
   }
 
   return (
-    <div role="img" aria-label={alt} className={cn("tea-rows flex items-end p-3 text-paper", box, className)}>
-      <span className="font-mono text-[11px] leading-snug">
+    <div
+      role="img"
+      aria-label={alt}
+      className={cn("tea-rows flex p-3 text-paper", labelPosition === "top" ? "items-start justify-end" : "items-end", box, className)}
+    >
+      {/* Field-note tag: legible on the texture, clearly a placeholder. */}
+      <span className="max-w-[34ch] bg-ink/80 px-2 py-1.5 font-mono text-[11px] leading-snug">
         {p.id} · {p.ratio.replace("/", ":")} · min {p.minSize}
         <br />
         {p.shot[locale]}

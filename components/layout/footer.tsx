@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import { ConfirmText } from "@/components/shared/to-confirm";
 import { LiteModeToggle } from "./lite-mode-toggle";
 
 const CAMPAIGN_YEAR = 2027;
@@ -13,10 +14,14 @@ export async function Footer() {
         <div className="flex flex-col gap-1.5">
           <span className="font-display text-2xl text-paper">Joyce Korir · 2027</span>
           <span>{t("tagline")}</span>
-          <span>{t("party")}</span>
+          <span>
+            <ConfirmText text={t("party")} tone="ink" />
+          </span>
         </div>
         <div className="flex flex-col gap-1.5">
-          <span className="font-mono text-xs text-accent">{t("authorisedBy")}</span>
+          <span>
+            <ConfirmText text={t("authorisedBy")} tone="ink" />
+          </span>
           <span>{t("honesty")}</span>
         </div>
         <ul className="flex flex-col">

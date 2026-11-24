@@ -70,8 +70,8 @@ export function MapSvg({
           textAnchor="middle"
           pointerEvents="none"
           aria-hidden
-          className="fill-paper font-sans font-semibold"
-          style={{ fontSize: level === "wards" ? 18 : 28, paintOrder: "stroke", stroke: "#14201A", strokeWidth: 4 }}
+          className={level === "wards" ? "hidden fill-paper font-sans font-semibold sm:block" : "fill-paper font-sans font-semibold"}
+          style={{ fontSize: level === "wards" ? 18 : 34, paintOrder: "stroke", stroke: "#14201A", strokeWidth: 5 }}
         >
           {a.name}
         </text>

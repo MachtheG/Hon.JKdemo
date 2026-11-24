@@ -1,8 +1,8 @@
 import type { SourceId } from "@/data/sources";
 
-/** Polling opens 06:00 East Africa Time on Tuesday 10 August 2027. */
+/** Election day: Tuesday 10 August 2027 (EAT). The countdown runs to the start of the day. */
 export const ELECTION = {
-  isoStart: "2027-08-10T06:00:00+03:00",
+  isoStart: "2027-08-10T00:00:00+03:00",
   isoDate: "2027-08-10",
   campaignOpens: "2027-05-29",
   campaignCloses: "2027-08-07",

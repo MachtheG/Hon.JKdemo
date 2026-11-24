@@ -6,7 +6,7 @@
   "skipLink": "Ruka hadi maudhui kuu",
   "brand": {
     "name": "Joyce Korir",
-    "office": "Mwakilishi wa Wanawake · Bomet"
+    "office": "Mgombea · Mwakilishi wa Wanawake · Bomet"
   },
   "nav": {
     "label": "Kuu",
@@ -45,7 +45,8 @@
     "tick": "Chanzo: {title}",
     "published": "Ilichapishwa {date}",
     "open": "Fungua chanzo",
-    "close": "Funga"
+    "close": "Funga",
+    "many": "Vyanzo {count}: {titles}"
   },
   "photo": {
     "slot": "Nafasi ya picha {id}",
@@ -53,7 +54,7 @@
   },
   "footer": {
     "tagline": "Mgombea wa Mwakilishi wa Wanawake, Kaunti ya Bomet",
-    "party": "Chama: UDA",
+    "party": "Chama: UDA [[TO CONFIRM: 2027 UDA nomination (party primaries from 29 May 2027)]]",
     "authorisedBy": "[[TO CONFIRM: authorised-by line — agent name and address]]",
     "credits": "Wapiga picha",
     "sources": "Vyanzo",

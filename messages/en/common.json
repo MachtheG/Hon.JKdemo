@@ -6,7 +6,7 @@
   "skipLink": "Skip to main content",
   "brand": {
     "name": "Joyce Korir",
-    "office": "Woman Rep · Bomet"
+    "office": "Woman Rep candidate · Bomet"
   },
   "nav": {
     "label": "Main",
@@ -45,7 +45,8 @@
     "tick": "Source: {title}",
     "published": "Published {date}",
     "open": "Open source",
-    "close": "Close"
+    "close": "Close",
+    "many": "{count} sources: {titles}"
   },
   "photo": {
     "slot": "Photo slot {id}",
@@ -53,7 +54,7 @@
   },
   "footer": {
     "tagline": "Woman Representative candidate, Bomet County",
-    "party": "Party: UDA",
+    "party": "Party: UDA [[TO CONFIRM: 2027 UDA nomination (party primaries from 29 May 2027)]]",
     "authorisedBy": "[[TO CONFIRM: authorised-by line — agent name and address]]",
     "credits": "Photo credits",
     "sources": "Sources",

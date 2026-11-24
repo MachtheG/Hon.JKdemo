@@ -15,7 +15,7 @@ export function Timeline() {
       <ol className="m-0 list-none border-l-2 border-tea p-0">
         {timeline.map((e) => (
           <li key={e.year + e.title.en} className="relative grid gap-1 py-4 pl-6 sm:grid-cols-[150px_110px_1fr] sm:gap-4">
-            <span aria-hidden className={`absolute top-6 -left-[7px] size-3 ${e.kind === "office" ? "bg-accent" : "bg-tea"}`} />
+            <span aria-hidden className={`absolute top-6 -left-[7px] size-3 ${e.kind === "office" ? "bg-tea" : "border-2 border-tea bg-surface"}`} />
             <span className="font-mono text-sm">{e.year}</span>
             <span className="font-mono text-xs text-laterite-ink uppercase sm:pt-0.5">{t(`kinds.${e.kind}`)}</span>
             <span>

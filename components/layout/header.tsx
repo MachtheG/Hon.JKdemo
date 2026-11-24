@@ -38,7 +38,6 @@ export async function Header() {
           <MobileMenu />
         </div>
       </div>
-      <LanguageToggle className="justify-end border-t border-tea px-4 py-1 sm:hidden" />
     </header>
   );
 }

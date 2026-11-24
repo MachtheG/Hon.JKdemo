@@ -1,8 +1,10 @@
 {
-  "meta": { "title": "Kaunti ya Bomet" },
+  "meta": {
+    "title": "Kaunti ya Bomet"
+  },
   "kicker": "Kaunti ya Bomet",
   "title": "Maeneo bunge matano. Wadi ishirini na tano. Kaunti moja.",
-  "intro": "Akiwa Mwakilishi wa Wanawake, Joyce anawakilisha Kaunti yote ya Bomet katika Bunge la Kitaifa. Hii ndiyo kaunti anayoihudumia, kwa takwimu rasmi.",
+  "intro": "Akiwa Mwakilishi wa Wanawake kuanzia 2017 hadi 2022, Joyce aliwakilisha Kaunti yote ya Bomet katika Bunge la Kitaifa. Hii ndiyo kaunti anayoomba kuihudumia tena, kwa takwimu rasmi.",
   "stats": {
     "title": "Bomet kwa takwimu",
     "population": "watu (Sensa 2019)",

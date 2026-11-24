@@ -16,6 +16,8 @@
   "whatsapp": {
     "title": "Follow on WhatsApp",
     "body": "Campaign updates, events and the record — straight to your phone.",
-    "pending": "[[TO CONFIRM: official WhatsApp channel link]]"
+    "pending": "[[TO CONFIRM: official WhatsApp channel link]]",
+    "soon": "Channel link coming soon",
+    "instead": "Pledge your vote instead"
   }
 }

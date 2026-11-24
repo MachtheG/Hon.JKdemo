@@ -6,7 +6,7 @@
     "kicker": "Field notes · Bomet County · 2027",
     "title": "Mama Arudi Kazini.",
     "sub": "Back to work for Bomet's women — from Singorwet ward to the Senate, on the record.",
-    "votes": "votes as Woman Rep, 2017",
+    "votes": "votes for Woman Rep, 2017",
     "share": "of valid votes cast",
     "levelsValue": "4 levels",
     "levels": "ward · assembly · house · senate",
@@ -21,7 +21,7 @@
     "campaignOpens": "campaign period opens",
     "addToCalendar": "Add to calendar",
     "icsSummary": "Kenya General Election — vote for Joyce Korir, Woman Rep Bomet",
-    "icsDescription": "Polling stations open 6am. Bring your ID."
+    "icsDescription": "Bring your ID card."
   },
   "entry": {
     "label": "Start here",
@@ -40,7 +40,7 @@
   },
   "stats": {
     "title": "The work, on the record.",
-    "votes": "votes as Woman Rep, 2017",
+    "votes": "votes for Woman Rep, 2017",
     "share": "of valid votes cast in Bomet",
     "contributions": "Senate floor contributions",
     "bill": "bill sponsored: County Library Services",

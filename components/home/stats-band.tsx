@@ -38,11 +38,11 @@ export function StatsBand() {
           {t("whatsapp")}
         </a>
       </div>
-      <dl className="m-0 grid grid-cols-2 gap-x-3 gap-y-6 border-t-2 border-text pt-7 lg:grid-cols-4 lg:gap-8">
+      <dl className="m-0 grid grid-cols-1 gap-x-3 gap-y-6 border-t-2 border-text pt-7 min-[400px]:grid-cols-2 lg:grid-cols-4 lg:gap-8">
         {items.map((s) => (
-          <div key={s.key} className="flex flex-col-reverse">
+          <div key={s.key} className="flex flex-col-reverse justify-end">
             <dt className="text-sm text-muted sm:text-base">{t(s.key)}</dt>
-            <dd className="m-0 font-mono text-[30px] leading-tight sm:text-[56px]">
+            <dd className="m-0 font-mono text-[40px] leading-tight whitespace-nowrap sm:text-[56px] lg:text-[64px]">
               <AnimatedNumber value={s.value} decimals={s.decimals} suffix={s.suffix} />
               <SourceTick id={s.source} />
             </dd>

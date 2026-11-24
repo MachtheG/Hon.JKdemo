@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { SourceTick } from "@/components/shared/source-tick";
+import { ConfirmText } from "@/components/shared/to-confirm";
 import type { SourceId } from "@/data/sources";
 
 export function PromiseBlock({ k, n, sources }: { k: "one" | "two" | "three"; n: number; sources: SourceId[] }) {
@@ -24,10 +25,8 @@ export function PromiseBlock({ k, n, sources }: { k: "one" | "two" | "three"; n:
       <div className="flex flex-col gap-2 bg-mist p-5 text-ink">
         <span className="font-mono text-xs text-[#7a3418] uppercase">{t("recordLabel")}</span>
         <p className="m-0">
-          {t(`promises.${k}.record`)}
-          {sources.map((s) => (
-            <SourceTick key={s} id={s} />
-          ))}
+          <ConfirmText text={t(`promises.${k}.record`)} />
+          <SourceTick id={sources} />
         </p>
       </div>
     </article>

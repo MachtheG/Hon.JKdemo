@@ -41,6 +41,7 @@ export function ElectionMap() {
             {t("controls.projects")}: {overlay ? t("controls.on") : t("controls.off")}
           </button>
         </div>
+        <p className="m-0 text-sm text-muted">{t("controls.hint")}</p>
         <div className="bg-mist p-3 sm:p-5">
           <MapSvg level={level} selected={selected} onSelect={setSelected} label={t("title")} />
         </div>

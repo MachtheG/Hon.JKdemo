@@ -1,10 +1,17 @@
 {
-  "meta": { "title": "Safari yake" },
+  "meta": {
+    "title": "Safari yake"
+  },
   "kicker": "Safari yake",
   "title": "Kutoka wadi ya Singorwet hadi Seneti.",
-  "intro": "Joyce Chepkoech Korir amehudumia Bomet katika kila ngazi ya uongozi wa umma — kama diwani, Meya, MCA na Naibu Spika, Mwakilishi wa Wanawake, na sasa Seneta aliyeteuliwa.",
+  "intro": "Joyce Chepkoech Korir amehudumia Bomet katika kila ngazi ya uongozi wa umma — kama diwani na Meya/Naibu Meya wa Manispaa ya Bomet, MCA na Naibu Spika, Mwakilishi wa Wanawake (2017–2022), na sasa Seneta aliyeteuliwa.",
   "timeline": "Historia",
-  "kinds": { "education": "Elimu", "office": "Wadhifa", "honour": "Heshima", "legislation": "Sheria" },
+  "kinds": {
+    "education": "Elimu",
+    "office": "Wadhifa",
+    "honour": "Heshima",
+    "legislation": "Sheria"
+  },
   "archive": "Kutoka kwenye kumbukumbu",
   "pending": "Baadhi ya maelezo bado yanathibitishwa kwa nyaraka rasmi. Yamewekewa alama hadi yathibitishwe."
 }

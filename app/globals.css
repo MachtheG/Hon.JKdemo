@@ -69,9 +69,17 @@ body {
   font-size: 1.0625rem; /* 17px */
   line-height: 1.55;
 }
+/* Two-tone focus ring: visible on paper, yellow, tea and ink alike (WCAG 2.4.7 / 2.4.11). */
 :focus-visible {
-  outline: 3px solid var(--accent);
+  outline: 3px solid var(--ink);
   outline-offset: 2px;
+  box-shadow: 0 0 0 5px var(--accent);
+}
+.bg-ink :focus-visible,
+.bg-tea :focus-visible,
+.tea-rows :focus-visible {
+  outline-color: var(--accent);
+  box-shadow: 0 0 0 5px var(--ink);
 }
 .tabular {
   font-variant-numeric: tabular-nums;

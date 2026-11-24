@@ -26,7 +26,7 @@ export function JoinCta() {
             </Button>
           </div>
         </div>
-        <Photo id="HOME-JOIN" sizes="(min-width: 1024px) 33vw, 320px" className="w-full max-w-xs lg:max-w-none" />
+        <Photo id="HOME-JOIN" sizes="(min-width: 1024px) 33vw, 320px" className="w-full max-w-md lg:max-w-none" />
       </div>
     </section>
   );

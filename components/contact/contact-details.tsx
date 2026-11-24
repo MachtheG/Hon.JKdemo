@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { ConfirmText } from "@/components/shared/to-confirm";
 
 export function ContactDetails() {
   const t = useTranslations("contact.details");
@@ -8,9 +9,9 @@ export function ContactDetails() {
         {t("title")}
       </h2>
       <address className="flex flex-col gap-2 font-mono text-sm not-italic">
-        <span>{t("office")}</span>
-        <span>{t("phone")}</span>
-        <span>{t("email")}</span>
+        <span><ConfirmText text={t("office")} /></span>
+        <span><ConfirmText text={t("phone")} /></span>
+        <span><ConfirmText text={t("email")} /></span>
       </address>
       <p className="m-0 text-muted">{t("press")}</p>
     </section>

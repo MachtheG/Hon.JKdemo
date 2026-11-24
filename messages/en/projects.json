@@ -1,8 +1,10 @@
 {
-  "meta": { "title": "Projects (NGAAF)" },
+  "meta": {
+    "title": "Projects (NGAAF)"
+  },
   "kicker": "Projects · NGAAF 2017–2022",
   "title": "Every shilling, by ward.",
-  "intro": "As Woman Rep, Joyce oversaw the National Government Affirmative Action Fund (NGAAF) in Bomet. Each project lists her role and whether a figure is an allocation, a disbursement or spending.",
+  "intro": "Woman Representatives oversee the National Government Affirmative Action Fund (NGAAF) in their county [[TO CONFIRM: official source for the Woman Rep's NGAAF role]]. Each project lists Joyce's role and whether a figure is an allocation, a disbursement or spending.",
   "filters": {
     "label": "Filter projects",
     "sector": "Sector",
@@ -55,9 +57,23 @@
     "source": "Source",
     "view": "View project"
   },
-  "kinds": { "allocation": "allocation", "disbursement": "disbursement", "expenditure": "spending" },
-  "statuses": { "approved": "approved", "ongoing": "ongoing", "complete": "complete" },
-  "roleNames": { "sponsored": "sponsored", "lobbied": "lobbied", "allocated": "allocated", "oversaw": "oversaw", "delivered": "delivered" },
+  "kinds": {
+    "allocation": "allocation",
+    "disbursement": "disbursement",
+    "expenditure": "spending"
+  },
+  "statuses": {
+    "approved": "approved",
+    "ongoing": "ongoing",
+    "complete": "complete"
+  },
+  "roleNames": {
+    "sponsored": "sponsored",
+    "lobbied": "lobbied",
+    "allocated": "allocated",
+    "oversaw": "oversaw",
+    "delivered": "delivered"
+  },
   "detail": {
     "back": "All projects",
     "facts": "Project facts",

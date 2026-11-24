@@ -29,6 +29,7 @@ export function ProjectsView({ emptyState }: { emptyState: React.ReactNode }) {
 
   return (
     <div className="flex flex-col gap-12">
+      {allProjects.length === 0 ? emptyState : null}
       <ProjectFilters count={list.length} />
       <div className="grid gap-10 lg:grid-cols-2">
         <BarChart
@@ -47,7 +48,7 @@ export function ProjectsView({ emptyState }: { emptyState: React.ReactNode }) {
         />
       </div>
       {list.length === 0 ? (
-        emptyState
+        allProjects.length === 0 ? null : emptyState
       ) : (
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {list.map((p) => (

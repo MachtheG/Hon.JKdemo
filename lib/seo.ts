@@ -28,7 +28,8 @@ export async function pageMetadata(
   const t = await getTranslations(ns);
   const common = await getTranslations("common.meta");
   const title = opts.title ?? t("meta.title");
-  const description = t.has("intro") ? t("intro") : common("description");
+  // Unverified segments are shown on the page, but never put into search/share snippets.
+  const description = (t.has("intro") ? t("intro") : common("description")).replace(/\s*\[\[TO CONFIRM:[^\]]*\]\]/g, "");
   // A page-level openGraph replaces the inherited one, so point at the locale's share card explicitly.
   const image = { url: `/${locale}/opengraph-image`, width: 1200, height: 630, alt: common("siteName") };
 

@@ -29,16 +29,9 @@ export const timeline: TimelineEntry[] = [
   {
     year: "2007–2013",
     kind: "office",
-    title: { en: "Councillor, Singorwet Ward, Bomet Municipal Council", sw: "Diwani, Wadi ya Singorwet, Baraza la Manispaa ya Bomet" },
-    source: "parl-senate-profile",
-    confirm: "elected or nominated councillor; Deputy Mayor dates",
-  },
-  {
-    year: "2011",
-    kind: "office",
-    title: { en: "First woman Mayor of Bomet Municipality", sw: "Meya wa kwanza mwanamke wa Manispaa ya Bomet" },
-    source: "allafrica-first-woman-mayor-2011",
-    confirm: "dates as Mayor (reported as 2011–2013)",
+    title: { en: "Elected councillor, Singorwet Ward; Mayor/Deputy Mayor, Bomet Municipality", sw: "Diwani aliyechaguliwa, Wadi ya Singorwet; Meya/Naibu Meya, Manispaa ya Bomet" },
+    source: "parl-na-profile-2017",
+    confirm: "years as Deputy Mayor and as Mayor",
   },
   {
     year: "2013–2017",
@@ -49,9 +42,9 @@ export const timeline: TimelineEntry[] = [
   {
     year: "2014–2017",
     kind: "education",
-    title: { en: "JKUAT — Diploma", sw: "JKUAT — Stashahada" },
-    source: "parl-senate-profile",
-    confirm: "diploma title and year ('County Governance' 2014, or 'Governance & Leadership' 2015–2017)",
+    title: { en: "JKUAT — Diploma in County Governance", sw: "JKUAT — Stashahada ya Utawala wa Kaunti" },
+    source: "parl-na-profile-2017",
+    confirm: "the 2022 Senate profile gives 2015–2017 and a different title",
   },
   {
     year: "2017",
@@ -96,7 +89,7 @@ export const timeline: TimelineEntry[] = [
     kind: "honour",
     title: { en: "Chief of the Order of the Burning Spear (CBS)", sw: "Chief of the Order of the Burning Spear (CBS)" },
     source: "psc-annual-report-2023-24",
-    confirm: "year conferred and Gazette notice",
+    confirm: "CBS seen only in a search snippet of the PSC report — page, year conferred and Gazette notice",
   },
 ];
 

@@ -33,7 +33,7 @@ export const sources = [
     accessed: "2026-11-22",
     tier: "official",
     notes:
-      "Education, employment history, committee: National Cohesion & Equal Opportunity (2017–). Photo: /sites/default/files/2017-10/88c9db60db08f693776a4a523f26de7b_M.jpg",
+      "Employment: 2007–2013 Mayor/Deputy Mayor, elected councillor for Singorwet Ward; 2013–2017 MCA Singorwet Ward, Deputy Speaker; 2017– National Assembly. Party JP. Committee: National Cohesion & Equal Opportunity (2017–). Education: Tendwet Primary 1987–95; Mugango Secondary 1996–99; Kenya Institute of Legal Studies 2004–05; JKUAT Diploma in County Governance 2014–2017. Photo: /sites/default/files/2017-10/88c9db60db08f693776a4a523f26de7b_M.jpg",
   },
   {
     id: "parl-senate-profile",
@@ -76,7 +76,7 @@ export const sources = [
     accessed: "2026-11-22",
     tier: "secondary",
     notes:
-      "Counts: 1 bill, 174 contributions, 2 committees, 3 motions (seconded), 12 statements, 31 papers laid, 20 votes recorded. Trackers updated to 8 Oct 2026.",
+      "Counts: 1 bill, 174 contributions, 2 committees (Delegated Legislation; National Cohesion, Equal Opportunity and Regional Integration), 3 motions seconded, 12 statements, 31 papers laid, 20 votes recorded. Statements incl. tea weights & measures (25 May 2023), ECDE teachers in Bomet (22 Feb 2024), UDPTE teachers (18 Sep 2024), National Tree Planting Initiative (14 Nov 2024), GBV in Bomet (8 Oct 2026). Motion seconded: TTC students in higher-education funding model, 17 Mar 2026, adopted. Trackers updated to 8 Oct 2026.",
   },
   {
     id: "mzalendo-na-12th",
@@ -211,7 +211,7 @@ export const sources = [
     url: "https://allafrica.com/stories/201107050624.html",
     accessed: "2026-11-22",
     tier: "secondary",
-    notes: "Not readable by our fetcher (403) — campaign/team to confirm content.",
+    notes: "Not readable by our fetcher (403). 'First woman Mayor' and '2011' unverified — not shown on the site until read.",
   },
   {
     id: "star-psc-sworn-2022",
@@ -239,7 +239,7 @@ export const sources = [
     url: "https://kenyanews.go.ke/?p=3012",
     accessed: "2026-11-22",
     tier: "official",
-    notes: "Date reported as 2018 by search summary — [[TO CONFIRM]].",
+    notes: "Link returned HTTP 404 on 24 Nov 2026; date reported as 2018 by a search summary. Content unverified — not used for any claim until an archived copy is found.",
   },
   {
     id: "nation-three-fight-2017",

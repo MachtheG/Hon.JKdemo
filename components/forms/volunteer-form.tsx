@@ -56,7 +56,7 @@ export function VolunteerForm() {
       <ConsentFields kind="volunteer" register={register} error={err("consent")} />
       <Honeypot id="vol-website" register={register} />
       <FormStatus kind="volunteer" result={result} statusRef={statusRef} />
-      <Button type="submit" variant="ink" size="lg" disabled={pending} className="self-start">
+      <Button type="submit" variant="accent" size="lg" disabled={pending} className="self-start">
         {pending ? t("submit.sending") : t("submit.volunteer")}
       </Button>
     </form>

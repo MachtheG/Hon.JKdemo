@@ -23,7 +23,7 @@ export function SenateStats() {
           return <Stat key={s.key} value={String(stat.value)} label={t(s.key)} source={stat.source} size="md" />;
         })}
       </div>
-      <p className="m-0 font-mono text-xs text-muted">{t("note")}</p>
+      <p className="m-0 font-mono text-[13px] text-muted">{t("note")}</p>
       <p className="m-0 text-sm">{t("committees")}</p>
     </section>
   );

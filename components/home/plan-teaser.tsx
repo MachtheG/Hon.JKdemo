@@ -11,7 +11,7 @@ export function PlanTeaser() {
   return (
     <section aria-labelledby="plan-title" className="bg-mist text-ink">
       <div className="mx-auto grid max-w-[1312px] gap-10 px-4 py-16 sm:py-20 lg:grid-cols-[1fr_2fr] lg:gap-12">
-        <Photo id="HOME-PLAN" sizes="(min-width: 1024px) 33vw, 320px" className="w-full max-w-xs lg:max-w-none" />
+        <Photo id="HOME-PLAN" sizes="(min-width: 1024px) 33vw, 320px" className="w-full max-w-md lg:max-w-none" />
         <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-2">
             <span className="font-mono text-xs tracking-[0.12em] text-[#7a3418] uppercase">

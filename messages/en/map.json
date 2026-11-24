@@ -12,7 +12,8 @@
     "projects": "Projects overlay",
     "on": "on",
     "off": "off",
-    "projectsNone": "No sourced projects yet — pins appear when NGAAF documents are supplied."
+    "projectsNone": "No sourced projects yet — pins appear when NGAAF documents are supplied.",
+    "hint": "Tap or select an area to see its details."
   },
   "legend": {
     "title": "Joyce's vote share, 2017",
@@ -20,7 +21,7 @@
     "b4060": "40–60%",
     "b6075": "60–75%",
     "gte75": "75% and over",
-    "led": "Led (accent outline)",
+    "led": "Led (yellow outline)",
     "countyOnly": "Shading is the county-wide result; it does not show constituency or ward results."
   },
   "panel": {

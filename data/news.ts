@@ -58,7 +58,7 @@ export const news: NewsItem[] = [
     headline: "Government agencies to blame for early pregnancies",
     summary: { en: "As Woman Rep, Joyce pressed agencies to act firmly on defilement, teen pregnancy and early marriage.", sw: "Akiwa Mwakilishi wa Wanawake, Joyce alizitaka taasisi kuchukua hatua dhidi ya unajisi, mimba za utotoni na ndoa za mapema." },
     source: "kna-early-pregnancies",
-    showOnSite: true,
+    showOnSite: false, // link returns 404 (24 Nov 2026) — hidden until an archived copy is found
   },
   {
     date: "undated",
@@ -72,6 +72,6 @@ export const news: NewsItem[] = [
     headline: "Bomet Picks First Woman Mayor",
     summary: { en: "Bomet Municipality elects Joyce as its first woman mayor.", sw: "Manispaa ya Bomet yamchagua Joyce kuwa meya wake wa kwanza mwanamke." },
     source: "allafrica-first-woman-mayor-2011",
-    showOnSite: true,
+    showOnSite: false, // article unread (403) — hidden until verified
   },
 ];

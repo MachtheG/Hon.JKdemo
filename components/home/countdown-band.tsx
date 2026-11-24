@@ -9,10 +9,10 @@ export function CountdownBand() {
 
   return (
     <section id="countdown" aria-label={t("kicker")} className="scroll-mt-4 bg-tea text-paper">
-      <div className="mx-auto grid max-w-[1312px] items-end gap-6 px-4 py-8 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mx-auto grid max-w-[1312px] items-end gap-6 px-4 py-8 sm:grid-cols-3 lg:grid-cols-[1.4fr_1fr_1fr_auto]">
         <div className="flex flex-col">
           <span className="font-mono text-xs tracking-[0.12em] text-mist uppercase">{t("kicker")}</span>
-          <span className="font-display text-[28px]">
+          <span className="font-display text-[28px] lg:whitespace-nowrap">
             <time dateTime={ELECTION.isoDate}>{t("date")}</time>
             <SourceTick id={ELECTION.source} tone="accent" />
           </span>

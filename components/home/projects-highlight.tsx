@@ -25,7 +25,7 @@ export function ProjectsHighlight() {
         </div>
 
         {featured.length === 0 ? (
-          <div className="flex flex-col justify-center gap-2.5 border border-dashed border-mist p-6 sm:p-8">
+          <div className="flex flex-col justify-center gap-2.5 self-start border border-dashed border-mist p-6 sm:p-8">
             <span className="font-mono text-sm text-accent uppercase">{t("emptyTitle")}</span>
             <p className="m-0 text-mist">{t("emptyBody")}</p>
           </div>

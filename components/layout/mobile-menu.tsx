@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useId, useState } from "react";
 import { Link, usePathname } from "@/i18n/navigation";
+import { LanguageToggle } from "./language-toggle";
 import { navItems } from "./nav-items";
 
 /** Full menu: a disclosure on mobile, and the overflow menu on desktop. */
@@ -54,6 +55,7 @@ export function MobileMenu() {
             </Link>
           </li>
         </ul>
+        <LanguageToggle className="mx-auto mt-4 max-w-[1312px] sm:hidden" />
       </div>
     </div>
   );

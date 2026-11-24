@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { ConfirmText } from "@/components/shared/to-confirm";
 
 const keys = ["controller", "collect", "why", "basis", "share", "keep", "rights", "complain", "cookies", "children"] as const;
 
@@ -11,7 +12,9 @@ export function PrivacySections() {
           <h2 id={`p-${k}`} className="m-0 font-display text-2xl font-semibold">
             {t(`${k}.title`)}
           </h2>
-          <p className="m-0">{t(`${k}.body`)}</p>
+          <p className="m-0">
+            <ConfirmText text={t(`${k}.body`)} />
+          </p>
         </section>
       ))}
     </div>

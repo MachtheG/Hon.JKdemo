@@ -12,7 +12,8 @@
     "projects": "Miradi kwenye ramani",
     "on": "imewashwa",
     "off": "imezimwa",
-    "projectsNone": "Bado hakuna miradi yenye chanzo — alama zitaonekana nyaraka za NGAAF zikiwasilishwa."
+    "projectsNone": "Bado hakuna miradi yenye chanzo — alama zitaonekana nyaraka za NGAAF zikiwasilishwa.",
+    "hint": "Gusa au chagua eneo ili kuona maelezo yake."
   },
   "legend": {
     "title": "Asilimia ya kura za Joyce, 2017",

@@ -1,5 +1,7 @@
 {
-  "meta": { "title": "Rekodi" },
+  "meta": {
+    "title": "Rekodi"
+  },
   "kicker": "Rekodi",
   "title": "Ngazi nne za uongozi. Rekodi moja.",
   "intro": "Kila mstari hapa chini una kiungo cha chanzo rasmi au kilichochapishwa. Pale ambapo jambo bado linathibitishwa, imeelezwa.",
@@ -10,7 +12,7 @@
     "national": "Kitaifa",
     "senate": "Seneti",
     "councillor": "Diwani, Wadi ya Singorwet",
-    "councillorNote": "Meya wa kwanza mwanamke wa Manispaa ya Bomet, 2011",
+    "councillorNote": "Meya/Naibu Meya wa Manispaa ya Bomet",
     "mca": "MCA na Naibu Spika",
     "mcaNote": "Bunge la Kaunti ya Bomet",
     "wr": "Mwakilishi wa Wanawake, Bomet",
@@ -30,7 +32,11 @@
   },
   "floor": {
     "title": "Katika Seneti kwa ajili ya Bomet",
-    "kinds": { "statement": "Taarifa", "bill": "Mswada", "motion": "Hoja" }
+    "kinds": {
+      "statement": "Taarifa",
+      "bill": "Mswada",
+      "motion": "Hoja"
+    }
   },
   "timeline": {
     "title": "Historia kamili",

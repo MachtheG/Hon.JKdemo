@@ -5,6 +5,7 @@ import { VolunteerForm } from "@/components/forms/volunteer-form";
 import { InvolveSection } from "@/components/get-involved/involve-section";
 import { Container } from "@/components/shared/container";
 import { PageHeader } from "@/components/shared/page-header";
+import { ConfirmText } from "@/components/shared/to-confirm";
 import { pageMetadata } from "@/lib/seo";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -24,7 +25,17 @@ export default function GetInvolvedPage() {
           <VolunteerForm />
         </InvolveSection>
         <InvolveSection id="whatsapp" n={3} title={t("whatsapp.title")} body={t("whatsapp.body")}>
-          <p className="m-0 font-mono text-sm">{t("whatsapp.pending")}</p>
+          <div className="flex flex-wrap items-center gap-4">
+            <span aria-disabled="true" className="inline-flex min-h-12 items-center border-2 border-dashed border-text/50 px-5 font-semibold text-muted">
+              {t("whatsapp.soon")}
+            </span>
+            <a href="#pledge" className="inline-flex min-h-11 items-center font-semibold">
+              {t("whatsapp.instead")} →
+            </a>
+          </div>
+          <p className="m-0 text-sm">
+            <ConfirmText text={t("whatsapp.pending")} />
+          </p>
         </InvolveSection>
       </Container>
     </>

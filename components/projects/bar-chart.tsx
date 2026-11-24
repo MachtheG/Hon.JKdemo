@@ -66,7 +66,7 @@ export function BarChart({
           );
         })}
         {empty ? (
-          <span className="absolute inset-x-0 top-1/2 -translate-y-1/2 text-center text-sm text-laterite-ink">{emptyLabel}</span>
+          <span className="absolute top-1/2 left-1/2 w-max max-w-[90%] -translate-x-1/2 -translate-y-1/2 border border-laterite-ink/40 bg-surface px-3 py-1 text-center text-sm text-laterite-ink">{emptyLabel}</span>
         ) : null}
       </div>
       <div className="flex gap-0.5 font-mono text-[11px] sm:text-xs">

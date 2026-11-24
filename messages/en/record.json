@@ -1,5 +1,7 @@
 {
-  "meta": { "title": "The Record" },
+  "meta": {
+    "title": "The Record"
+  },
   "kicker": "The record",
   "title": "Four levels of office. One record.",
   "intro": "Every line below links to an official or published source. Where a detail is still being checked, it says so.",
@@ -10,7 +12,7 @@
     "national": "National",
     "senate": "Senate",
     "councillor": "Councillor, Singorwet Ward",
-    "councillorNote": "First woman Mayor of Bomet Municipality, 2011",
+    "councillorNote": "Mayor/Deputy Mayor of Bomet Municipality",
     "mca": "MCA & Deputy Speaker",
     "mcaNote": "Bomet County Assembly",
     "wr": "Woman Rep, Bomet",
@@ -30,7 +32,11 @@
   },
   "floor": {
     "title": "On the Senate floor for Bomet",
-    "kinds": { "statement": "Statement", "bill": "Bill", "motion": "Motion" }
+    "kinds": {
+      "statement": "Statement",
+      "bill": "Bill",
+      "motion": "Motion"
+    }
   },
   "timeline": {
     "title": "Full timeline",

@@ -8,54 +8,76 @@
 | 4 — Scaffold, design system, shell, /styleguide | ✅ Quality gate passed | 2026-11-24 |
 | 5 — Home (Hero A, as approved) | ✅ Quality gate passed | 2026-11-24 |
 | 6 — Record, Projects, Map, Plan, all tabs, county + constituency pages | ✅ Quality gate passed | 2026-11-24 |
-| 7 — Forms, SEO, a11y, Lighthouse, agents | — | |
+| 7 — Forms, SEO, a11y, Lighthouse, review agents | ⏸ Done — waiting for /review and /security-review (Lighthouse perf < 95, see below) | 2026-11-24 |
+| 8 — Ship (repo `Hon.JKdemo`, public) | — | |
+
+### Phase 7 quality gate (2026-11-24)
+- **Checks:** lint ✅ · typecheck ✅ · unit 27/27 ✅ · build ✅ · sources ✅ (72 refs) · translations ✅ (17 namespaces × en/sw)
+- **Browser tests:** 186/186 ✅ at 375 / 768 / 1440:
+  - **Accessibility:** axe WCAG 2.0/2.1/2.2 A+AA reports 0 violations on 17 pages.
+  - **Forms:** validation, explicit consent, success messages, Kiswahili errors.
+  - **SEO:** canonical, hreflang, OG image, JSON-LD, sitemap, robots, share card.
+- **Lighthouse (mobile, local):** Accessibility, Best practices and SEO are 100 on every page. Performance medians are 82–91, **below the 95 target**, because of runtime Total Blocking Time. Details and options are in docs/LIGHTHOUSE.md.
+- **Forms:** set `FORM_ADAPTER` to `resend` or `supabase` in production. Until it is set, forms answer "not open yet" and nothing is lost silently.
+- **Fact-checker:** first run was **FAIL** (1 blocker, 5 majors). All fixed:
+  - **Blocker:** the county page and the header implied she is the current Woman Rep. Both are now past tense, or "candidate".
+  - **Majors:** two unsourced NGAAF-role claims and a dead KNA link are now marked TO CONFIRM. The unread "first woman Mayor 2011" claim is replaced by the official profile's wording, "Mayor/Deputy Mayor", and the related news item is hidden.
+  - **Minors:** source citations corrected (ladder, JKUAT, Senate rung). Source notes now record committee names and statement dates. "Votes for Woman Rep" instead of "as Woman Rep". The unsourced "6am" is removed. The 2027 party ticket is marked TO CONFIRM.
+- **Design critic:** 18 findings, all addressed. The most important:
+  - two-tone focus ring (it was invisible on paper and on yellow)
+  - mobile results table no longer clips
+  - mobile hero is now a true 4:5 Hero A
+  - rung ladder replaces the bars
+  - shape-coded timeline markers
+  - designed TO CONFIRM chips
+  - empty-state chip, with the explanation shown first
+  - map teaser uses tea + hatch with an accent outline
+  - multi-source ticks merged, with a 44px hit area
+  - EN/SW switch moved into the mobile menu
+  - zoomed constituency maps with readable labels
 
 ### Phase 6 quality gate (2026-11-24)
-- lint ✅ · typecheck ✅ · unit 13/13 ✅ · build ✅ (all static/PPR) · sources ✅ (78 refs) · translations ✅ (16 namespaces × en/sw)
-- e2e 108/108 ✅ at 375 / 768 / 1440 — every page: 200, clean hydration, no sideways scroll; map selection/keyboard/wards; URL filters; 404 placeholder; TO CONFIRM markers visible. Screenshots in docs/screenshots/phase-6/
-- **Map:** lightweight server-rendered SVG (brief allows SVG for a small area) from geoBoundaries KEN ADM2/ADM3 — licences in data/credits.ts. Rebuild with `npm run map`. Works with no JS and in lite mode. MapLibre not needed.
-- **Charts:** hand-built single-series SVG bars (tea), with hover and keyboard tooltips and a table view. No Recharts dependency yet; data is empty until NGAAF documents arrive.
-- **Shading is county-level only** (the only level IEBC published); every constituency and ward panel says "Pending Form 37B/37A".
-- Excluded ward "Chaik" (Kericho) that overlapped Konoin after boundary simplification.
-- New TO CONFIRM items: WhatsApp channel link; campaign office/phone/email; data controller name and ODPC registration; processors list; retention period.
+- **Checks:** lint ✅ · typecheck ✅ · unit 13/13 ✅ · build ✅ · sources ✅ · translations ✅. e2e 108/108 ✅.
+- **Map:** SVG from geoBoundaries (licences in data/credits.ts). Shading is county-level only. The ward "Chaik" is excluded (it is a Kericho ward).
+- **Charts:** hand-built single-series SVG with a table view. No Recharts yet, because there is no data to chart.
 
 ### Phase 5 quality gate (2026-11-24)
-- lint ✅ · typecheck ✅ · unit 10/10 ✅ · build ✅ (static/PPR) · sources ✅ (67 refs) · translations ✅
-- e2e 42/42 ✅ at 375 / 768 / 1440, incl. no hydration errors, sourced popover, .ics download, stats never show placeholder zeros — screenshots in docs/screenshots/phase-5/
-- Fixed: SourceTick used block elements inside <p> (hydration error); counters could show "0" to non-scrolling viewers.
-- Photo slots on home: 7 (see docs/SHOT-LIST.md). Stats, map preview and countdown bands carry no photo by design (data bands).
-- Known until Phase 6: nav/CTA links to inner pages 404.
+- **Checks:** lint ✅ · typecheck ✅ · unit 10/10 ✅ · build ✅ · e2e 42/42 ✅. SourceTick hydration fix. Counters never show zeros.
 
 ### Phase 4 quality gate (2026-11-24)
-- lint ✅ · typecheck ✅ · unit tests 10/10 ✅ · build ✅ (all routes static/PPR)
-- source check ✅ (25 sources, 60 refs) · translation check ✅ (3 namespaces × en/sw)
-- e2e 18/18 ✅ at 375 / 768 / 1440 — screenshots in docs/screenshots/phase-4/
-- Note: Kiswahili shell copy is a first draft — needs native review (item 14).
-| 8 — Ship (repo `Hon.JKdemo`, public) | — | |
+- **Checks:** lint ✅ · typecheck ✅ · unit 10/10 ✅ · build ✅ · e2e 18/18 ✅.
 
 ## [[TO CONFIRM]] register
 
 | # | Item | Needed from | Blocks |
 |---|---|---|---|
-| 1 | Forms 37B (5 constituencies) — 2017 Woman Rep, Bomet | Campaign agents | Map below county level |
+| 1 | Forms 37B (5 constituencies), 2017 Woman Rep, Bomet | Campaign agents | Map below county level |
 | 2 | Forms 37A / ward tallies (25 wards) | Campaign agents | Ward drill-down |
 | 3 | Rejected ballots, 2017 Woman Rep (Form 37C) | Campaign / IEBC | Turnout accuracy |
 | 4 | NGAAF allocations & approved project lists FY2017/18–2021/22 | Campaign | Projects page, map overlay, funds chart |
-| 5 | Secondary school name (Mugango vs Mucamco) | Campaign | Story timeline |
-| 6 | JKUAT diploma title & years | Campaign | Story timeline |
-| 7 | Moi University degree — completed? | Campaign | Story timeline |
-| 8 | Councillor 2007: elected or nominated; Deputy Mayor dates; Mayor 2011–2013 | Campaign | Story timeline |
-| 9 | CBS — year conferred & Gazette notice | Campaign | Honours |
-| 10 | County Library Services Bill — current status (assent?) | Parliament | Record page |
-| 11 | KNA "early pregnancies" article date; Nation 2017 article date | Research | News |
-| 12 | Kenya Gazette notice for 10 Aug 2027 election date | Research | Countdown source |
-| 13 | KNBS Vol. I/II table refs (currently via secondary transcriptions) | Research | Context stats |
-| 14 | Kiswahili slogan "Mama Arudi Kazini" — native review | Campaign | Theme |
+| 5 | Secondary school name (Mugango in the 2017 profile vs Mucamco in the 2022 profile) | Campaign | Story timeline |
+| 6 | JKUAT diploma: 2017 profile says County Governance 2014–2017; 2022 profile says 2015–2017 | Campaign | Story timeline |
+| 7 | Moi University degree: completed? | Campaign | Story timeline |
+| 8 | Years as Deputy Mayor and as Mayor. "Elected councillor, Singorwet" is now confirmed by the NA profile. | Campaign | Record, Story |
+| 9 | CBS: seen only in a search snippet of the PSC report. Page, year conferred, Gazette notice. | Campaign / Research | Story (honours) |
+| 10 | County Library Services Bill: current status (assent?) | Parliament | Record page |
+| 11 | KNA "early pregnancies" article: link now returns 404. Need an archived copy (news item hidden; Plan claim marked). | Research | Plan, News |
+| 12 | Kenya Gazette notice for the 10 Aug 2027 election date (currently cited via The Standard) | Research | Countdown source |
+| 13 | KNBS Vol. I/II table references (figures currently via secondary transcriptions) | Research | Context stats |
+| 14 | Kiswahili: slogan "Mama Arudi Kazini" and all site copy, native review | Campaign | Theme, all pages |
 | 15 | Authorised-by line (agent name, address) | Campaign | Footer |
-| 16 | WhatsApp channel link; official social accounts | Campaign | Get Involved |
+| 16 | Official WhatsApp channel link; official social accounts | Campaign | Get Involved |
 | 17 | Photo rights for Parliament portraits / supplied photos | Campaign | All sections |
-| 18 | Three promises — DRAFT until signed off | Campaign | The Plan |
+| 18 | Three promises: DRAFT until signed off | Campaign | The Plan |
+| 19 | Official source for the Woman Rep's NGAAF role (e.g. PFM (NGAAF) Regulations, NGAAF Board) | Research | Projects intro, Plan #1 |
+| 20 | "First woman Mayor of Bomet" (Daily Nation, 4 Jul 2011): article unread (403) | Research | Hidden news item |
+| 21 | Campaign office address, phone, email | Campaign | Contact |
+| 22 | Data controller legal name, postal address, email, ODPC registration number | Campaign | Privacy notice |
+| 23 | Final list of data processors (e.g. Vercel, Resend/Supabase) and where they store data | Campaign | Privacy notice |
+| 24 | Retention period for form data (draft: until 30 Nov 2027) | Campaign | Privacy notice |
+| 25 | 2027 UDA nomination (primaries from 29 May 2027) | Campaign | Footer party line |
+| 26 | UDA brand yellow hex (approximated as #F5C400) | Campaign | Palette |
 
 ## Known data errors in third-party sources (excluded)
 - Mzalendo 12th-Parliament page: 242,775 votes / Gazette 9951 belong to the 2022 winner.
-- TransTally 2017: registered voters/turnout use the 2022 register.
+- TransTally 2017: registered voters and turnout use the 2022 register.

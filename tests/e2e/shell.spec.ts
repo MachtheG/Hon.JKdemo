@@ -90,7 +90,10 @@ test("root redirects to /en", async ({ page }) => {
 
 test("language toggle switches to Kiswahili", async ({ page }) => {
   await page.goto("/en/styleguide");
-  await page.getByRole("link", { name: /Switch language to Kiswahili/ }).first().click();
+  const visibleSwitch = page.getByRole("link", { name: /Switch language to Kiswahili/ }).filter({ visible: true });
+  // On phones the language switch lives inside the menu.
+  if ((await visibleSwitch.count()) === 0) await page.getByRole("button", { name: "Open menu" }).click();
+  await visibleSwitch.first().click();
   await expect(page).toHaveURL(/\/sw\/styleguide$/);
   await expect(page.locator("html")).toHaveAttribute("lang", "sw");
 });
