@@ -17,7 +17,7 @@
     "kicker": "Election day",
     "date": "Tuesday 10 August 2027",
     "days": "{days, plural, one {day to go} other {days to go}}",
-    "today": "Polls are open today",
+    "today": "Election day is today",
     "campaignOpens": "campaign period opens",
     "addToCalendar": "Add to calendar",
     "icsSummary": "Kenya General Election — vote for Joyce Korir, Woman Rep Bomet",

@@ -11,7 +11,7 @@ export const ELECTION = {
 
 const DAY_MS = 86_400_000;
 
-/** Whole days remaining until the election starts (0 once polling has begun). */
+/** Whole days remaining until election day (0 from the start of 10 August 2027, EAT). */
 export function daysUntil(target: string, now: Date = new Date()): number {
   const diff = new Date(target).getTime() - now.getTime();
   return diff <= 0 ? 0 : Math.ceil(diff / DAY_MS);

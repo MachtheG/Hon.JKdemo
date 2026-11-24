@@ -19,7 +19,7 @@
   - **SEO:** canonical, hreflang, OG image, JSON-LD, sitemap, robots, share card.
 - **Lighthouse (mobile, local):** Accessibility, Best practices and SEO are 100 on every page. Performance medians are 82–91, **below the 95 target**, because of runtime Total Blocking Time. Details and options are in docs/LIGHTHOUSE.md.
 - **Forms:** set `FORM_ADAPTER` to `resend` or `supabase` in production. Until it is set, forms answer "not open yet" and nothing is lost silently.
-- **Fact-checker:** first run was **FAIL** (1 blocker, 5 majors). All fixed:
+- **Fact-checker:** first run was **FAIL** (1 blocker, 5 majors). All fixed. **Re-run: PASS**, and its 4 remaining minors are fixed too (share card, site name, nomination wording, election-day message).
   - **Blocker:** the county page and the header implied she is the current Woman Rep. Both are now past tense, or "candidate".
   - **Majors:** two unsourced NGAAF-role claims and a dead KNA link are now marked TO CONFIRM. The unread "first woman Mayor 2011" claim is replaced by the official profile's wording, "Mayor/Deputy Mayor", and the related news item is hidden.
   - **Minors:** source citations corrected (ladder, JKUAT, Senate rung). Source notes now record committee names and statement dates. "Votes for Woman Rep" instead of "as Woman Rep". The unsourced "6am" is removed. The 2027 party ticket is marked TO CONFIRM.
@@ -75,7 +75,7 @@
 | 22 | Data controller legal name, postal address, email, ODPC registration number | Campaign | Privacy notice |
 | 23 | Final list of data processors (e.g. Vercel, Resend/Supabase) and where they store data | Campaign | Privacy notice |
 | 24 | Retention period for form data (draft: until 30 Nov 2027) | Campaign | Privacy notice |
-| 25 | 2027 UDA nomination (primaries from 29 May 2027) | Campaign | Footer party line |
+| 25 | 2027 UDA ticket (IEBC candidate nominations 29 May – 11 Jun 2027; party primary date needs its own source) | Campaign | Footer party line |
 | 26 | UDA brand yellow hex (approximated as #F5C400) | Campaign | Palette |
 
 ## Known data errors in third-party sources (excluded)
