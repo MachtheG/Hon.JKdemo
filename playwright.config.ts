@@ -21,5 +21,6 @@ export default defineConfig({
     url: `http://localhost:${PORT}/en`,
     reuseExistingServer: !process.env.CI,
     timeout: 120_000,
+    env: { FORM_ADAPTER: "console" },
   },
 });

@@ -1,5 +1,7 @@
 {
-  "meta": { "title": "Jiunge" },
+  "meta": {
+    "title": "Jiunge"
+  },
   "kicker": "Jiunge",
   "title": "Jiunge na kazi.",
   "intro": "Njia tatu za kumsaidia Joyce kurudi kazini kwa wanawake wa Bomet.",
@@ -15,7 +17,5 @@
     "title": "Fuatilia kwenye WhatsApp",
     "body": "Habari za kampeni, matukio na rekodi — moja kwa moja kwenye simu yako.",
     "pending": "[[TO CONFIRM: official WhatsApp channel link]]"
-  },
-  "soon": "Usajili unafunguliwa hivi karibuni.",
-  "privacy": "Tunatumia taarifa zako kwa madhumuni unayochagua tu, kwa idhini yako. Soma taarifa yetu ya faragha."
+  }
 }

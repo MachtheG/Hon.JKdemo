@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { pageMetadata } from "@/lib/seo";
 import { useTranslations } from "next-intl";
 import { Container } from "@/components/shared/container";
 import { PageHeader } from "@/components/shared/page-header";
@@ -7,8 +7,7 @@ import { Photo } from "@/components/shared/photo";
 import { Timeline } from "@/components/story/timeline";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("story.meta");
-  return { title: t("title") };
+  return pageMetadata("story", "/story");
 }
 
 export default function StoryPage() {

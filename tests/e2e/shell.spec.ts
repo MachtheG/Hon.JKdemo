@@ -14,13 +14,13 @@ for (const p of pages) {
     await expect(page.getByRole("contentinfo")).toBeVisible();
 
     // Countdown pill hydrates to a day count.
-    await expect(page.getByRole("link", { name: /(days until|Siku \d+ hadi)/ })).toBeVisible();
+    await expect(page.getByRole("link", { name: /^(\d+ days|Siku \d+) · 10\.08\.2027 (until the election|hadi uchaguzi)$/ })).toBeVisible();
 
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
     expect(overflow).toBeLessThanOrEqual(0);
 
     await page.screenshot({
-      path: `docs/screenshots/phase-6/${p.name}-${info.project.name}.png`,
+      path: `docs/screenshots/phase-7/${p.name}-${info.project.name}.png`,
       fullPage: true,
     });
   });
@@ -90,7 +90,7 @@ test("root redirects to /en", async ({ page }) => {
 
 test("language toggle switches to Kiswahili", async ({ page }) => {
   await page.goto("/en/styleguide");
-  await page.getByRole("link", { name: "Switch language to Kiswahili" }).first().click();
+  await page.getByRole("link", { name: /Switch language to Kiswahili/ }).first().click();
   await expect(page).toHaveURL(/\/sw\/styleguide$/);
   await expect(page.locator("html")).toHaveAttribute("lang", "sw");
 });

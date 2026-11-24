@@ -1,5 +1,7 @@
 {
-  "meta": { "title": "Get involved" },
+  "meta": {
+    "title": "Get involved"
+  },
   "kicker": "Get involved",
   "title": "Join the work.",
   "intro": "Three ways to help Joyce get back to work for Bomet's women.",
@@ -15,7 +17,5 @@
     "title": "Follow on WhatsApp",
     "body": "Campaign updates, events and the record — straight to your phone.",
     "pending": "[[TO CONFIRM: official WhatsApp channel link]]"
-  },
-  "soon": "Sign-up opens soon.",
-  "privacy": "We only use your details for the purpose you choose, with your consent. Read our privacy notice."
+  }
 }

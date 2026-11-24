@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { pageMetadata } from "@/lib/seo";
 import { useTranslations } from "next-intl";
 import { PromiseBlock } from "@/components/plan/promise-block";
 import { Container } from "@/components/shared/container";
@@ -8,8 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("plan.meta");
-  return { title: t("title") };
+  return pageMetadata("plan", "/plan");
 }
 
 export default function PlanPage() {

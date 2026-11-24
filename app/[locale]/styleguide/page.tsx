@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { pageMetadata } from "@/lib/seo";
 import { useTranslations } from "next-intl";
 import { ButtonSamples } from "@/components/styleguide/button-samples";
 import { ColourSwatches } from "@/components/styleguide/colour-swatches";
@@ -10,8 +10,7 @@ import { StatSamples } from "@/components/styleguide/stat-samples";
 import { TypeSpecimen } from "@/components/styleguide/type-specimen";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("styleguide.meta");
-  return { title: t("title"), robots: { index: false } };
+  return pageMetadata("styleguide", "/styleguide", { noindex: true });
 }
 
 export default function StyleguidePage() {

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { pageMetadata } from "@/lib/seo";
 import { useTranslations } from "next-intl";
 import { Suspense } from "react";
 import { ProjectsEmptyState } from "@/components/projects/empty-state";
@@ -9,8 +9,7 @@ import { Container } from "@/components/shared/container";
 import { PageHeader } from "@/components/shared/page-header";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("projects.meta");
-  return { title: t("title") };
+  return pageMetadata("projects", "/projects");
 }
 
 export default function ProjectsPage() {

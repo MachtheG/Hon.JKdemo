@@ -27,8 +27,8 @@
   },
   "countdown": {
     "pill": "{days, plural, =0 {Siku ya uchaguzi} one {Siku #} other {Siku #}} · 10.08.2027",
-    "pillLabel": "{days, plural, =0 {Leo ni siku ya uchaguzi} one {Siku # hadi uchaguzi wa 10 Agosti 2027} other {Siku # hadi uchaguzi wa 10 Agosti 2027}}",
-    "loading": "10.08.2027"
+    "loading": "10.08.2027",
+    "srSuffix": "hadi uchaguzi"
   },
   "language": {
     "label": "Lugha",

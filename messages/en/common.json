@@ -27,8 +27,8 @@
   },
   "countdown": {
     "pill": "{days, plural, =0 {Election day} one {# day} other {# days}} · 10.08.2027",
-    "pillLabel": "{days, plural, =0 {Today is election day} one {# day until the election on 10 August 2027} other {# days until the election on 10 August 2027}}",
-    "loading": "10.08.2027"
+    "loading": "10.08.2027",
+    "srSuffix": "until the election"
   },
   "language": {
     "label": "Language",

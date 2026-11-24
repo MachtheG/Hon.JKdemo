@@ -1,0 +1,55 @@
+{
+  "fields": {
+    "name": "Full name",
+    "phone": "Phone number",
+    "phoneHint": "Kenyan number, e.g. 0712 345 678",
+    "ward": "Your ward",
+    "wardPlaceholder": "Choose your ward",
+    "email": "Email (optional)",
+    "emailRequiredHint": "Give an email or a phone number so we can reply.",
+    "roles": "How would you like to help?",
+    "subject": "Subject",
+    "message": "Message",
+    "website": "Leave this field empty"
+  },
+  "roles": {
+    "doorToDoor": "Door-to-door visits",
+    "womensGroups": "Women's group meetings",
+    "events": "Events and rallies",
+    "pollingAgent": "Polling-day agent",
+    "online": "Sharing online"
+  },
+  "subjects": { "general": "General question", "event": "Invite Joyce to an event", "press": "Press enquiry" },
+  "consent": {
+    "required": "I agree that the Joyce Korir 2027 campaign may use these details for {purpose}, as set out in the privacy notice. I can withdraw consent at any time.",
+    "updates": "Also send me campaign updates by SMS or WhatsApp (optional).",
+    "privacyLink": "Read the privacy notice",
+    "purposes": {
+      "pledge": "counting pledges by ward",
+      "volunteer": "organising volunteers in my ward",
+      "contact": "replying to my message"
+    }
+  },
+  "submit": { "pledge": "Pledge my vote", "volunteer": "Sign me up", "contact": "Send message", "sending": "Sending…" },
+  "success": {
+    "pledge": "Thank you — your pledge is counted. See you at the polls on 10 August 2027.",
+    "volunteer": "Thank you — a coordinator for your ward will be in touch.",
+    "contact": "Thank you — your message has been sent. We'll reply as soon as we can."
+  },
+  "errors": {
+    "nameShort": "Please enter your full name.",
+    "nameLong": "That name is too long.",
+    "phone": "Enter a Kenyan mobile number, e.g. 0712 345 678.",
+    "ward": "Choose your ward in Bomet.",
+    "email": "Enter a valid email address.",
+    "roles": "Choose at least one way to help.",
+    "messageShort": "Please write a little more (at least 10 characters).",
+    "messageLong": "Please keep your message under 2,000 characters.",
+    "consent": "We need your consent to use these details.",
+    "bot": "Please leave this field empty.",
+    "summary": "Please fix the highlighted fields.",
+    "rateLimited": "Too many submissions from this connection. Please try again in a few minutes.",
+    "unavailable": "Sign-up is not open yet. Please try again soon.",
+    "error": "Something went wrong on our side. Please try again."
+  }
+}

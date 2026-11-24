@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { pageMetadata } from "@/lib/seo";
 import { useTranslations } from "next-intl";
 import { ElectionMap } from "@/components/map/election-map";
 import { ResultsTable } from "@/components/map/results-table";
@@ -11,8 +11,7 @@ import { county2017 } from "@/lib/election-results";
 import { formatNumber } from "@/lib/format";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("map.meta");
-  return { title: t("title") };
+  return pageMetadata("map", "/map");
 }
 
 export default function MapPage() {

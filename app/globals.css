@@ -103,6 +103,8 @@ body {
 }
 .hero-push {
   animation: hero-push 8s ease-out 1 forwards;
+  will-change: transform;
+  contain: paint;
 }
 
 @media (prefers-reduced-motion: reduce) {

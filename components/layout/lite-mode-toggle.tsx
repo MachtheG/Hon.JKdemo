@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useSyncExternalStore } from "react";
 import { LITE_EVENT, LITE_KEY } from "@/lib/lite-mode";
-import { cn } from "@/lib/utils";
+import { clsx as cn } from "clsx";
 
 const subscribe = (onChange: () => void) => {
   window.addEventListener(LITE_EVENT, onChange);

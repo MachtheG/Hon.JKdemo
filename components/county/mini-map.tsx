@@ -5,7 +5,7 @@ import { Link } from "@/i18n/navigation";
 export function MiniMap({ highlight, label }: { highlight?: string; label: string }) {
   const wards = highlight ? bometMap.wards.filter((w) => w.constituency === highlight) : [];
   return (
-    <svg viewBox={bometMap.viewBox} role="img" aria-label={label} className="h-auto w-full bg-mist">
+    <svg viewBox={bometMap.viewBox} role="group" aria-label={label} className="h-auto w-full bg-mist">
       {bometMap.constituencies.map((c) => {
         const on = c.slug === highlight;
         return (

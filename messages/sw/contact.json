@@ -1,5 +1,7 @@
 {
-  "meta": { "title": "Wasiliana" },
+  "meta": {
+    "title": "Wasiliana"
+  },
   "kicker": "Wasiliana",
   "title": "Zungumza na kampeni.",
   "intro": "Maswali, mialiko ya matukio, au maombi ya vyombo vya habari.",
@@ -9,6 +11,5 @@
     "phone": "[[TO CONFIRM: campaign phone]]",
     "email": "[[TO CONFIRM: campaign email]]",
     "press": "Vyombo vya habari: tafadhali taja chombo chako na muda wa mwisho."
-  },
-  "soon": "Fomu ya mawasiliano inafunguliwa hivi karibuni. Kwa sasa, tumia maelezo yaliyo hapo juu."
+  }
 }

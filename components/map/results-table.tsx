@@ -13,7 +13,8 @@ export function ResultsTable() {
       <h2 id="results-title" className="m-0 font-display text-[28px] font-semibold">
         {t("title")}
       </h2>
-      <div className="overflow-x-auto">
+      {/* Focusable so keyboard users can scroll the table on narrow screens (WCAG 2.1.1). */}
+      <div className="overflow-x-auto" tabIndex={0} role="region" aria-labelledby="results-title">
         <table className="w-full min-w-[600px] border-collapse text-[15px]">
           <caption className="pb-2 text-left text-muted">{t("caption")}</caption>
           <thead>

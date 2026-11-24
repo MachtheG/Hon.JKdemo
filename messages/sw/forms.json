@@ -1,0 +1,55 @@
+{
+  "fields": {
+    "name": "Jina kamili",
+    "phone": "Nambari ya simu",
+    "phoneHint": "Nambari ya Kenya, mfano 0712 345 678",
+    "ward": "Wadi yako",
+    "wardPlaceholder": "Chagua wadi yako",
+    "email": "Barua pepe (si lazima)",
+    "emailRequiredHint": "Weka barua pepe au nambari ya simu ili tukujibu.",
+    "roles": "Ungependa kusaidia vipi?",
+    "subject": "Mada",
+    "message": "Ujumbe",
+    "website": "Acha sehemu hii wazi"
+  },
+  "roles": {
+    "doorToDoor": "Kutembelea nyumba kwa nyumba",
+    "womensGroups": "Mikutano ya vikundi vya wanawake",
+    "events": "Matukio na mikutano ya hadhara",
+    "pollingAgent": "Wakala siku ya kura",
+    "online": "Kushiriki mtandaoni"
+  },
+  "subjects": { "general": "Swali la jumla", "event": "Mwalike Joyce kwenye tukio", "press": "Swali la vyombo vya habari" },
+  "consent": {
+    "required": "Nakubali kampeni ya Joyce Korir 2027 itumie maelezo haya kwa {purpose}, kama ilivyoelezwa katika taarifa ya faragha. Ninaweza kuondoa idhini wakati wowote.",
+    "updates": "Pia nitumie habari za kampeni kwa SMS au WhatsApp (si lazima).",
+    "privacyLink": "Soma taarifa ya faragha",
+    "purposes": {
+      "pledge": "kuhesabu ahadi kwa wadi",
+      "volunteer": "kupanga wanaojitolea katika wadi yangu",
+      "contact": "kujibu ujumbe wangu"
+    }
+  },
+  "submit": { "pledge": "Ahidi kura yangu", "volunteer": "Nisajili", "contact": "Tuma ujumbe", "sending": "Inatuma…" },
+  "success": {
+    "pledge": "Asante — ahadi yako imehesabiwa. Tuonane vituoni tarehe 10 Agosti 2027.",
+    "volunteer": "Asante — mratibu wa wadi yako atawasiliana nawe.",
+    "contact": "Asante — ujumbe wako umetumwa. Tutajibu haraka iwezekanavyo."
+  },
+  "errors": {
+    "nameShort": "Tafadhali andika jina lako kamili.",
+    "nameLong": "Jina hilo ni refu mno.",
+    "phone": "Weka nambari ya simu ya Kenya, mfano 0712 345 678.",
+    "ward": "Chagua wadi yako Bomet.",
+    "email": "Weka barua pepe sahihi.",
+    "roles": "Chagua angalau njia moja ya kusaidia.",
+    "messageShort": "Tafadhali andika zaidi kidogo (angalau herufi 10).",
+    "messageLong": "Tafadhali ujumbe usizidi herufi 2,000.",
+    "consent": "Tunahitaji idhini yako kutumia maelezo haya.",
+    "bot": "Tafadhali acha sehemu hii wazi.",
+    "summary": "Tafadhali rekebisha sehemu zilizoonyeshwa.",
+    "rateLimited": "Maombi mengi mno kutoka muunganisho huu. Tafadhali jaribu tena baada ya dakika chache.",
+    "unavailable": "Usajili bado haujafunguliwa. Tafadhali jaribu tena hivi karibuni.",
+    "error": "Kuna hitilafu upande wetu. Tafadhali jaribu tena."
+  }
+}

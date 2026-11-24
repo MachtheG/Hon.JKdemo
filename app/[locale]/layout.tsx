@@ -3,17 +3,31 @@ import { Fraunces, IBM_Plex_Mono, Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 import { locale as rootLocale } from "next/root-params";
 import { NextIntlClientProvider } from "next-intl";
-import { getTranslations } from "next-intl/server";
+import { getMessages, getTranslations } from "next-intl/server";
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
 import { SkipLink } from "@/components/layout/skip-link";
 import { isLocale, locales } from "@/i18n/routing";
+import { PersonJsonLd } from "@/components/layout/person-json-ld";
 import { liteModeBootScript } from "@/lib/lite-mode";
+import { SITE_URL } from "@/lib/site";
 import "../globals.css";
 
 const fraunces = Fraunces({ subsets: ["latin", "latin-ext"], axes: ["opsz"], variable: "--font-fraunces" });
 const inter = Inter({ subsets: ["latin", "latin-ext"], variable: "--font-inter" });
 const plexMono = IBM_Plex_Mono({ subsets: ["latin"], weight: ["400", "500"], variable: "--font-plex-mono" });
+
+/**
+ * Only the namespaces that client components read are sent to the browser
+ * (server components translate on the server). Keeps hydration payload small.
+ */
+const CLIENT_NAMESPACES = ["common", "forms", "map", "projects"] as const;
+async function clientMessages() {
+  const all = (await getMessages()) as Record<string, Record<string, unknown>>;
+  const picked: Record<string, unknown> = Object.fromEntries(CLIENT_NAMESPACES.map((ns) => [ns, all[ns]]));
+  picked.home = { countdown: all.home?.countdown };
+  return picked as typeof all;
+}
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -22,8 +36,12 @@ export function generateStaticParams() {
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("common.meta");
   return {
+    metadataBase: new URL(SITE_URL),
     title: { default: t("siteName"), template: `%s · ${t("siteName")}` },
     description: t("description"),
+    applicationName: t("siteName"),
+    authors: [{ name: "Joyce Korir 2027 campaign" }],
+    formatDetection: { telephone: false },
   };
 }
 
@@ -41,9 +59,10 @@ export default async function LocaleLayout({ children }: LayoutProps<"/[locale]"
     <html lang={locale} className={`${fraunces.variable} ${inter.variable} ${plexMono.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: liteModeBootScript }} />
+        <PersonJsonLd locale={locale} />
       </head>
       <body className="flex min-h-dvh flex-col antialiased">
-        <NextIntlClientProvider>
+        <NextIntlClientProvider messages={await clientMessages()}>
           <SkipLink />
           <Header />
           <main id="main" className="flex-1">

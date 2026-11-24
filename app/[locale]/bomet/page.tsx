@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { pageMetadata } from "@/lib/seo";
 import { useTranslations } from "next-intl";
 import { ConstituencyCards } from "@/components/county/constituency-cards";
 import { CountyStats } from "@/components/county/county-stats";
@@ -9,8 +9,7 @@ import { PageHeader } from "@/components/shared/page-header";
 import { Link } from "@/i18n/navigation";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("county.meta");
-  return { title: t("title") };
+  return pageMetadata("county", "/bomet");
 }
 
 export default function CountyPage() {

@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { pageMetadata } from "@/lib/seo";
 import { useTranslations } from "next-intl";
 import { GalleryGrid } from "@/components/gallery/gallery-grid";
 import { Container } from "@/components/shared/container";
 import { PageHeader } from "@/components/shared/page-header";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("gallery.meta");
-  return { title: t("title") };
+  return pageMetadata("gallery", "/gallery");
 }
 
 export default function GalleryPage() {

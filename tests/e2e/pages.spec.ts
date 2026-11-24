@@ -28,7 +28,7 @@ for (const p of pages) {
     expect(errors).toEqual([]);
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
     expect(overflow).toBeLessThanOrEqual(0);
-    await page.screenshot({ path: `docs/screenshots/phase-6/${p.replace("/", "-")}-${info.project.name}.png`, fullPage: true });
+    await page.screenshot({ path: `docs/screenshots/phase-7/${p.replace("/", "-")}-${info.project.name}.png`, fullPage: true });
   });
 }
 
