@@ -8,13 +8,14 @@ import { sourceById, type SourceId } from "@/data/sources";
  * Several sources render as ONE tick with a count, never "▪ ▪".
  *
  * Phrasing content only (<span>, <a>, <button>) so it is valid inside <p>,
- * <span>, <dd> and headings. The hit area is 44px; the mark stays 8px.
+ * <span>, <dd> and headings. The hit area is 34×44px; the mark stays 8px.
  */
 export function SourceTick({ id, tone = "laterite" }: { id: SourceId | SourceId[]; tone?: "laterite" | "accent" }) {
   const t = useTranslations("common.source");
   const list = (Array.isArray(id) ? id : [id]).map((x) => sourceById[x]);
   const popId = `src-${useId().replace(/[^a-zA-Z0-9_-]/g, "")}`;
   // The visible count must be part of the accessible name (WCAG 2.5.3).
+  // Hit area grows left and vertically only (34×44px): extending right could push past the viewport edge.
   const label =
     list.length > 1
       ? t("many", { count: list.length, titles: list.map((s) => s.title).join("; ") })
@@ -26,7 +27,7 @@ export function SourceTick({ id, tone = "laterite" }: { id: SourceId | SourceId[
         type="button"
         popoverTarget={popId}
         aria-label={label}
-        className="relative ml-1 inline-flex h-6 min-w-6 -translate-y-2 items-center justify-center gap-0.5 align-baseline before:absolute before:-inset-2.5 before:content-['']"
+        className="relative ml-1 inline-flex h-6 min-w-6 -translate-y-2 items-center justify-center gap-0.5 align-baseline before:absolute before:-inset-y-2.5 before:right-0 before:-left-2.5 before:content-['']"
       >
         <span aria-hidden className={tone === "accent" ? "size-2 bg-accent" : "size-2 bg-laterite"} />
         {list.length > 1 ? (
