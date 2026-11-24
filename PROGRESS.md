@@ -4,8 +4,15 @@
 |---|---|---|
 | 1 — Interview / brief | ✅ Approved | 2026-11-22 |
 | 2 — Research | ✅ Approved | 2026-11-22 |
-| 3 — Creative direction & canvases | ⏸ Awaiting artboard picks | 2026-11-22 |
-| 4–7 — Build | — | |
+| 3 — Creative direction & canvases | ✅ Approved — Hero A | 2026-11-24 |
+| 4 — Scaffold, design system, shell, /styleguide | ✅ Quality gate passed | 2026-11-24 |
+| 5–7 — Build | — | |
+
+### Phase 4 quality gate (2026-11-24)
+- lint ✅ · typecheck ✅ · unit tests 10/10 ✅ · build ✅ (all routes static/PPR)
+- source check ✅ (25 sources, 60 refs) · translation check ✅ (3 namespaces × en/sw)
+- e2e 18/18 ✅ at 375 / 768 / 1440 — screenshots in docs/screenshots/phase-4/
+- Note: Kiswahili shell copy is a first draft — needs native review (item 14).
 | 8 — Ship (repo `Hon.JKdemo`, public) | — | |
 
 ## [[TO CONFIRM]] register

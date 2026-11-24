@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "siteName": "Joyce Korir · Mwakilishi wa Wanawake, Bomet 2027",
+    "description": "Mhe. Joyce Chepkoech Korir — Mama Arudi Kazini kwa wanawake wa Bomet. Rekodi, miradi na mpango, kila takwimu na chanzo chake."
+  },
+  "skipLink": "Ruka hadi maudhui kuu",
+  "brand": {
+    "name": "Joyce Korir",
+    "office": "Mwakilishi wa Wanawake · Bomet"
+  },
+  "nav": {
+    "label": "Kuu",
+    "home": "Nyumbani",
+    "record": "Rekodi",
+    "projects": "Miradi",
+    "map": "Ramani",
+    "plan": "Mpango",
+    "story": "Safari Yake",
+    "county": "Bomet",
+    "gallery": "Picha",
+    "news": "Habari",
+    "getInvolved": "Jiunge",
+    "contact": "Wasiliana",
+    "privacy": "Faragha",
+    "openMenu": "Fungua menyu",
+    "closeMenu": "Funga menyu"
+  },
+  "countdown": {
+    "pill": "{days, plural, =0 {Siku ya uchaguzi} one {Siku #} other {Siku #}} · 10.08.2027",
+    "pillLabel": "{days, plural, =0 {Leo ni siku ya uchaguzi} one {Siku # hadi uchaguzi wa 10 Agosti 2027} other {Siku # hadi uchaguzi wa 10 Agosti 2027}}",
+    "loading": "10.08.2027"
+  },
+  "language": {
+    "label": "Lugha",
+    "switchTo": "Badilisha lugha kuwa {language}",
+    "en": "English",
+    "sw": "Kiswahili"
+  },
+  "lite": {
+    "on": "Hali nyepesi imewashwa",
+    "off": "Hali nyepesi imezimwa",
+    "label": "Hali nyepesi kwa mtandao wa polepole"
+  },
+  "source": {
+    "tick": "Chanzo: {title}",
+    "published": "Ilichapishwa {date}",
+    "open": "Fungua chanzo",
+    "close": "Funga"
+  },
+  "photo": {
+    "slot": "Nafasi ya picha {id}",
+    "pending": "Picha itakuja"
+  },
+  "footer": {
+    "tagline": "Mgombea wa Mwakilishi wa Wanawake, Kaunti ya Bomet",
+    "party": "Chama: UDA",
+    "authorisedBy": "[[TO CONFIRM: authorised-by line — agent name and address]]",
+    "credits": "Wapiga picha",
+    "sources": "Vyanzo",
+    "privacy": "Faragha · Sheria ya Ulinzi wa Data 2019",
+    "honesty": "Kila takwimu kwenye tovuti hii ina kiungo cha chanzo chake.",
+    "copyright": "© {year} Kampeni ya Joyce Korir"
+  },
+  "notFound": {
+    "title": "Ukurasa haukupatikana",
+    "body": "Ukurasa huu bado haujawekwa. Tovuti ya kampeni bado inajengwa.",
+    "home": "Rudi nyumbani"
+  }
+}

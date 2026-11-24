@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "title": "Mwongozo wa mtindo"
+  },
+  "title": "Mwongozo wa mtindo",
+  "intro": "Mfumo wa muundo wa tovuti ya kampeni: rangi, maandishi, alama na vipengele vikuu. Kila ukurasa umejengwa kutokana na hivi.",
+  "sections": {
+    "colour": "Rangi",
+    "type": "Maandishi",
+    "motifs": "Alama",
+    "buttons": "Vitufe",
+    "stats": "Takwimu zenye vyanzo",
+    "photos": "Nafasi za picha"
+  },
+  "colour": {
+    "ink": "Wino — maandishi, tabaka",
+    "tea": "Chai — rangi kuu",
+    "leaf": "Jani — mfululizo wa pili",
+    "laterite": "Udongo mwekundu — msisitizo (kubwa tu)",
+    "lateriteInk": "Udongo mwekundu mzito — maandishi madogo",
+    "mist": "Ukungu — mistari, mandhari tulivu",
+    "paper": "Karatasi — mandhari ya ukurasa",
+    "accent": "Manjano ya UDA — vitufe, hesabu, maeneo tuliyoongoza"
+  },
+  "type": {
+    "display": "Vichwa · Fraunces",
+    "body": "Maandishi · Inter",
+    "data": "Takwimu · IBM Plex Mono",
+    "sample": "Mama Arudi Kazini kwa wanawake wa Bomet.",
+    "bodySample": "Kila takwimu kwenye tovuti hii ina kiungo cha chanzo chake. Majukumu yanaelezwa kwa uaminifu: alidhamini, alitenga, alipigania au alisimamia."
+  },
+  "motifs": {
+    "teaRows": "Mistari ya chai — muundo wa sehemu na ramani",
+    "teaRule": "Mstari wa chai — kitenganishi cha sehemu",
+    "ladder": "Ngazi — wadi, bunge la kaunti, bunge la kitaifa, seneti",
+    "ladderSteps": {
+      "ward": "Wadi",
+      "assembly": "Bunge la Kaunti",
+      "house": "Bunge la Kitaifa",
+      "senate": "Seneti"
+    }
+  },
+  "buttons": {
+    "accent": "Toa ahadi yako",
+    "ink": "Jitolee",
+    "outline": "Tazama rekodi",
+    "disabled": "Haipatikani"
+  },
+  "stats": {
+    "votes": "kura kama Mwakilishi wa Wanawake, 2017",
+    "share": "ya kura halali zilizopigwa",
+    "population": "watu Bomet (Sensa 2019)"
+  },
+  "photos": {
+    "hero": "Joyce na wafanyabiashara wanawake sokoni — mwanga wa asili",
+    "card": "Joyce katika mkutano wa kikundi cha wanawake"
+  }
+}

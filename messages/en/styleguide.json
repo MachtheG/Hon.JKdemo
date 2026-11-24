@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "title": "Styleguide"
+  },
+  "title": "Styleguide",
+  "intro": "The design system for the campaign site: tokens, type, motifs and core components. Every page is built from these.",
+  "sections": {
+    "colour": "Colour",
+    "type": "Type",
+    "motifs": "Motifs",
+    "buttons": "Buttons",
+    "stats": "Sourced stats",
+    "photos": "Photo slots"
+  },
+  "colour": {
+    "ink": "Ink — text, overlays",
+    "tea": "Tea — primary brand",
+    "leaf": "Leaf — secondary series",
+    "laterite": "Laterite — emphasis (large only)",
+    "lateriteInk": "Laterite ink — small text on paper",
+    "mist": "Mist — dividers, quiet fills",
+    "paper": "Paper — page background",
+    "accent": "UDA yellow — CTAs, countdown, areas led"
+  },
+  "type": {
+    "display": "Display · Fraunces",
+    "body": "Body · Inter",
+    "data": "Data · IBM Plex Mono, tabular",
+    "sample": "Back to work for Bomet's women.",
+    "bodySample": "Every figure on this site links to its source. Roles are stated honestly: sponsored, allocated, lobbied or oversaw."
+  },
+  "motifs": {
+    "teaRows": "Tea rows — section texture and map hatching",
+    "teaRule": "Tea rule — section divider",
+    "ladder": "The ladder — ward, assembly, house, senate",
+    "ladderSteps": {
+      "ward": "Ward",
+      "assembly": "County Assembly",
+      "house": "National Assembly",
+      "senate": "Senate"
+    }
+  },
+  "buttons": {
+    "accent": "Pledge your support",
+    "ink": "Volunteer",
+    "outline": "See the record",
+    "disabled": "Disabled"
+  },
+  "stats": {
+    "votes": "votes as Woman Rep, 2017",
+    "share": "of valid votes cast",
+    "population": "people in Bomet (2019 Census)"
+  },
+  "photos": {
+    "hero": "Joyce with women traders at a market — natural light, eye level",
+    "card": "Joyce at a women's group meeting"
+  }
+}
