@@ -93,6 +93,18 @@ body {
 }
 
 /* ── Motion & lite mode ───────────────────────────────────────────────── */
+@keyframes hero-push {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.04);
+  }
+}
+.hero-push {
+  animation: hero-push 8s ease-out 1 forwards;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

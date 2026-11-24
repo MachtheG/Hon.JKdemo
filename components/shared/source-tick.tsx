@@ -5,11 +5,14 @@ import { sourceById, type SourceId } from "@/data/sources";
 /**
  * The ▪ beside every figure. Opens a native popover (no JS) with the source's
  * title, publisher, date and link from data/sources.ts.
+ *
+ * Uses phrasing content only (<span>, <a>, <button>) so it is valid inside
+ * <p>, <span>, <dd> and headings — anywhere a figure can appear.
  */
 export function SourceTick({ id, tone = "laterite" }: { id: SourceId; tone?: "laterite" | "accent" }) {
   const t = useTranslations("common.source");
   const s = sourceById[id];
-  const popId = `src-${useId().replace(/:/g, "")}`;
+  const popId = `src-${useId().replace(/[^a-zA-Z0-9_-]/g, "")}`;
 
   return (
     <>
@@ -21,26 +24,28 @@ export function SourceTick({ id, tone = "laterite" }: { id: SourceId; tone?: "la
       >
         <span aria-hidden className={tone === "accent" ? "size-2 bg-accent" : "size-2 bg-laterite"} />
       </button>
-      <div
+      <span
         id={popId}
         popover="auto"
-        className="m-auto max-w-sm border border-ink bg-surface-raised p-5 font-sans text-base text-text shadow-2xl backdrop:bg-ink/40"
+        role="dialog"
+        aria-label={s.title}
+        className="m-auto max-w-sm border border-ink bg-surface-raised p-5 text-left font-sans text-base leading-normal font-normal tracking-normal text-text normal-case shadow-2xl backdrop:bg-ink/40 [&:popover-open]:block"
       >
-        <p className="m-0 font-display text-lg font-semibold">{s.title}</p>
-        <p className="m-0 mt-1 text-sm text-muted">
+        <span className="block font-display text-lg font-semibold">{s.title}</span>
+        <span className="mt-1 block text-sm text-muted">
           {s.publisher}
           {s.date !== "undated" ? ` · ${t("published", { date: s.date })}` : ""}
-        </p>
-        {s.notes ? <p className="m-0 mt-2 text-sm">{s.notes}</p> : null}
-        <div className="mt-4 flex gap-3">
+        </span>
+        {s.notes ? <span className="mt-2 block text-sm">{s.notes}</span> : null}
+        <span className="mt-4 flex gap-3">
           <a href={s.url} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center font-semibold text-tea">
             {t("open")} ↗
           </a>
           <button type="button" popoverTarget={popId} popoverTargetAction="hide" className="min-h-11 px-3 text-sm underline">
             {t("close")}
           </button>
-        </div>
-      </div>
+        </span>
+      </span>
     </>
   );
 }

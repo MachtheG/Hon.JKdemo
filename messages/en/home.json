@@ -2,10 +2,90 @@
   "meta": {
     "title": "Mama Arudi Kazini — Back to work for Bomet's women"
   },
-  "placeholder": {
-    "kicker": "Woman Rep · Bomet · 2027",
+  "hero": {
+    "kicker": "Field notes · Bomet County · 2027",
     "title": "Mama Arudi Kazini.",
-    "body": "Back to work for Bomet's women. The full home page arrives in Phase 5.",
-    "styleguide": "View the styleguide"
+    "sub": "Back to work for Bomet's women — from Singorwet ward to the Senate, on the record.",
+    "votes": "votes as Woman Rep, 2017",
+    "share": "of valid votes cast",
+    "levelsValue": "4 levels",
+    "levels": "ward · assembly · house · senate",
+    "pledge": "Pledge your support",
+    "record": "See the record"
+  },
+  "countdown": {
+    "kicker": "Election day",
+    "date": "Tuesday 10 August 2027",
+    "days": "{days, plural, one {day to go} other {days to go}}",
+    "today": "Polls are open today",
+    "campaignOpens": "campaign period opens",
+    "addToCalendar": "Add to calendar",
+    "icsSummary": "Kenya General Election — vote for Joyce Korir, Woman Rep Bomet",
+    "icsDescription": "Polling stations open 6am. Bring your ID."
+  },
+  "entry": {
+    "label": "Start here",
+    "who": {
+      "title": "Who she is",
+      "body": "Councillor, Deputy Speaker, Woman Rep, Senator — four levels of public office."
+    },
+    "record": {
+      "title": "The record",
+      "body": "Votes, bills and statements, each linked to its source."
+    },
+    "next": {
+      "title": "What's next",
+      "body": "Three promises for 2027–2032, drafted from the record."
+    }
+  },
+  "stats": {
+    "title": "The work, on the record.",
+    "votes": "votes as Woman Rep, 2017",
+    "share": "of valid votes cast in Bomet",
+    "contributions": "Senate floor contributions",
+    "bill": "bill sponsored: County Library Services",
+    "whatsapp": "Share these numbers on WhatsApp",
+    "whatsappText": "Joyce Korir won 205,964 votes (78.5%) as Bomet Woman Rep in 2017 (IEBC). Back to work for Bomet's women: {url}"
+  },
+  "projects": {
+    "kicker": "Projects · NGAAF 2017–2022",
+    "title": "Every shilling, by ward.",
+    "body": "Each project shows her role — allocated, lobbied or oversaw — and whether the figure is an allocation or spending.",
+    "emptyTitle": "Awaiting documents",
+    "emptyBody": "Highlights appear once NGAAF allocation letters and approved project lists are supplied. Nothing is listed without a document.",
+    "cta": "Explore all projects"
+  },
+  "map": {
+    "kicker": "The map",
+    "title": "Where we led in 2017",
+    "summary": "Joyce led Bomet County with {share}% of valid votes (IEBC). Constituency and ward results load once Forms 37A/37B are verified.",
+    "tile": "{share}% county",
+    "schematic": "Schematic preview",
+    "cta": "Open the map"
+  },
+  "plan": {
+    "kicker": "The plan",
+    "draft": "Draft — awaiting campaign sign-off",
+    "title": "Three promises for the next term",
+    "one": {
+      "title": "Open NGAAF",
+      "body": "Every allocation published by ward, every group listed."
+    },
+    "two": {
+      "title": "Safe girls, safe homes",
+      "body": "A county-wide response to GBV and defilement."
+    },
+    "three": {
+      "title": "Teachers & libraries",
+      "body": "ECDE teacher welfare and county libraries in Bomet."
+    },
+    "cta": "Read the full plan"
+  },
+  "join": {
+    "title": "Join the work.",
+    "body": "Pledge your vote, volunteer in your ward, or follow the campaign on WhatsApp.",
+    "pledge": "Pledge your vote",
+    "volunteer": "Volunteer",
+    "whatsapp": "WhatsApp channel"
   }
 }

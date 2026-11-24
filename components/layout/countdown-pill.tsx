@@ -1,21 +1,13 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { useSyncExternalStore } from "react";
 import { Link } from "@/i18n/navigation";
-import { daysUntil, ELECTION } from "@/lib/election";
-
-const subscribe = (onChange: () => void) => {
-  const id = window.setInterval(onChange, 60_000);
-  return () => window.clearInterval(id);
-};
-const getSnapshot = () => daysUntil(ELECTION.isoStart);
-const getServerSnapshot = () => null;
+import { useDaysToElection } from "@/lib/use-days-to-election";
 
 /** Header pill. The server renders the date; the client adds the live day count. */
 export function CountdownPill() {
   const t = useTranslations("common.countdown");
-  const days = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+  const days = useDaysToElection();
 
   return (
     <Link

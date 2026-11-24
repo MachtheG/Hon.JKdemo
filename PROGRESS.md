@@ -6,7 +6,15 @@
 | 2 — Research | ✅ Approved | 2026-11-22 |
 | 3 — Creative direction & canvases | ✅ Approved — Hero A | 2026-11-24 |
 | 4 — Scaffold, design system, shell, /styleguide | ✅ Quality gate passed | 2026-11-24 |
-| 5–7 — Build | — | |
+| 5 — Home (Hero A, as approved) | ✅ Quality gate passed | 2026-11-24 |
+| 6–7 — Build | — | |
+
+### Phase 5 quality gate (2026-11-24)
+- lint ✅ · typecheck ✅ · unit 10/10 ✅ · build ✅ (static/PPR) · sources ✅ (67 refs) · translations ✅
+- e2e 42/42 ✅ at 375 / 768 / 1440, incl. no hydration errors, sourced popover, .ics download, stats never show placeholder zeros — screenshots in docs/screenshots/phase-5/
+- Fixed: SourceTick used block elements inside <p> (hydration error); counters could show "0" to non-scrolling viewers.
+- Photo slots on home: 7 (see docs/SHOT-LIST.md). Stats, map preview and countdown bands carry no photo by design (data bands).
+- Known until Phase 6: nav/CTA links to inner pages 404.
 
 ### Phase 4 quality gate (2026-11-24)
 - lint ✅ · typecheck ✅ · unit tests 10/10 ✅ · build ✅ (all routes static/PPR)

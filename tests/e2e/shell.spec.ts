@@ -20,11 +20,68 @@ for (const p of pages) {
     expect(overflow).toBeLessThanOrEqual(0);
 
     await page.screenshot({
-      path: `docs/screenshots/phase-4/${p.name}-${info.project.name}.png`,
+      path: `docs/screenshots/phase-5/${p.name}-${info.project.name}.png`,
       fullPage: true,
     });
   });
 }
+
+test("home: all approved sections render in order", async ({ page }) => {
+  await page.goto("/en");
+  await expect(page.getByRole("heading", { level: 1, name: "Mama Arudi Kazini." })).toBeVisible();
+  for (const name of [
+    "The work, on the record.",
+    "Every shilling, by ward.",
+    "Where we led in 2017",
+    "Three promises for the next term",
+    "Join the work.",
+  ]) {
+    await expect(page.getByRole("heading", { level: 2, name })).toBeVisible();
+  }
+  await expect(page.locator("#countdown")).toContainText(/days to go/);
+  await expect(page.getByRole("link", { name: "Share these numbers on WhatsApp" })).toHaveAttribute("href", /^https:\/\/wa\.me\/\?text=/);
+});
+
+test("home: stats never show a placeholder zero, before or after scrolling", async ({ page }) => {
+  await page.goto("/en");
+  const stats = page.locator("section[aria-labelledby=stats-title] dd");
+  await expect(stats.first()).toContainText("205,964");
+  await stats.first().scrollIntoViewIfNeeded();
+  await page.waitForTimeout(1200);
+  await expect(stats.nth(0)).toContainText("205,964");
+  await expect(stats.nth(1)).toContainText("78.5%");
+});
+
+for (const path of ["/en", "/sw", "/en/styleguide"]) {
+  test(`${path}: hydrates with no page errors`, async ({ page }) => {
+    const errors: string[] = [];
+    page.on("pageerror", (e) => errors.push(e.message));
+    await page.goto(path);
+    await page.waitForLoadState("networkidle");
+    expect(errors).toEqual([]);
+  });
+}
+
+test("home: a source tick opens its source", async ({ page }) => {
+  await page.goto("/en");
+  await page.getByRole("button", { name: /Source: Data Report of the 2017 General Election/ }).first().click();
+  const pop = page.getByRole("dialog", { name: "Data Report of the 2017 General Election" }).first();
+  await expect(pop).toBeVisible();
+  await expect(pop.getByRole("link", { name: /Open source/ })).toHaveAttribute("href", /iebc\.or\.ke/);
+});
+
+test("home: final figures are in the server HTML", async ({ request }) => {
+  const html = await (await request.get("/en")).text();
+  expect(html).toContain("205,964");
+  expect(html).toContain("78.5%");
+});
+
+test("home: add to calendar downloads an .ics", async ({ page }) => {
+  await page.goto("/en");
+  const download = page.waitForEvent("download");
+  await page.getByRole("button", { name: "Add to calendar" }).click();
+  expect((await download).suggestedFilename()).toBe("election-2027-08-10.ics");
+});
 
 test("root redirects to /en", async ({ page }) => {
   await page.goto("/");
