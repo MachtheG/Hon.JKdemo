@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "title": "Changia"
+  },
+  "kicker": "Saidia kampeni",
+  "title": "Msaidie Joyce kurudi kazini kwa Bomet.",
+  "intro": "Kila mchango unasaidia kampeni kuwafikia wanawake, wafanyabiashara, walimu na familia katika wadi zote 25 za Bomet.",
+  "how": {
+    "title": "Jinsi ya kuchangia",
+    "mpesa": "M-Pesa",
+    "paybill": "Paybill [[TO CONFIRM: nambari ya paybill au till ya M-Pesa ya kampeni na jina la akaunti]]",
+    "soon": "Maelezo ya kuchangia yatachapishwa hapa hivi karibuni. Kwa sasa, timu ya kampeni itafurahi kusikia kutoka kwako.",
+    "contact": "Wasiliana na kampeni"
+  },
+  "uses": {
+    "title": "Mchango wako unafanya nini",
+    "one": "Unamfikisha Joyce kwenye mikutano katika kila wadi",
+    "two": "Unachapisha na kushiriki rekodi, ili kila dai lithibitishwe",
+    "three": "Unawafunza na kuwasaidia mawakala wa siku ya kura"
+  },
+  "note": "Kampeni inapokea michango kutoka kwa watu binafsi pekee na kwa mujibu wa sheria za Kenya. [[TO CONFIRM: kanuni, viwango na utoaji ripoti wa michango ambao kampeni itafuata]]"
+}

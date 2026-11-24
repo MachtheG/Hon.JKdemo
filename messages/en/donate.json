@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "title": "Donate"
+  },
+  "kicker": "Support the campaign",
+  "title": "Help Joyce get back to work for Bomet.",
+  "intro": "Every contribution helps the campaign reach women, traders, teachers and families in all 25 wards of Bomet.",
+  "how": {
+    "title": "How to give",
+    "mpesa": "M-Pesa",
+    "paybill": "Paybill [[TO CONFIRM: campaign M-Pesa paybill or till number and account name]]",
+    "soon": "Contribution details will be published here shortly. In the meantime, the campaign team will be glad to hear from you.",
+    "contact": "Contact the campaign"
+  },
+  "uses": {
+    "title": "What your support does",
+    "one": "Brings Joyce to meetings in every ward",
+    "two": "Prints and shares the record, so every claim can be checked",
+    "three": "Trains and supports polling-day agents"
+  },
+  "note": "The campaign accepts contributions only from individuals and in line with Kenyan law. [[TO CONFIRM: contribution rules, limits and reporting the campaign will apply]]"
+}

@@ -22,6 +22,7 @@ The site has one rule: **every figure links to its source.** Anything not yet ve
 ```bash
 npm ci
 cp .env.example .env.local      # FORM_ADAPTER=console for local dev
+# NEXT_PUBLIC_SHOW_TO_CONFIRM=true  → internal review build showing [[TO CONFIRM]] markers
 npm run dev                     # http://localhost:3000 → redirects to /en
 ```
 

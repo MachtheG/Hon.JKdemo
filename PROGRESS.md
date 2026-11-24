@@ -51,6 +51,11 @@
 ### Phase 4 quality gate (2026-11-24)
 - **Checks:** lint ✅ · typecheck ✅ · unit 10/10 ✅ · build ✅ · e2e 18/18 ✅.
 
+## Client redesign (2026-11-24)
+- Rebuilt to the campaign's reference layout: white base, UDA green + gold, Outfit/Inter type, Senate seal + wordmark, pill navigation with dropdowns, gold Donate button, hero with photo + green scrim + sign-up form, live countdown (days/hours/minutes/seconds), real photographs in every slot (no placeholders).
+- **Public vs review build:** the public build omits every unverified item (no visible [[TO CONFIRM]] markers, and claims that depend on them are left out). Set  for an internal review build that shows them. The register below is unchanged.
+- Photos: 3 press/official photos of Joyce (credited; permission to confirm) + 1 official portrait + 3 openly licensed Bomet landscapes (CC BY-SA 4.0, credited on /credits).
+
 ## [[TO CONFIRM]] register
 
 | # | Item | Needed from | Blocks |
@@ -80,7 +85,10 @@
 | 23 | Final list of data processors (e.g. Vercel, Resend/Supabase) and where they store data | Campaign | Privacy notice |
 | 24 | Retention period for form data (draft: until 30 Nov 2027) | Campaign | Privacy notice |
 | 25 | 2027 UDA ticket (IEBC candidate nominations 29 May – 11 Jun 2027; party primary date needs its own source) | Campaign | Footer party line |
-| 26 | UDA brand yellow hex (approximated as #F5C400) | Campaign | Palette |
+| 26 | UDA brand colours (gold approximated as #D4A62A, green #0B6E3A) | Campaign | Palette |
+| 27 | **Written authorisation to use the Parliament of Kenya (Senate) seal** beside the candidate's name (used at the campaign's instruction; file: public/brand/senate-seal.png) | Campaign / Parliament | Header, footer |
+| 28 | Permission for press photos (Kenyans.co.ke ×2, Parliament of Kenya ×2) and higher-resolution originals for the hero | Campaign | Hero and all photo slots |
+| 29 | M-Pesa paybill/till and contribution rules for the Donate page | Campaign | Donate |
 
 ## Known data errors in third-party sources (excluded)
 - Mzalendo 12th-Parliament page: 242,775 votes / Gazette 9951 belong to the 2022 winner.

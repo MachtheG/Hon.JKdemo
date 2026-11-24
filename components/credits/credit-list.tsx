@@ -1,10 +1,11 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { credits } from "@/data/credits";
-import { photoList as photos } from "@/data/photos";
+import { uniqueImages } from "@/data/photos";
 
 export function CreditList() {
   const t = useTranslations("credits");
-  const published = photos.filter((p) => p.file && p.credit);
+  const locale = useLocale() as "en" | "sw";
+  const published = uniqueImages.map((img) => ({ id: img.file, credit: `${img.alt[locale]} — ${img.credit} (${img.licence})` }));
   return (
     <div className="flex flex-col gap-12">
       <section aria-labelledby="c-photos" className="flex flex-col gap-3">
@@ -17,7 +18,7 @@ export function CreditList() {
           <ul className="m-0 list-none p-0">
             {published.map((p) => (
               <li key={p.id} className="border-b border-rule py-3">
-                {p.id} — {p.credit}
+                {p.credit}
               </li>
             ))}
           </ul>

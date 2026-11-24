@@ -1,63 +1,32 @@
 import { useTranslations } from "next-intl";
+import { HeroPledgeForm } from "@/components/forms/hero-pledge-form";
 import { Photo } from "@/components/shared/photo";
-import { SourceTick } from "@/components/shared/source-tick";
-import { Button } from "@/components/ui/button";
-import { Link } from "@/i18n/navigation";
-import { county2017 } from "@/lib/election-results";
-import { formatNumber } from "@/lib/format";
 
 /**
- * Hero A (approved 2026-11-24): full-bleed portrait with the field-note overlay.
- * Mobile: a true 4:5 portrait with the field-note strip pulled up over its lower
- * edge. sm+: full-bleed 16:9 with the overlay inset bottom-left.
+ * Home hero, after the campaign's reference design: the candidate's photograph
+ * fills the right of the frame, a deep green scrim carries a bold white headline
+ * and the sign-up form on the left. On phones the photo sits on top.
  */
 export function Hero() {
   const t = useTranslations("home.hero");
 
   return (
-    <section aria-labelledby="hero-title" className="relative isolate overflow-hidden text-paper sm:flex sm:min-h-[760px] sm:items-end">
-      <div className="hero-push relative aspect-[4/5] sm:absolute sm:inset-0 sm:-z-10 sm:aspect-auto">
-        <Photo id="HERO-01" fill priority sizes="100vw" labelPosition="top" />
+    <section aria-labelledby="hero-title" className="relative isolate overflow-hidden bg-[#0a3d24] text-white">
+      {/* Photo: top block on phones, right-hand full-bleed from md */}
+      <div className="hero-push relative h-[380px] sm:h-[460px] md:absolute md:inset-y-0 md:right-0 md:left-[30%] md:h-auto md:[mask-image:linear-gradient(to_right,transparent,black_28%)]">
+        <Photo id="HERO-01" fill priority sizes="(min-width: 768px) 70vw, 100vw" rounded={false} focus="42% 28%" />
       </div>
-      <div className="relative -mt-28 px-4 sm:mx-auto sm:mt-0 sm:w-full sm:max-w-[1312px] sm:pb-14">
-        <div className="flex flex-col gap-5 bg-ink/95 px-5 py-7 sm:max-w-[760px] sm:p-11">
-          <span className="font-mono text-xs tracking-[0.14em] text-accent uppercase">{t("kicker")}</span>
-          <h1 id="hero-title" className="m-0 font-display text-[44px] leading-[0.98] font-semibold tracking-[-0.02em] sm:text-[84px]">
+      <div aria-hidden className="hero-scrim pointer-events-none absolute inset-0" />
+
+      <div className="relative mx-auto flex max-w-[1312px] px-4 pb-12 md:min-h-[640px] md:items-center md:py-16 lg:min-h-[700px]">
+        <div className="flex w-full max-w-[560px] flex-col gap-5 pt-8 md:pt-0">
+          <span className="text-[13px] font-semibold tracking-[0.18em] text-accent uppercase">{t("kicker")}</span>
+          <h1 id="hero-title" className="m-0 font-display text-[40px] leading-[1.05] font-bold sm:text-[52px] lg:text-[60px]">
             {t("title")}
           </h1>
-          <p className="m-0 text-lg text-mist sm:text-2xl sm:leading-snug">{t("sub")}</p>
-
-          <dl className="m-0 grid grid-cols-2 gap-4 border-t border-mist/30 pt-5 sm:grid-cols-3 sm:gap-6">
-            <div className="flex flex-col-reverse justify-end gap-1">
-              <dt className="text-sm text-mist">{t("votes")}</dt>
-              <dd className="m-0 font-mono text-[28px] leading-none font-medium whitespace-nowrap tabular sm:text-[34px]">
-                {formatNumber(county2017.votes)}
-                <SourceTick id={county2017.source} tone="accent" />
-              </dd>
-            </div>
-            <div className="flex flex-col-reverse justify-end gap-1">
-              <dt className="text-sm text-mist">{t("share")}</dt>
-              <dd className="m-0 font-mono text-[28px] leading-none font-medium whitespace-nowrap tabular sm:text-[34px]">
-                {county2017.share}%
-                <SourceTick id="iebc-data-report-2017" tone="accent" />
-              </dd>
-            </div>
-            <div className="hidden flex-col-reverse justify-end gap-1 sm:flex">
-              <dt className="text-sm text-mist">{t("levels")}</dt>
-              <dd className="m-0 font-mono text-[34px] leading-none font-medium whitespace-nowrap">
-                {t("levelsValue")}
-                <SourceTick id={["parl-na-profile-2017", "parl-senate-profile"]} tone="accent" />
-              </dd>
-            </div>
-          </dl>
-
-          <div className="flex flex-wrap gap-3.5">
-            <Button asChild variant="accent" size="lg">
-              <Link href="/get-involved#pledge">{t("pledge")}</Link>
-            </Button>
-            <Button asChild variant="outline" size="lg" className="text-paper">
-              <Link href="/record">{t("record")}</Link>
-            </Button>
+          <p className="m-0 max-w-[30rem] text-lg leading-relaxed text-white/85 sm:text-xl">{t("sub")}</p>
+          <div className="mt-2">
+            <HeroPledgeForm />
           </div>
         </div>
       </div>

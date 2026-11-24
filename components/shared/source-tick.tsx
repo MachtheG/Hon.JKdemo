@@ -29,7 +29,7 @@ export function SourceTick({ id, tone = "laterite" }: { id: SourceId | SourceId[
         aria-label={label}
         className="relative ml-1 inline-flex h-6 min-w-6 -translate-y-2 items-center justify-center gap-0.5 align-baseline before:absolute before:-inset-y-2.5 before:right-0 before:-left-2.5 before:content-['']"
       >
-        <span aria-hidden className={tone === "accent" ? "size-2 bg-accent" : "size-2 bg-laterite"} />
+        <span aria-hidden className={tone === "accent" ? "size-[7px] rounded-full bg-accent" : "size-[7px] rounded-full bg-laterite"} />
         {list.length > 1 ? (
           <span aria-hidden className={"font-mono text-[10px] leading-none " + (tone === "accent" ? "text-accent" : "text-laterite-ink")}>
             {list.length}

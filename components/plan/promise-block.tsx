@@ -23,7 +23,7 @@ export function PromiseBlock({ k, n, sources }: { k: "one" | "two" | "three"; n:
         </ul>
       </div>
       <div className="flex flex-col gap-2 bg-mist p-5 text-ink">
-        <span className="font-mono text-xs text-[#7a3418] uppercase">{t("recordLabel")}</span>
+        <span className="font-mono text-xs text-tea uppercase">{t("recordLabel")}</span>
         <p className="m-0">
           <ConfirmText text={t(`promises.${k}.record`)} />
           <SourceTick id={sources} />

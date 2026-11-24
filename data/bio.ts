@@ -7,8 +7,10 @@ export interface TimelineEntry {
   kind: "education" | "office" | "honour" | "legislation";
   title: Bilingual;
   source: SourceId;
-  /** Shown publicly as [[TO CONFIRM: …]] until the campaign supplies a document. */
+  /** Review note: shown as [[TO CONFIRM: …]] only in the internal review build. */
   confirm?: string;
+  /** The claim itself (not just a detail) is unverified: hidden entirely in public builds. */
+  claimUnverified?: boolean;
 }
 
 export const timeline: TimelineEntry[] = [
@@ -90,6 +92,7 @@ export const timeline: TimelineEntry[] = [
     title: { en: "Chief of the Order of the Burning Spear (CBS)", sw: "Chief of the Order of the Burning Spear (CBS)" },
     source: "psc-annual-report-2023-24",
     confirm: "CBS seen only in a search snippet of the PSC report — page, year conferred and Gazette notice",
+    claimUnverified: true,
   },
 ];
 

@@ -14,6 +14,7 @@ const paths = [
   "/en/gallery",
   "/en/news",
   "/en/get-involved",
+  "/en/donate",
   "/en/contact",
   "/en/privacy",
   "/en/sources",

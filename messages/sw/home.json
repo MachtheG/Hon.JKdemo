@@ -3,15 +3,9 @@
     "title": "Mama Arudi Kazini — Kazi kwa wanawake wa Bomet"
   },
   "hero": {
-    "kicker": "Kumbukumbu za kazi · Kaunti ya Bomet · 2027",
+    "kicker": "Mwakilishi wa Wanawake · Kaunti ya Bomet",
     "title": "Mama Arudi Kazini.",
-    "sub": "Arudi kazini kwa wanawake wa Bomet — kutoka wadi ya Singorwet hadi Seneti, kila kitu kwenye rekodi.",
-    "votes": "kura za Mwakilishi wa Wanawake, 2017",
-    "share": "ya kura halali zilizopigwa",
-    "levelsValue": "Ngazi 4",
-    "levels": "wadi · kaunti · bunge · seneti",
-    "pledge": "Toa ahadi yako",
-    "record": "Tazama rekodi"
+    "sub": "Kutoka wadi ya Singorwet hadi Seneti, Joyce Korir amehudumia Bomet katika kila ngazi. Weka jina lako na usimame naye tarehe 10 Agosti 2027."
   },
   "countdown": {
     "kicker": "Siku ya uchaguzi",
@@ -22,25 +16,29 @@
     "addToCalendar": "Weka kwenye kalenda",
     "icsSummary": "Uchaguzi Mkuu wa Kenya — mpigie kura Joyce Korir, Mwakilishi wa Wanawake Bomet",
     "icsDescription": "Beba kitambulisho chako.",
-    "past": "Uchaguzi wa 2027 umeshafanyika"
+    "past": "Uchaguzi wa 2027 umeshafanyika",
+    "lead": "Kila mpiga kura wa Bomet anaamua. Kumbuka tarehe na ubebe kitambulisho chako."
   },
   "entry": {
-    "label": "Anza hapa",
+    "label": "Mfahamu Joyce",
+    "title": "Mfahamu Joyce Korir",
+    "lead": "Diwani wa wadi, Naibu Spika, Mwakilishi wa Wanawake na Seneta — ngazi nne za uongozi, ahadi moja kwa Bomet.",
+    "more": "Soma zaidi",
     "who": {
-      "title": "Yeye ni nani",
-      "body": "Diwani, Naibu Spika, Mwakilishi wa Wanawake, Seneta — ngazi nne za uongozi."
+      "title": "Safari ya Joyce",
+      "body": "Kutoka wadi ya Singorwet hadi Seneti: safari yake, kwenye rekodi."
     },
     "record": {
-      "title": "Rekodi",
-      "body": "Kura, miswada na taarifa, kila moja na chanzo chake."
+      "title": "Rekodi ya Joyce",
+      "body": "Kura, miswada na taarifa Bungeni — kila moja na chanzo chake rasmi."
     },
     "next": {
-      "title": "Kinachofuata",
-      "body": "Ahadi tatu za 2027–2032, zilizotokana na rekodi yake."
+      "title": "Mpango wa Joyce",
+      "body": "Ahadi tatu za 2027–2032, zilizojengwa juu ya kazi aliyokwisha fanya."
     }
   },
   "stats": {
-    "title": "Kazi, kwenye rekodi.",
+    "title": "Rekodi unayoweza kuthibitisha.",
     "votes": "kura za Mwakilishi wa Wanawake, 2017",
     "share": "ya kura halali Bomet",
     "contributions": "michango katika Seneti",
@@ -49,25 +47,26 @@
     "whatsappText": "Joyce Korir alipata kura 205,964 (78.5%) kama Mwakilishi wa Wanawake Bomet mwaka 2017 (IEBC). Mama Arudi Kazini: {url}"
   },
   "projects": {
-    "kicker": "Miradi · NGAAF 2017–2022",
+    "kicker": "Miradi · NGAAF",
     "title": "Kila shilingi, kwa kila wadi.",
-    "body": "Kila mradi unaonyesha jukumu lake — alitenga, alipigania au alisimamia — na kama kiasi ni mgao au matumizi.",
-    "emptyTitle": "Tunasubiri nyaraka",
-    "emptyBody": "Miradi itaonekana hapa baada ya barua za mgao wa NGAAF na orodha za miradi iliyoidhinishwa kuwasilishwa. Hakuna kinachoorodheshwa bila hati.",
-    "cta": "Tazama miradi yote"
+    "body": "Orodha kamili ya miradi ya kipindi cha Joyce kama Mwakilishi wa Wanawake inakusanywa kutoka rekodi rasmi — itachapishwa wazi, wadi kwa wadi.",
+    "points": {
+      "one": "Kila mradi na wadi yake na mwaka wa fedha",
+      "two": "Jukumu lake limeelezwa wazi — na kama kiasi ni mgao au matumizi",
+      "three": "Hati rasmi nyuma ya kila mradi"
+    },
+    "cta": "Tazama miradi"
   },
   "map": {
-    "kicker": "Ramani",
-    "title": "Tulipoongoza mwaka 2017",
-    "summary": "Joyce aliongoza Kaunti ya Bomet kwa {share}% ya kura halali (IEBC). Matokeo ya maeneo bunge na wadi yataongezwa baada ya Fomu 37A/37B kuthibitishwa.",
-    "tile": "{share}% kaunti",
-    "schematic": "Mchoro wa awali",
+    "kicker": "Tulipoongoza",
+    "title": "Bomet ilimchagua Joyce mwaka 2017.",
+    "summary": "Mwaka 2017 Joyce alipata kura {votes} — {share}% ya kura halali katika Kaunti ya Bomet.",
     "cta": "Fungua ramani"
   },
   "plan": {
-    "kicker": "Mpango",
-    "draft": "Rasimu — inasubiri idhini ya kampeni",
-    "title": "Ahadi tatu kwa muhula ujao",
+    "kicker": "Mpango wa Joyce",
+    "draft": "Rasimu kwa ukaguzi wa kampeni",
+    "title": "Ahadi tatu kwa muhula ujao.",
     "one": {
       "title": "NGAAF wazi",
       "body": "Kila mgao uchapishwe kwa wadi, kila kikundi kiorodheshwe."
@@ -83,10 +82,10 @@
     "cta": "Soma mpango kamili"
   },
   "join": {
-    "title": "Jiunge na kazi.",
-    "body": "Ahidi kura yako, jitolee katika wadi yako, au fuatilia kampeni kwenye WhatsApp.",
+    "title": "Simama na Joyce.",
+    "body": "Ahidi kura yako, jitolee katika wadi yako, au saidia kampeni.",
     "pledge": "Ahidi kura yako",
     "volunteer": "Jitolee",
-    "whatsapp": "Chaneli ya WhatsApp"
+    "donate": "Changia"
   }
 }

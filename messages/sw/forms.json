@@ -19,7 +19,11 @@
     "pollingAgent": "Wakala siku ya kura",
     "online": "Kushiriki mtandaoni"
   },
-  "subjects": { "general": "Swali la jumla", "event": "Mwalike Joyce kwenye tukio", "press": "Swali la vyombo vya habari" },
+  "subjects": {
+    "general": "Swali la jumla",
+    "event": "Mwalike Joyce kwenye tukio",
+    "press": "Swali la vyombo vya habari"
+  },
   "consent": {
     "required": "Nakubali kampeni ya Joyce Korir 2027 itumie maelezo haya kwa {purpose}, kama ilivyoelezwa katika taarifa ya faragha. Ninaweza kuondoa idhini wakati wowote.",
     "updates": "Pia nitumie habari za kampeni kwa SMS au WhatsApp (si lazima).",
@@ -30,7 +34,13 @@
       "contact": "kujibu ujumbe wangu"
     }
   },
-  "submit": { "pledge": "Ahidi kura yangu", "volunteer": "Nisajili", "contact": "Tuma ujumbe", "sending": "Inatuma…" },
+  "submit": {
+    "pledge": "Ahidi kura yangu",
+    "volunteer": "Nisajili",
+    "contact": "Tuma ujumbe",
+    "sending": "Inatuma…",
+    "hero": "Jiunge na Joyce"
+  },
   "success": {
     "pledge": "Asante — ahadi yako imehesabiwa. Tuonane vituoni tarehe 10 Agosti 2027.",
     "volunteer": "Asante — mratibu wa wadi yako atawasiliana nawe.",

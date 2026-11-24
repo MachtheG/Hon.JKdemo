@@ -1,12 +1,11 @@
-import { useTranslations } from "next-intl";
-import { PhotoSlot } from "@/components/shared/photo-slot";
+import { Photo } from "@/components/shared/photo";
 
+/** Real photographs as they render across the site (rounded, focal-point cropped, blur placeholder). */
 export function PhotoSamples() {
-  const t = useTranslations("styleguide.photos");
   return (
     <div className="grid gap-4 md:grid-cols-3">
-      <PhotoSlot id="HERO-01" ratio="16/9" minSize="2880×1620" shot={t("hero")} className="md:col-span-2" />
-      <PhotoSlot id="CARD-WHO" ratio="3/2" minSize="1800×1200" shot={t("card")} />
+      <Photo id="RECORD-01" sizes="(min-width: 768px) 66vw, 100vw" className="md:col-span-2" />
+      <Photo id="CARD-WHO" sizes="(min-width: 768px) 33vw, 100vw" />
     </div>
   );
 }

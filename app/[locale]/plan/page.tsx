@@ -15,7 +15,7 @@ export default function PlanPage() {
   const t = useTranslations("plan");
   return (
     <>
-      <p role="note" className="m-0 bg-laterite-ink px-4 py-2.5 text-center font-mono text-sm text-paper">
+      <p role="note" className="m-0 bg-gold-soft px-4 py-2.5 text-center text-sm font-medium text-ink">
         {t("banner")}
       </p>
       <PageHeader kicker={t("kicker")} title={t("title")} photo="PLAN-01" />

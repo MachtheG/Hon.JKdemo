@@ -23,6 +23,7 @@ const pages = [
   "gallery",
   "news",
   "get-involved",
+  "donate",
   "contact",
   "privacy",
   "sources",
@@ -40,7 +41,7 @@ for (const p of pages) {
     expect(errors).toEqual([]);
     const { over, culprits } = await overflowReport(page);
     expect(over, culprits).toBeLessThanOrEqual(0);
-    await page.screenshot({ path: `docs/screenshots/phase-7/${p.replace("/", "-")}-${info.project.name}.png`, fullPage: true });
+    await page.screenshot({ path: `docs/screenshots/client-v2/${p.replace("/", "-")}-${info.project.name}.png`, fullPage: true });
   });
 }
 
@@ -99,7 +100,27 @@ test("constituency page lists its five wards", async ({ page }) => {
   }
 });
 
-test("story: unconfirmed details are visibly marked", async ({ page }) => {
-  await page.goto("/en/story");
-  await expect(page.getByText(/\[\[TO CONFIRM:/).first()).toBeVisible();
+test("public build never shows TO CONFIRM markers or placeholder slot text", async ({ request }) => {
+  for (const p of ["", ...pages]) {
+    for (const loc of ["en", "sw"]) {
+      const html = await (await request.get(`/${loc}/${p}`)).text();
+      expect(html, `${loc}/${p}`).not.toContain("[[TO CONFIRM");
+      expect(html, `${loc}/${p}`).not.toMatch(/HERO-01 · 16:9|min 2880×1620/);
+    }
+  }
+});
+
+test("every page shows real photographs", async ({ page }) => {
+  for (const p of ["", "record", "story", "plan", "bomet", "news", "privacy"]) {
+    await page.goto(`/en/${p}`);
+    const imgs = page.locator("main img[src*='/_next/image'], main img[src*='/images/']");
+    expect(await imgs.count(), p).toBeGreaterThan(0);
+  }
+});
+
+test("header shows the Senate seal beside her name", async ({ page }) => {
+  await page.goto("/en");
+  const banner = page.getByRole("banner");
+  await expect(banner.locator("img[src*='senate-seal']").first()).toBeVisible();
+  await expect(banner.getByText("Joyce Korir", { exact: true })).toBeVisible();
 });

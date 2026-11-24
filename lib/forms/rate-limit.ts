@@ -5,7 +5,8 @@ import "server-only";
  * On serverless this resets per instance — pair with Vercel's firewall rules for real abuse.
  */
 const WINDOW_MS = 10 * 60 * 1000;
-const LIMIT = 5;
+/** Override with FORM_RATE_LIMIT (e.g. a high value for the e2e test server only). */
+const LIMIT = Number(process.env.FORM_RATE_LIMIT) || 5;
 const hits = new Map<string, number[]>();
 
 export function allow(key: string, now = Date.now()): boolean {

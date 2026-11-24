@@ -3,15 +3,9 @@
     "title": "Mama Arudi Kazini — Back to work for Bomet's women"
   },
   "hero": {
-    "kicker": "Field notes · Bomet County · 2027",
-    "title": "Mama Arudi Kazini.",
-    "sub": "Back to work for Bomet's women — from Singorwet ward to the Senate, on the record.",
-    "votes": "votes for Woman Rep, 2017",
-    "share": "of valid votes cast",
-    "levelsValue": "4 levels",
-    "levels": "ward · assembly · house · senate",
-    "pledge": "Pledge your support",
-    "record": "See the record"
+    "kicker": "Woman Representative · Bomet County",
+    "title": "Back to work for Bomet's women.",
+    "sub": "Mama Arudi Kazini. From Singorwet ward to the Senate, Joyce Korir has served Bomet at every level. Add your name and stand with her on 10 August 2027."
   },
   "countdown": {
     "kicker": "Election day",
@@ -22,25 +16,29 @@
     "addToCalendar": "Add to calendar",
     "icsSummary": "Kenya General Election — vote for Joyce Korir, Woman Rep Bomet",
     "icsDescription": "Bring your ID card.",
-    "past": "The 2027 election has taken place"
+    "past": "The 2027 election has taken place",
+    "lead": "Every Bomet voter decides. Mark the date and bring your ID card."
   },
   "entry": {
-    "label": "Start here",
+    "label": "Meet Joyce",
+    "title": "Meet Joyce Korir",
+    "lead": "Ward councillor, Deputy Speaker, Woman Representative and Senator — four levels of public office, one commitment to Bomet.",
+    "more": "Read more",
     "who": {
-      "title": "Who she is",
-      "body": "Councillor, Deputy Speaker, Woman Rep, Senator — four levels of public office."
+      "title": "Joyce's Story",
+      "body": "From Singorwet ward to the Senate: the journey, in her own words and on the record."
     },
     "record": {
-      "title": "The record",
-      "body": "Votes, bills and statements, each linked to its source."
+      "title": "Joyce's Record",
+      "body": "Votes, bills and statements in Parliament — each one linked to its official source."
     },
     "next": {
-      "title": "What's next",
-      "body": "Three promises for 2027–2032, drafted from the record."
+      "title": "Joyce's Plan",
+      "body": "Three promises for 2027–2032, built on the work she has already done."
     }
   },
   "stats": {
-    "title": "The work, on the record.",
+    "title": "A record you can check.",
     "votes": "votes for Woman Rep, 2017",
     "share": "of valid votes cast in Bomet",
     "contributions": "Senate floor contributions",
@@ -49,25 +47,26 @@
     "whatsappText": "Joyce Korir won 205,964 votes (78.5%) as Bomet Woman Rep in 2017 (IEBC). Back to work for Bomet's women: {url}"
   },
   "projects": {
-    "kicker": "Projects · NGAAF 2017–2022",
+    "kicker": "Projects · NGAAF",
     "title": "Every shilling, by ward.",
-    "body": "Each project shows her role — allocated, lobbied or oversaw — and whether the figure is an allocation or spending.",
-    "emptyTitle": "Awaiting documents",
-    "emptyBody": "Highlights appear once NGAAF allocation letters and approved project lists are supplied. Nothing is listed without a document.",
-    "cta": "Explore all projects"
+    "body": "The full ledger of projects from Joyce's term as Woman Representative is being compiled from official records — published openly, ward by ward.",
+    "points": {
+      "one": "Every project listed with its ward and financial year",
+      "two": "Her role stated plainly — and whether a figure is an allocation or spending",
+      "three": "The official document behind each entry"
+    },
+    "cta": "Explore projects"
   },
   "map": {
-    "kicker": "The map",
-    "title": "Where we led in 2017",
-    "summary": "Joyce led Bomet County with {share}% of valid votes (IEBC). Constituency and ward results load once Forms 37A/37B are verified.",
-    "tile": "{share}% county",
-    "schematic": "Schematic preview",
+    "kicker": "Where we led",
+    "title": "Bomet chose Joyce in 2017.",
+    "summary": "In 2017 Joyce won {votes} votes — {share}% of valid votes cast across Bomet County.",
     "cta": "Open the map"
   },
   "plan": {
-    "kicker": "The plan",
-    "draft": "Draft — awaiting campaign sign-off",
-    "title": "Three promises for the next term",
+    "kicker": "Joyce's Plan",
+    "draft": "Draft for campaign review",
+    "title": "Three promises for the next term.",
     "one": {
       "title": "Open NGAAF",
       "body": "Every allocation published by ward, every group listed."
@@ -83,10 +82,10 @@
     "cta": "Read the full plan"
   },
   "join": {
-    "title": "Join the work.",
-    "body": "Pledge your vote, volunteer in your ward, or follow the campaign on WhatsApp.",
+    "title": "Stand with Joyce.",
+    "body": "Pledge your vote, volunteer in your ward, or support the campaign.",
     "pledge": "Pledge your vote",
     "volunteer": "Volunteer",
-    "whatsapp": "WhatsApp channel"
+    "donate": "Donate"
   }
 }

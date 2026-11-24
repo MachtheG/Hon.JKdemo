@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { ConfirmText } from "@/components/shared/to-confirm";
+import { ConfirmText, SHOW_TO_CONFIRM, stripConfirm } from "@/components/shared/to-confirm";
 
 export function ContactDetails() {
   const t = useTranslations("contact.details");
@@ -8,10 +8,15 @@ export function ContactDetails() {
       <h2 id="office-title" className="m-0 font-display text-[28px] font-semibold">
         {t("title")}
       </h2>
-      <address className="flex flex-col gap-2 font-mono text-sm not-italic">
-        <span><ConfirmText text={t("office")} /></span>
-        <span><ConfirmText text={t("phone")} /></span>
-        <span><ConfirmText text={t("email")} /></span>
+      {/* Lines that are still unconfirmed are omitted from the public site. */}
+      <address className="flex flex-col gap-2 not-italic">
+        {(["office", "phone", "email"] as const)
+          .filter((k) => SHOW_TO_CONFIRM || stripConfirm(t(k)) !== "")
+          .map((k) => (
+            <span key={k}>
+              <ConfirmText text={t(k)} />
+            </span>
+          ))}
       </address>
       <p className="m-0 text-muted">{t("press")}</p>
     </section>

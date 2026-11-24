@@ -1,41 +1,29 @@
 @import "tailwindcss";
 
-/* ── Design tokens (docs/CREATIVE-DIRECTION.md §3) ─────────────────────── */
+/*
+ * ── Design tokens ─────────────────────────────────────────────────────────
+ * White first, with UDA green and gold accents. Contrast (WCAG 2.2 AA):
+ *   ink  #0C3320 on white ≈ 13:1 · green #0B6E3A on white ≈ 6.4:1
+ *   ink on gold #D4A62A ≈ 6.8:1 · gold on ink ≈ 5.5:1 — never gold text on white.
+ * Token names are historical (tea/laterite…) so every component re-skins at once.
+ */
 :root {
-  --ink: #14201a;
-  --tea: #1f4d3a;
-  --leaf: #3e7d5a;
-  --laterite: #b4532a;
-  --laterite-ink: #9a4220; /* small text on paper */
-  --muted: #4a5a50;
-  --mist: #d9ded8;
-  --paper: #f6f1e7;
-  --accent: #f5c400; /* UDA yellow — approximated, confirm brand hex */
+  --ink: #0c3320; /* deep green-black: body text, dark sections */
+  --tea: #0b6e3a; /* UDA green: primary brand */
+  --leaf: #1c8c4e; /* lighter green: hovers, secondary */
+  --laterite: #c8961e; /* gold: small decorative marks */
+  --laterite-ink: #0b6e3a; /* accent text on white (kickers, labels) */
+  --muted: #4b5b52;
+  --mist: #f1f4ef; /* soft off-white surfaces */
+  --paper: #ffffff;
+  --accent: #d4a62a; /* gold: buttons, countdown, "led" */
+  --gold-soft: #f7efd8;
 
-  --surface: var(--paper);
+  --surface: #ffffff;
   --surface-raised: #ffffff;
   --text: var(--ink);
   --text-muted: var(--muted);
-  --rule: var(--mist);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --surface: #0f1813;
-    --surface-raised: #1b3a2d;
-    --text: #f6f1e7;
-    --text-muted: #c3cbc4;
-    --rule: #2c4a3c;
-    --laterite-ink: #e08a62;
-  }
-}
-:root[data-theme="dark"] {
-  --surface: #0f1813;
-  --surface-raised: #1b3a2d;
-  --text: #f6f1e7;
-  --text-muted: #c3cbc4;
-  --rule: #2c4a3c;
-  --laterite-ink: #e08a62;
+  --rule: #e3e8e1;
 }
 
 @theme inline {
@@ -47,15 +35,17 @@
   --color-mist: var(--mist);
   --color-paper: var(--paper);
   --color-accent: var(--accent);
+  --color-gold-soft: var(--gold-soft);
   --color-surface: var(--surface);
   --color-surface-raised: var(--surface-raised);
   --color-text: var(--text);
   --color-muted: var(--text-muted);
   --color-rule: var(--rule);
 
-  --font-display: var(--font-fraunces), Georgia, serif;
+  --font-display: var(--font-outfit), system-ui, sans-serif;
   --font-sans: var(--font-inter), system-ui, sans-serif;
-  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+  /* Figures use the display face with tabular numerals — no "code" monospace. */
+  --font-mono: var(--font-outfit), system-ui, sans-serif;
 }
 
 /* ── Base ─────────────────────────────────────────────────────────────── */
@@ -67,9 +57,15 @@ body {
   color: var(--text);
   font-family: var(--font-sans);
   font-size: 1.0625rem; /* 17px */
-  line-height: 1.55;
+  line-height: 1.6;
 }
-/* Two-tone focus ring: visible on paper, yellow, tea and ink alike (WCAG 2.4.7 / 2.4.11). */
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+/* Two-tone focus ring: visible on white, gold, green and dark sections (WCAG 2.4.7 / 2.4.11). */
 :focus-visible {
   outline: 3px solid var(--ink);
   outline-offset: 2px;
@@ -77,27 +73,41 @@ body {
 }
 .bg-ink :focus-visible,
 .bg-tea :focus-visible,
-.tea-rows :focus-visible {
+.hero-scrim :focus-visible {
   outline-color: var(--accent);
   box-shadow: 0 0 0 5px var(--ink);
 }
 .tabular {
   font-variant-numeric: tabular-nums;
 }
-
-/* ── Signature motifs ─────────────────────────────────────────────────── */
-.tea-rows {
-  background-color: #2a5a45;
-  background-image:
-    repeating-linear-gradient(168deg, rgb(217 222 216 / 0.16) 0 2px, transparent 2px 18px),
-    repeating-linear-gradient(172deg, rgb(20 32 26 / 0.25) 0 1px, transparent 1px 31px);
+.font-mono {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
 }
+
+/* ── Brand details ────────────────────────────────────────────────────── */
+/* Short gold bar used above section headings. */
 .tea-rule {
-  height: 16px;
-  background-image: repeating-linear-gradient(180deg, var(--tea) 0 1px, transparent 1px 4px);
+  height: 3px;
+  width: 64px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+/* Fallback fill if an image is ever missing — no text, no placeholder look. */
+.tea-rows {
+  background: linear-gradient(135deg, var(--tea), var(--ink));
 }
 .hatch {
-  background-image: repeating-linear-gradient(168deg, rgb(20 32 26 / 0.28) 0 2px, transparent 2px 10px);
+  background-image: repeating-linear-gradient(135deg, rgb(255 255 255 / 0.16) 0 2px, transparent 2px 9px);
+}
+/* Hero: deep green scrim on the left fading into the photograph (as in the reference). */
+.hero-scrim {
+  background: linear-gradient(90deg, rgb(10 61 36 / 0.97) 0%, rgb(10 61 36 / 0.9) 38%, rgb(10 61 36 / 0.35) 62%, rgb(10 61 36 / 0) 78%);
+}
+@media (max-width: 767px) {
+  .hero-scrim {
+    background: linear-gradient(180deg, rgb(10 61 36 / 0) 0%, rgb(10 61 36 / 0.55) 38%, rgb(10 61 36 / 0.96) 62%);
+  }
 }
 
 /* ── Motion & lite mode ───────────────────────────────────────────────── */
@@ -106,11 +116,11 @@ body {
     transform: scale(1);
   }
   to {
-    transform: scale(1.04);
+    transform: scale(1.03);
   }
 }
 .hero-push {
-  animation: hero-push 8s ease-out 1 forwards;
+  animation: hero-push 9s ease-out 1 forwards;
   will-change: transform;
   contain: paint;
 }

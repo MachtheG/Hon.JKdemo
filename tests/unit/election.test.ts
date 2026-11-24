@@ -24,3 +24,16 @@ describe("electionIcs", () => {
     expect(ics.split("\r\n")[0]).toBe("BEGIN:VCALENDAR");
   });
 });
+
+import { countdownParts } from "@/lib/countdown";
+
+describe("countdownParts (live d/h/m/s)", () => {
+  it("splits the remaining time", () => {
+    const now = new Date("2027-08-08T22:58:30+03:00").getTime();
+    expect(countdownParts(now)).toEqual({ phase: "before", days: 1, hours: 1, minutes: 1, seconds: 30 });
+  });
+  it("is 'today' on election day and 'after' from 11 August", () => {
+    expect(countdownParts(new Date("2027-08-10T12:00:00+03:00").getTime())).toEqual({ phase: "today" });
+    expect(countdownParts(new Date("2027-08-11T00:00:00+03:00").getTime())).toEqual({ phase: "after" });
+  });
+});

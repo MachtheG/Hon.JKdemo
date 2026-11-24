@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Fraunces, Inter } from "next/font/google";
+import { Inter, Outfit } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 
-const fraunces = Fraunces({ subsets: ["latin"], variable: "--font-fraunces" });
+const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 /** Unmatched routes skip the [locale] layout, so this page is bilingual. */
 export default function GlobalNotFound() {
   return (
-    <html lang="en" className={`${fraunces.variable} ${inter.variable}`}>
+    <html lang="en" className={`${outfit.variable} ${inter.variable}`}>
       <body className="flex min-h-dvh items-center justify-center bg-ink p-6 text-paper">
         <main className="flex max-w-xl flex-col gap-4">
           <p className="m-0 font-mono text-sm text-accent">404</p>

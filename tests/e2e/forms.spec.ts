@@ -32,6 +32,19 @@ test.describe("pledge form", () => {
   });
 });
 
+test("hero sign-up form submits a pledge with consent", async ({ page }) => {
+  await page.goto("/en");
+  const hero = page.locator("section[aria-labelledby=hero-title]");
+  await hero.getByRole("button", { name: "Join Joyce" }).click();
+  await expect(hero.getByRole("alert")).toBeVisible();
+  await hero.getByLabel("Full name").fill("Hero Tester");
+  await hero.getByLabel("Phone number").fill("0712 345 678");
+  await hero.getByLabel("Your ward").selectOption("Kembu");
+  await hero.getByRole("checkbox").check();
+  await hero.getByRole("button", { name: "Join Joyce" }).click();
+  await expect(hero.getByRole("status").filter({ hasText: "your pledge is counted" })).toBeVisible();
+});
+
 test("volunteer form needs a role", async ({ page }) => {
   await page.goto("/en/get-involved");
   const form = page.getByRole("form", { name: "Sign me up" });

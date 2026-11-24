@@ -3,7 +3,7 @@ import type { PhotoId } from "@/data/photos";
 import { Photo } from "./photo";
 import { ConfirmText } from "./to-confirm";
 
-/** Standard inner-page header: kicker, title, intro, and the candidate's photo. */
+/** Inner-page header: soft panel, gold rule, kicker, bold title, intro and a photograph (every page has one). */
 export function PageHeader({
   kicker,
   title,
@@ -18,11 +18,12 @@ export function PageHeader({
   children?: ReactNode;
 }) {
   return (
-    <header className="border-b border-rule">
-      <div className="mx-auto grid max-w-[1312px] items-end gap-8 px-4 py-12 sm:py-16 lg:grid-cols-[3fr_2fr] lg:gap-12">
+    <header className="bg-mist">
+      <div className="mx-auto grid max-w-[1312px] items-center gap-10 px-4 py-14 sm:py-20 lg:grid-cols-[3fr_2fr] lg:gap-14">
         <div className="flex flex-col gap-4">
-          <span className="font-mono text-xs tracking-[0.12em] text-laterite-ink uppercase">{kicker}</span>
-          <h1 className="m-0 font-display text-[40px] leading-none font-semibold tracking-[-0.015em] sm:text-[64px] lg:text-[72px]">
+          <div className="tea-rule" aria-hidden />
+          <span className="text-[13px] font-semibold tracking-[0.18em] text-tea uppercase">{kicker}</span>
+          <h1 className="m-0 font-display text-[38px] leading-[1.05] font-bold sm:text-[54px] lg:text-[60px]">
             {title}
           </h1>
           {intro ? (
@@ -38,7 +39,7 @@ export function PageHeader({
           ) : null}
           {children}
         </div>
-        {photo ? <Photo id={photo} sizes="(min-width: 1024px) 40vw, 100vw" /> : null}
+        <Photo id={photo ?? "COUNTY-01"} sizes="(min-width: 1024px) 40vw, 100vw" className="shadow-lg" />
       </div>
     </header>
   );

@@ -12,9 +12,9 @@ const ratioClass: Record<Ratio, string> = {
 };
 
 /**
- * Renders a manifest photo, or its designed placeholder until the file exists.
- * `fill` makes it cover its parent (for full-bleed heroes). `labelPosition="top"`
- * keeps a placeholder's slot tag clear of overlays at the bottom.
+ * A manifest photo with a blur placeholder and the slot's focal point.
+ * `fill` covers the parent (heroes). `rounded` gives the soft card corners.
+ * If a file is ever missing, a plain brand gradient shows — never slot text.
  */
 export function Photo({
   id,
@@ -22,49 +22,39 @@ export function Photo({
   sizes = "100vw",
   priority,
   className,
-  labelPosition = "bottom",
+  rounded = true,
+  focus,
 }: {
   id: PhotoId;
   fill?: boolean;
   sizes?: string;
   priority?: boolean;
   className?: string;
-  labelPosition?: "top" | "bottom";
+  rounded?: boolean;
+  focus?: string;
 }) {
   const locale = useLocale() as "en" | "sw";
   const p = photoById[id];
   const alt = (p.alt ?? p.shot)[locale];
   const box = fill ? "absolute inset-0" : ratioClass[p.ratio];
+  const corner = !fill && rounded ? "rounded-xl" : "";
 
-  if (p.file) {
-    const f = photoFiles[p.file];
-    return (
-      <div className={cn("relative overflow-hidden bg-tea", box, className)}>
-        <Image
-          src={p.file}
-          alt={alt}
-          fill
-          sizes={sizes}
-          priority={priority}
-          className="object-cover"
-          {...(f ? { placeholder: "blur" as const, blurDataURL: f.blurDataURL } : {})}
-        />
-      </div>
-    );
+  if (!p.file) {
+    return <div role="img" aria-label={alt} className={cn("tea-rows", box, corner, className)} />;
   }
-
+  const f = photoFiles[p.file];
   return (
-    <div
-      role="img"
-      aria-label={alt}
-      className={cn("tea-rows flex p-3 text-paper", labelPosition === "top" ? "items-start justify-end" : "items-end", box, className)}
-    >
-      {/* Field-note tag: legible on the texture, clearly a placeholder. */}
-      <span className="max-w-[34ch] bg-ink/80 px-2 py-1.5 font-mono text-[11px] leading-snug">
-        {p.id} · {p.ratio.replace("/", ":")} · min {p.minSize}
-        <br />
-        {p.shot[locale]}
-      </span>
+    <div className={cn("relative overflow-hidden bg-mist", box, corner, className)}>
+      <Image
+        src={p.file}
+        alt={alt}
+        fill
+        sizes={sizes}
+        priority={priority}
+        className="object-cover"
+        style={{ objectPosition: focus ?? p.focus ?? "50% 50%" }}
+        {...(f ? { placeholder: "blur" as const, blurDataURL: f.blurDataURL } : {})}
+      />
     </div>
   );
 }

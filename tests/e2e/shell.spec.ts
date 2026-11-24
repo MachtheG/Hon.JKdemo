@@ -25,14 +25,14 @@ for (const p of pages) {
     await expect(page.locator("main#main")).toBeVisible();
     await expect(page.getByRole("contentinfo")).toBeVisible();
 
-    // Countdown pill hydrates to a day count.
-    await expect(page.getByRole("link", { name: /^(\d+ days|Siku \d+) · 10\.08\.2027 (until the election|hadi uchaguzi)$/ })).toBeVisible();
+    // The header countdown hydrates to live days / hours / minutes / seconds.
+    await expect(page.getByRole("timer").first()).toHaveText(/^\d+\s?[a-z]+\s*\d{2}\s?[a-z]+\s*\d{2}\s?[a-z]+\s*\d{2}\s?[a-z]+$/);
 
     const { over, culprits } = await overflowReport(page);
     expect(over, culprits).toBeLessThanOrEqual(0);
 
     await page.screenshot({
-      path: `docs/screenshots/phase-7/${p.name}-${info.project.name}.png`,
+      path: `docs/screenshots/client-v2/${p.name}-${info.project.name}.png`,
       fullPage: true,
     });
   });
@@ -40,17 +40,24 @@ for (const p of pages) {
 
 test("home: all approved sections render in order", async ({ page }) => {
   await page.goto("/en");
-  await expect(page.getByRole("heading", { level: 1, name: "Mama Arudi Kazini." })).toBeVisible();
+  await expect(page.getByRole("heading", { level: 1, name: "Back to work for Bomet's women." })).toBeVisible();
   for (const name of [
-    "The work, on the record.",
+    "Meet Joyce Korir",
+    "A record you can check.",
     "Every shilling, by ward.",
-    "Where we led in 2017",
-    "Three promises for the next term",
-    "Join the work.",
+    "Bomet chose Joyce in 2017.",
+    "Three promises for the next term.",
+    "Stand with Joyce.",
   ]) {
     await expect(page.getByRole("heading", { level: 2, name })).toBeVisible();
   }
-  await expect(page.locator("#countdown")).toContainText(/days to go/);
+  // Live countdown: four units, and the seconds keep ticking.
+  const tiles = page.locator("#countdown [role=timer]");
+  await expect(tiles).toContainText("Days");
+  await expect(tiles).toContainText("Seconds");
+  const before = await tiles.textContent();
+  await page.waitForTimeout(1500);
+  expect(await tiles.textContent()).not.toBe(before);
   await expect(page.getByRole("link", { name: "Share these numbers on WhatsApp" })).toHaveAttribute("href", /^https:\/\/wa\.me\/\?text=/);
 });
 

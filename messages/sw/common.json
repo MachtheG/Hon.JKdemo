@@ -7,30 +7,47 @@
   "skipLink": "Ruka hadi maudhui kuu",
   "brand": {
     "name": "Joyce Korir",
-    "office": "Mgombea wa Mwakilishi wa Wanawake · Bomet"
+    "office": "Mwakilishi wa Wanawake · Bomet",
+    "home": "Joyce Korir — nyumbani"
   },
   "nav": {
     "label": "Kuu",
     "home": "Nyumbani",
-    "record": "Rekodi",
-    "projects": "Miradi",
-    "map": "Ramani",
-    "plan": "Mpango",
-    "story": "Safari Yake",
+    "story": "Safari ya Joyce",
+    "record": "Rekodi ya Joyce",
+    "plan": "Mpango wa Joyce",
     "county": "Bomet",
-    "gallery": "Picha",
-    "news": "Habari",
+    "countyPage": "Kaunti ya Bomet",
+    "map": "Ramani",
+    "projects": "Miradi",
     "getInvolved": "Jiunge",
+    "pledge": "Ahidi kura yako",
+    "volunteer": "Jitolee",
+    "news": "Habari",
+    "gallery": "Picha",
     "contact": "Wasiliana",
+    "donate": "Changia sasa",
     "privacy": "Faragha",
     "openMenu": "Fungua menyu",
     "closeMenu": "Funga menyu"
   },
   "countdown": {
-    "pill": "{days, plural, =0 {Siku ya uchaguzi} one {Siku #} other {Siku #}} · 10.08.2027",
-    "loading": "10.08.2027",
-    "srSuffix": "hadi uchaguzi",
-    "pillPast": "Uchaguzi ulifanyika 10.08.2027"
+    "bar": "Siku ya Uchaguzi · 10 Agosti 2027",
+    "label": "Muda uliobaki hadi siku ya uchaguzi, 10 Agosti 2027",
+    "short": {
+      "days": " siku",
+      "hours": " saa",
+      "minutes": " dak",
+      "seconds": " sek"
+    },
+    "units": {
+      "days": "Siku",
+      "hours": "Saa",
+      "minutes": "Dakika",
+      "seconds": "Sekunde"
+    },
+    "today": "Leo ni siku ya uchaguzi — nenda ukapige kura",
+    "after": "Uchaguzi wa 2027 umeshafanyika"
   },
   "language": {
     "label": "Lugha",
@@ -55,14 +72,15 @@
     "pending": "Picha itakuja"
   },
   "footer": {
-    "tagline": "Mgombea wa Mwakilishi wa Wanawake, Kaunti ya Bomet",
+    "tagline": "Joyce Korir — mgombea wa Mwakilishi wa Wanawake, Kaunti ya Bomet. Mama Arudi Kazini.",
     "party": "Chama: UDA [[TO CONFIRM: tiketi ya UDA 2027 (uteuzi wa wagombea wa IEBC 29 Mei – 11 Juni 2027)]]",
     "authorisedBy": "[[TO CONFIRM: mstari wa \"imeidhinishwa na\" — jina la wakala na anwani]]",
     "credits": "Wapiga picha",
     "sources": "Vyanzo",
     "privacy": "Faragha · Sheria ya Ulinzi wa Data 2019",
     "honesty": "Kila takwimu kwenye tovuti hii ina kiungo cha chanzo chake.",
-    "copyright": "© {year} Kampeni ya Joyce Korir"
+    "copyright": "© {year} Kampeni ya Joyce Korir",
+    "explore": "Gundua"
   },
   "notFound": {
     "title": "Ukurasa haukupatikana",

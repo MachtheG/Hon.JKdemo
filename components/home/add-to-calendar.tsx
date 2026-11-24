@@ -22,7 +22,7 @@ export function AddToCalendar() {
     <button
       type="button"
       onClick={download}
-      className="inline-flex min-h-13 items-center gap-2.5 justify-self-start border border-paper px-5 text-paper hover:bg-paper/10 sm:col-span-3 lg:col-span-1"
+      className="mt-2 inline-flex min-h-12 w-fit items-center gap-2.5 rounded-md border border-white/40 px-5 text-[14px] font-semibold text-white transition-colors hover:bg-white/10"
     >
       <CalendarPlus aria-hidden size={18} />
       {t("addToCalendar")}

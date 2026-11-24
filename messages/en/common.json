@@ -7,30 +7,47 @@
   "skipLink": "Skip to main content",
   "brand": {
     "name": "Joyce Korir",
-    "office": "Woman Rep candidate · Bomet"
+    "office": "for Woman Rep · Bomet",
+    "home": "Joyce Korir for Woman Rep — home"
   },
   "nav": {
     "label": "Main",
     "home": "Home",
-    "record": "The Record",
-    "projects": "Projects",
-    "map": "The Map",
-    "plan": "The Plan",
-    "story": "Story",
+    "story": "Joyce's Story",
+    "record": "Joyce's Record",
+    "plan": "Joyce's Plan",
     "county": "Bomet",
-    "gallery": "Gallery",
-    "news": "News",
+    "countyPage": "Bomet County",
+    "map": "The Map",
+    "projects": "Projects",
     "getInvolved": "Get Involved",
+    "pledge": "Pledge your vote",
+    "volunteer": "Volunteer",
+    "news": "News",
+    "gallery": "Gallery",
     "contact": "Contact",
+    "donate": "Donate now",
     "privacy": "Privacy",
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
   },
   "countdown": {
-    "pill": "{days, plural, =0 {Election day} one {# day} other {# days}} · 10.08.2027",
-    "loading": "10.08.2027",
-    "srSuffix": "until the election",
-    "pillPast": "Election held 10.08.2027"
+    "bar": "Election Day · 10 August 2027",
+    "label": "Time until election day, 10 August 2027",
+    "short": {
+      "days": "d",
+      "hours": "h",
+      "minutes": "m",
+      "seconds": "s"
+    },
+    "units": {
+      "days": "Days",
+      "hours": "Hours",
+      "minutes": "Minutes",
+      "seconds": "Seconds"
+    },
+    "today": "Election day is today — go and vote",
+    "after": "The 2027 election has taken place"
   },
   "language": {
     "label": "Language",
@@ -55,14 +72,15 @@
     "pending": "Photo to come"
   },
   "footer": {
-    "tagline": "Woman Representative candidate, Bomet County",
+    "tagline": "Joyce Korir — candidate for Woman Representative, Bomet County. Back to work for Bomet's women.",
     "party": "Party: UDA [[TO CONFIRM: 2027 UDA ticket (IEBC candidate nominations 29 May – 11 Jun 2027)]]",
     "authorisedBy": "[[TO CONFIRM: authorised-by line — agent name and address]]",
     "credits": "Photo credits",
     "sources": "Sources",
     "privacy": "Privacy · Data Protection Act 2019",
     "honesty": "Every figure on this site links to its source.",
-    "copyright": "© {year} Joyce Korir campaign"
+    "copyright": "© {year} Joyce Korir campaign",
+    "explore": "Explore"
   },
   "notFound": {
     "title": "Page not found",

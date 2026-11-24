@@ -19,7 +19,11 @@
     "pollingAgent": "Polling-day agent",
     "online": "Sharing online"
   },
-  "subjects": { "general": "General question", "event": "Invite Joyce to an event", "press": "Press enquiry" },
+  "subjects": {
+    "general": "General question",
+    "event": "Invite Joyce to an event",
+    "press": "Press enquiry"
+  },
   "consent": {
     "required": "I agree that the Joyce Korir 2027 campaign may use these details for {purpose}, as set out in the privacy notice. I can withdraw consent at any time.",
     "updates": "Also send me campaign updates by SMS or WhatsApp (optional).",
@@ -30,7 +34,13 @@
       "contact": "replying to my message"
     }
   },
-  "submit": { "pledge": "Pledge my vote", "volunteer": "Sign me up", "contact": "Send message", "sending": "Sending…" },
+  "submit": {
+    "pledge": "Pledge my vote",
+    "volunteer": "Sign me up",
+    "contact": "Send message",
+    "sending": "Sending…",
+    "hero": "Join Joyce"
+  },
   "success": {
     "pledge": "Thank you — your pledge is counted. See you at the polls on 10 August 2027.",
     "volunteer": "Thank you — a coordinator for your ward will be in touch.",
