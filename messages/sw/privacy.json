@@ -1,12 +1,14 @@
 {
-  "meta": { "title": "Taarifa ya faragha" },
+  "meta": {
+    "title": "Taarifa ya faragha"
+  },
   "kicker": "Faragha · Sheria ya Ulinzi wa Data, 2019",
   "title": "Jinsi tunavyoshughulikia taarifa zako binafsi.",
   "intro": "Taarifa hii inaeleza tunachokusanya kupitia tovuti hii, kwa nini, na haki zako chini ya Sheria ya Ulinzi wa Data ya Kenya, 2019. Ilisasishwa: 24 Novemba 2026.",
   "sections": {
     "controller": {
       "title": "1. Anayewajibika",
-      "body": "Mdhibiti wa data ni kampeni ya Joyce Korir 2027. [[TO CONFIRM: campaign legal name, postal address, email and ODPC registration number]]."
+      "body": "Mdhibiti wa data ni kampeni ya Joyce Korir 2027. [[TO CONFIRM: jina rasmi la kampeni, anwani ya posta, barua pepe na nambari ya usajili wa ODPC]]."
     },
     "collect": {
       "title": "2. Tunachokusanya",
@@ -22,11 +24,11 @@
     },
     "share": {
       "title": "5. Tunaoshiriki nao",
-      "body": "Hakuna mtu nje ya kampeni, isipokuwa watoa huduma wanaohifadhi au kutuma ujumbe kwa niaba yetu chini ya makubaliano ya maandishi. Hatuuzi wala kukodisha data yako. Baadhi ya watoa huduma huhifadhi data nje ya Kenya; wanapofanya hivyo, tunategemea kinga chini ya vifungu 48–50 vya Sheria. [[TO CONFIRM: final list of processors and their locations]]."
+      "body": "Hakuna mtu nje ya kampeni, isipokuwa watoa huduma wanaohifadhi au kutuma ujumbe kwa niaba yetu chini ya makubaliano ya maandishi. Hatuuzi wala kukodisha data yako. Baadhi ya watoa huduma huhifadhi data nje ya Kenya; wanapofanya hivyo, tunategemea kinga chini ya vifungu 48–50 vya Sheria. [[TO CONFIRM: orodha kamili ya watoa huduma wanaochakata data na mahali walipo]]."
     },
     "keep": {
       "title": "6. Muda tunaohifadhi",
-      "body": "Hadi tarehe 30 Novemba 2027, kisha tunaifuta, isipokuwa sheria ikitutaka kuihifadhi zaidi. [[TO CONFIRM: retention period]]."
+      "body": "Hadi tarehe 30 Novemba 2027, kisha tunaifuta, isipokuwa sheria ikitutaka kuihifadhi zaidi. [[TO CONFIRM: muda wa kuhifadhi data]]."
     },
     "rights": {
       "title": "7. Haki zako",

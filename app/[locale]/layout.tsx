@@ -37,7 +37,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("common.meta");
   return {
     metadataBase: new URL(SITE_URL),
-    title: { default: t("siteName"), template: `%s · ${t("siteName")}` },
+    title: { default: t("siteName"), template: `%s · ${t("titleSuffix")}` },
     description: t("description"),
     applicationName: t("siteName"),
     authors: [{ name: "Joyce Korir 2027 campaign" }],

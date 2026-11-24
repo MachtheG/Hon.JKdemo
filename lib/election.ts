@@ -11,10 +11,16 @@ export const ELECTION = {
 
 const DAY_MS = 86_400_000;
 
-/** Whole days remaining until election day (0 from the start of 10 August 2027, EAT). */
+/**
+ * Whole days until election day (EAT).
+ *   > 0  days remaining
+ *   0    election day itself (00:00–23:59 on 10 August 2027)
+ *   -1   the election has passed (from 00:00 on 11 August 2027)
+ */
 export function daysUntil(target: string, now: Date = new Date()): number {
   const diff = new Date(target).getTime() - now.getTime();
-  return diff <= 0 ? 0 : Math.ceil(diff / DAY_MS);
+  if (diff > 0) return Math.ceil(diff / DAY_MS);
+  return diff > -DAY_MS ? 0 : -1;
 }
 
 /** RFC 5545 calendar file contents for add-to-calendar. */

@@ -1,12 +1,13 @@
 {
   "meta": {
-    "siteName": "Joyce Korir · Mgombea Mwakilishi wa Wanawake, Bomet 2027",
-    "description": "Mhe. Joyce Chepkoech Korir — Mama Arudi Kazini kwa wanawake wa Bomet. Rekodi, miradi na mpango, kila takwimu na chanzo chake."
+    "siteName": "Joyce Korir · Mgombea wa Mwakilishi wa Wanawake, Bomet 2027",
+    "description": "Mhe. Joyce Chepkoech Korir — Mama Arudi Kazini kwa wanawake wa Bomet. Rekodi, miradi na mpango, kila takwimu na chanzo chake.",
+    "titleSuffix": "Joyce Korir 2027"
   },
   "skipLink": "Ruka hadi maudhui kuu",
   "brand": {
     "name": "Joyce Korir",
-    "office": "Mgombea · Mwakilishi wa Wanawake · Bomet"
+    "office": "Mgombea wa Mwakilishi wa Wanawake · Bomet"
   },
   "nav": {
     "label": "Kuu",
@@ -28,7 +29,8 @@
   "countdown": {
     "pill": "{days, plural, =0 {Siku ya uchaguzi} one {Siku #} other {Siku #}} · 10.08.2027",
     "loading": "10.08.2027",
-    "srSuffix": "hadi uchaguzi"
+    "srSuffix": "hadi uchaguzi",
+    "pillPast": "Uchaguzi ulifanyika 10.08.2027"
   },
   "language": {
     "label": "Lugha",
@@ -54,8 +56,8 @@
   },
   "footer": {
     "tagline": "Mgombea wa Mwakilishi wa Wanawake, Kaunti ya Bomet",
-    "party": "Chama: UDA [[TO CONFIRM: 2027 UDA ticket (IEBC candidate nominations 29 May – 11 Jun 2027)]]",
-    "authorisedBy": "[[TO CONFIRM: authorised-by line — agent name and address]]",
+    "party": "Chama: UDA [[TO CONFIRM: tiketi ya UDA 2027 (uteuzi wa wagombea wa IEBC 29 Mei – 11 Juni 2027)]]",
+    "authorisedBy": "[[TO CONFIRM: mstari wa \"imeidhinishwa na\" — jina la wakala na anwani]]",
     "credits": "Wapiga picha",
     "sources": "Vyanzo",
     "privacy": "Faragha · Sheria ya Ulinzi wa Data 2019",

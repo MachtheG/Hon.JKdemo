@@ -15,7 +15,7 @@ export function CountdownPill() {
       className="inline-flex min-h-11 items-center rounded-full bg-accent px-4 font-mono text-[13px] font-medium whitespace-nowrap text-ink tabular no-underline hover:bg-[#ffd633]"
     >
       {/* Visible text stays in the accessible name (WCAG 2.5.3); extra context is screen-reader only. */}
-      {days === null ? t("loading") : t("pill", { days })}
+      {days === null ? t("loading") : days < 0 ? t("pillPast") : t("pill", { days })}
       <span className="sr-only"> {t("srSuffix")}</span>
     </Link>
   );

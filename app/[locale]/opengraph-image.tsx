@@ -2,7 +2,6 @@ import { ImageResponse } from "next/og";
 import { county2017 } from "@/lib/election-results";
 import { formatNumber } from "@/lib/format";
 
-export const alt = "Joyce Korir — Mama Arudi Kazini. Woman Rep candidate, Bomet, 10 August 2027 · Mgombea Mwakilishi wa Wanawake, Bomet";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -22,7 +21,7 @@ export default async function OpengraphImage({ params }: { params: Promise<{ loc
         ))}
         <div style={{ position: "absolute", left: 64, right: 64, bottom: 64, top: 64, display: "flex", flexDirection: "column", justifyContent: "space-between", background: "rgba(20,32,26,0.92)", padding: 56 }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", color: "#F5C400", fontSize: 26, letterSpacing: 3 }}>
-            <span>{sw ? "MGOMBEA · MWAKILISHI WA WANAWAKE · BOMET" : "WOMAN REP CANDIDATE · BOMET"}</span>
+            <span>{sw ? "MGOMBEA WA MWAKILISHI WA WANAWAKE · BOMET" : "WOMAN REP CANDIDATE · BOMET"}</span>
             <span style={{ background: "#F5C400", color: "#14201A", padding: "8px 20px", borderRadius: 999 }}>10.08.2027</span>
           </div>
           <div style={{ display: "flex", flexDirection: "column", color: "#F6F1E7" }}>

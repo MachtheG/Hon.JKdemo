@@ -1,7 +1,8 @@
 {
   "meta": {
     "siteName": "Joyce Korir · Woman Rep candidate, Bomet 2027",
-    "description": "Hon. Joyce Chepkoech Korir — back to work for Bomet's women. The record, the projects and the plan, every figure sourced."
+    "description": "Hon. Joyce Chepkoech Korir — back to work for Bomet's women. The record, the projects and the plan, every figure sourced.",
+    "titleSuffix": "Joyce Korir 2027"
   },
   "skipLink": "Skip to main content",
   "brand": {
@@ -28,7 +29,8 @@
   "countdown": {
     "pill": "{days, plural, =0 {Election day} one {# day} other {# days}} · 10.08.2027",
     "loading": "10.08.2027",
-    "srSuffix": "until the election"
+    "srSuffix": "until the election",
+    "pillPast": "Election held 10.08.2027"
   },
   "language": {
     "label": "Language",

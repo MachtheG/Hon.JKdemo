@@ -11,6 +11,9 @@ export function CountdownDays() {
   if (days === 0) {
     return <span className="font-display text-3xl">{t("today")}</span>;
   }
+  if (days !== null && days < 0) {
+    return <span className="font-display text-3xl">{t("past")}</span>;
+  }
   return (
     <>
       <span className="font-mono text-[52px] leading-none tabular" aria-live="off">
