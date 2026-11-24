@@ -1,14 +1,14 @@
 {
   "meta": {
-    "siteName": "Joyce Korir · Mgombea wa Mwakilishi wa Wanawake, Bomet 2027",
-    "description": "Mhe. Joyce Chepkoech Korir — Mama Arudi Kazini kwa wanawake wa Bomet. Rekodi, miradi na mpango, kila takwimu na chanzo chake.",
+    "siteName": "Joyce Korir · Mgombea wa Ubunge, Bomet Central 2027",
+    "description": "Mhe. Joyce Chepkoech Korir — Mama Arudi Kazini, Bomet Central. Rekodi yake, miradi yake na mpango wake, kila takwimu na chanzo chake.",
     "titleSuffix": "Joyce Korir 2027"
   },
   "skipLink": "Ruka hadi maudhui kuu",
   "brand": {
     "name": "Joyce Korir",
-    "office": "Mwakilishi wa Wanawake · Bomet",
-    "home": "Joyce Korir — nyumbani"
+    "office": "Mgombea wa Ubunge · Bomet Central",
+    "home": "Joyce Korir kwa Ubunge — nyumbani"
   },
   "nav": {
     "label": "Kuu",
@@ -16,8 +16,8 @@
     "story": "Safari ya Joyce",
     "record": "Rekodi ya Joyce",
     "plan": "Mpango wa Joyce",
-    "county": "Bomet",
-    "countyPage": "Kaunti ya Bomet",
+    "county": "Bomet Central",
+    "countyPage": "Bomet Central",
     "map": "Ramani",
     "projects": "Miradi",
     "getInvolved": "Jiunge",
@@ -29,7 +29,8 @@
     "donate": "Changia sasa",
     "privacy": "Faragha",
     "openMenu": "Fungua menyu",
-    "closeMenu": "Funga menyu"
+    "closeMenu": "Funga menyu",
+    "countyAll": "Kaunti ya Bomet"
   },
   "countdown": {
     "bar": "Siku ya Uchaguzi · 10 Agosti 2027",
@@ -72,7 +73,7 @@
     "pending": "Picha itakuja"
   },
   "footer": {
-    "tagline": "Joyce Korir — mgombea wa Mwakilishi wa Wanawake, Kaunti ya Bomet. Mama Arudi Kazini.",
+    "tagline": "Joyce Korir — mgombea wa Ubunge, Bomet Central. Mama Arudi Kazini.",
     "party": "Chama: UDA [[TO CONFIRM: tiketi ya UDA 2027 (uteuzi wa wagombea wa IEBC 29 Mei – 11 Juni 2027)]]",
     "authorisedBy": "[[TO CONFIRM: mstari wa \"imeidhinishwa na\" — jina la wakala na anwani]]",
     "credits": "Wapiga picha",

@@ -4,35 +4,35 @@
   },
   "banner": "Rasimu kwa ukaguzi wa kampeni — ahadi hizi zinasubiri idhini",
   "kicker": "Mpango wa Joyce · 2027–2032",
-  "title": "Ahadi tatu. Kila moja inaanzia kazi iliyokwisha fanyika.",
+  "title": "Ahadi tatu kwa Bomet Central. Kila moja inaanzia kazi iliyokwisha fanyika.",
   "doLabel": "Atakachofanya",
   "recordLabel": "Kutoka kwenye rekodi",
   "cta": "Ahadi ipi ni muhimu zaidi kwako?",
   "ctaButton": "Toa ahadi na utuambie",
   "promises": {
     "one": {
-      "title": "NGAAF wazi",
-      "audience": "Kwa vikundi vya wanawake na wafanyabiashara",
-      "do1": "Kuchapisha kila mgao wa NGAAF kwa wadi na mwaka wa fedha",
-      "do2": "Vipindi wazi na vilivyopangwa vya maombi kwa vikundi vya wanawake",
-      "do3": "Mikutano ya kutoa ripoti kila robo mwaka katika maeneo bunge yote matano",
-      "record": "Aliibua suala la vipimo vya chai kwa wakulima wadogo katika Seneti (25 Mei 2023). [[TO CONFIRM: chanzo rasmi cha jukumu la Mwakilishi wa Wanawake katika NGAAF na migao yake Bomet, 2017–2022]]"
+      "title": "NG-CDF wazi",
+      "audience": "Kwa familia, wanafunzi na wafanyabiashara katika wadi zote tano",
+      "do1": "Kuchapisha kila basari na mradi wa NG-CDF wa Bomet Central, kwa wadi na mwaka wa fedha",
+      "do2": "Vipindi wazi vya basari vilivyotangazwa, na vigezo vilivyo wazi",
+      "do3": "Mikutano ya kutoa ripoti kila robo mwaka katika Silibwet Township, Singorwet, Chesoen, Mutarakwa na Ndaraweta",
+      "record": "Amehudumia Bomet katika Bunge la Kitaifa kama Mwakilishi wa Wanawake (2017–2022), na tangu 2022 kama Makamu Mwenyekiti wa Tume ya Huduma za Bunge."
     },
     "two": {
-      "title": "Wasichana salama, nyumba salama",
-      "audience": "Kwa wanawake, wasichana na wazee",
-      "do1": "Kushinikiza madawati ya kushughulikia ukatili wa kijinsia yanayofikika kutoka kila wadi",
-      "do2": "Kushirikiana na shule, machifu na wazee katika kuripoti unajisi",
-      "do3": "Kufuatilia kesi hadi mahakamani na kutangaza takwimu hadharani",
-      "record": "Aliibua ukatili wa kijinsia na wa nyumbani Bomet katika Seneti (8 Oktoba 2026). [[TO CONFIRM: ripoti ya Shirika la Habari la Kenya kuhusu unajisi na mimba za utotoni — kiungo asili hakipatikani tena (404)]]"
+      "title": "Shule, walimu na maktaba",
+      "audience": "Kwa wanafunzi, wazazi na walimu",
+      "do1": "Basari zinazowaweka watoto, hasa wasichana, katika shule ya sekondari",
+      "do2": "Kutetea masharti bora kwa walimu wa ECDE na wa shule za msingi",
+      "do3": "Kufuatilia sheria ya Huduma za Maktaba za Kaunti hadi maktaba ya umma ifike Bomet Central",
+      "record": "Alidhamini Mswada wa Huduma za Maktaba za Kaunti (ulipitishwa Seneti, 25 Februari 2026). Aliibua ustawi wa walimu wa ECDE wa Bomet katika Seneti (22 Februari 2024)."
     },
     "three": {
-      "title": "Walimu na maktaba",
-      "audience": "Kwa walimu, wanafunzi na wazazi",
-      "do1": "Kutetea ustawi na masharti ya kazi ya walimu wa ECDE",
-      "do2": "Kufuatilia sheria ya Huduma za Maktaba za Kaunti hadi maktaba zifike Bomet",
-      "do3": "Kuunga mkono basari zinazowaweka wasichana shuleni",
-      "record": "Alidhamini Mswada wa Huduma za Maktaba za Kaunti (ulipitishwa Seneti, 25 Februari 2026). Aliibua ustawi wa walimu wa ECDE Bomet (22 Februari 2024)."
+      "title": "Bei ya haki kwa wakulima",
+      "audience": "Kwa wakulima wa chai na maziwa",
+      "do1": "Kushinikiza mizani ya haki inayosimamiwa katika vituo vya kununua chai",
+      "do2": "Kuunga mkono vipozaji vya maziwa na masoko bora kwa wafugaji",
+      "do3": "Kufikisha masuala ya wakulima wadogo moja kwa moja katika Bunge la Kitaifa",
+      "record": "Aliibua kutofuatwa kwa vipimo na mizani katika uuzaji wa chai, kunakowaathiri wakulima wadogo, katika Seneti (25 Mei 2023)."
     }
   }
 }

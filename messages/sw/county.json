@@ -4,7 +4,7 @@
   },
   "kicker": "Kaunti ya Bomet",
   "title": "Maeneo bunge matano. Wadi ishirini na tano. Kaunti moja.",
-  "intro": "Akiwa Mwakilishi wa Wanawake kuanzia 2017 hadi 2022, Joyce aliwakilisha Kaunti yote ya Bomet katika Bunge la Kitaifa. Hii ndiyo kaunti anayoomba kuihudumia tena, kwa takwimu rasmi.",
+  "intro": "Joyce aliihudumia Kaunti yote ya Bomet katika Bunge la Kitaifa kama Mwakilishi wa Wanawake kuanzia 2017 hadi 2022. Mwaka 2027 anagombea Ubunge wa Bomet Central: Silibwet Township, Singorwet, Chesoen, Mutarakwa na Ndaraweta.",
   "stats": {
     "title": "Bomet kwa takwimu",
     "population": "watu (Sensa 2019)",
@@ -22,9 +22,9 @@
     "open": "Fungua"
   },
   "ngaaf": {
-    "title": "Kazi ya Mwakilishi wa Wanawake kwa Bomet",
-    "body": "Mwakilishi wa Wanawake anakaa Bunge la Kitaifa kwa niaba ya kaunti nzima na husimamia Hazina ya Serikali ya Kitaifa ya Usawazishaji (NGAAF) Bomet — ruzuku kwa vikundi vya wanawake, vijana na watu wenye ulemavu, na msaada kwa kaya zilizo hatarini.",
-    "link": "Tazama miradi ya NGAAF"
+    "title": "Kazi ya Mbunge kwa Bomet Central",
+    "body": "Mbunge anawakilisha eneo bunge katika Bunge la Kitaifa, akitunga sheria, kuidhinisha bajeti ya kitaifa na kuisimamia serikali, na hushirikiana na Hazina ya Maendeleo ya Maeneo Bunge (NG-CDF) katika basari, shule na miradi ya eneo.",
+    "link": "Tazama mpango wake kwa Bomet Central"
   },
   "page": {
     "kicker": "Eneo bunge la {name} · Kaunti ya Bomet",

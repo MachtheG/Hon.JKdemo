@@ -26,7 +26,7 @@ export default function CountyPage() {
         <aside className="flex flex-col gap-3 bg-ink p-6 text-paper sm:p-8">
           <h2 className="m-0 font-display text-2xl font-semibold">{t("ngaaf.title")}</h2>
           <p className="m-0 max-w-3xl text-mist">{t("ngaaf.body")}</p>
-          <Link href="/projects" className="inline-flex min-h-11 items-center self-start font-semibold text-paper">
+          <Link href="/plan" className="inline-flex min-h-11 items-center self-start font-semibold text-paper">
             {t("ngaaf.link")} →
           </Link>
         </aside>

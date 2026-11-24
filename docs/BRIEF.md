@@ -15,6 +15,11 @@ Date: 22 November 2026
 | 2022 | Sought UDA ticket for Bomet Central MP; not nominated. No IEBC general-election result in 2022. | Capital FM; Nation |
 | 2027 declaration | None found publicly — campaign confirms Woman Rep | Interview |
 
+## Change of race (24 November 2026)
+- **Office corrected by the campaign: Member of Parliament, Bomet Central** (wards: Silibwet Township, Singorwet, Chesoen, Mutarakwa, Ndaraweta). Supersedes the Woman Rep entries below.
+- Her record as Woman Rep (2017–2022) stays as history. Her only general-election result is still the 2017 county-wide Woman Rep race; Bomet Central figures from it need Forms 37A/37B.
+- Plan rewritten for an MP: Open NG-CDF · Schools, teachers & libraries · A fair price for farmers (DRAFT until signed off).
+
 ## Round 1 — The race
 - **Office:** Woman Representative, Bomet County (site covers county → 5 constituencies → wards; NGAAF projects page).
 - **Status:** Experienced challenger, framed as a returning leader (ward → assembly → Woman Rep → Senate). She does not hold the Woman Rep seat; never imply incumbency for it.

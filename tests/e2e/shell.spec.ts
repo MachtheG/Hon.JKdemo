@@ -40,13 +40,13 @@ for (const p of pages) {
 
 test("home: all approved sections render in order", async ({ page }) => {
   await page.goto("/en");
-  await expect(page.getByRole("heading", { level: 1, name: "Back to work for Bomet's women." })).toBeVisible();
+  await expect(page.getByRole("heading", { level: 1, name: "Back to work for Bomet Central." })).toBeVisible();
   for (const name of [
     "Meet Joyce Korir",
     "A record you can check.",
     "Every shilling, by ward.",
     "Bomet chose Joyce in 2017.",
-    "Three promises for the next term.",
+    "Three promises for Bomet Central.",
     "Stand with Joyce.",
   ]) {
     await expect(page.getByRole("heading", { level: 2, name })).toBeVisible();

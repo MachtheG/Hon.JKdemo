@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Mama Arudi Kazini — Back to work for Bomet's women"
+    "title": "Mama Arudi Kazini — Back to work for Bomet Central"
   },
   "hero": {
-    "kicker": "Woman Representative · Bomet County",
-    "title": "Back to work for Bomet's women.",
-    "sub": "Mama Arudi Kazini. From Singorwet ward to the Senate, Joyce Korir has served Bomet at every level. Add your name and stand with her on 10 August 2027."
+    "kicker": "Member of Parliament · Bomet Central",
+    "title": "Back to work for Bomet Central.",
+    "sub": "Mama Arudi Kazini. Joyce Korir began as councillor for Singorwet ward, here in Bomet Central, and has served Bomet at every level since. Add your name and stand with her on 10 August 2027."
   },
   "countdown": {
     "kicker": "Election day",
@@ -14,7 +14,7 @@
     "today": "Election day is today",
     "campaignOpens": "campaign period opens",
     "addToCalendar": "Add to calendar",
-    "icsSummary": "Kenya General Election — vote for Joyce Korir, Woman Rep Bomet",
+    "icsSummary": "Kenya General Election — vote for Joyce Korir, MP Bomet Central",
     "icsDescription": "Bring your ID card.",
     "past": "The 2027 election has taken place",
     "lead": "Every Bomet voter decides. Mark the date and bring your ID card."
@@ -44,7 +44,7 @@
     "contributions": "Senate floor contributions",
     "bill": "bill sponsored: County Library Services",
     "whatsapp": "Share these numbers on WhatsApp",
-    "whatsappText": "Joyce Korir won 205,964 votes (78.5%) as Bomet Woman Rep in 2017 (IEBC). Back to work for Bomet's women: {url}"
+    "whatsappText": "Joyce Korir won 205,964 votes (78.5%) across Bomet County as Woman Rep in 2017 (IEBC). Back to work for Bomet Central: {url}"
   },
   "projects": {
     "kicker": "Projects · NGAAF",
@@ -66,24 +66,24 @@
   "plan": {
     "kicker": "Joyce's Plan",
     "draft": "Draft for campaign review",
-    "title": "Three promises for the next term.",
+    "title": "Three promises for Bomet Central.",
     "one": {
-      "title": "Open NGAAF",
-      "body": "Every allocation published by ward, every group listed."
+      "title": "Open NG-CDF",
+      "body": "Every bursary and project in Bomet Central published, ward by ward."
     },
     "two": {
-      "title": "Safe girls, safe homes",
-      "body": "A county-wide response to GBV and defilement."
+      "title": "Schools, teachers & libraries",
+      "body": "Bursaries that keep children in school, better terms for teachers, and a public library for Bomet Central."
     },
     "three": {
-      "title": "Teachers & libraries",
-      "body": "ECDE teacher welfare and county libraries in Bomet."
+      "title": "A fair price for farmers",
+      "body": "Honest weights for tea, better markets for milk, and a voice in Parliament for smallholders."
     },
     "cta": "Read the full plan"
   },
   "join": {
     "title": "Stand with Joyce.",
-    "body": "Pledge your vote, volunteer in your ward, or support the campaign.",
+    "body": "Pledge your vote, volunteer in your ward, or support the campaign in Bomet Central.",
     "pledge": "Pledge your vote",
     "volunteer": "Volunteer",
     "donate": "Donate"

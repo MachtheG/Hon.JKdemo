@@ -1,14 +1,14 @@
 {
   "meta": {
-    "siteName": "Joyce Korir · Woman Rep candidate, Bomet 2027",
-    "description": "Hon. Joyce Chepkoech Korir — back to work for Bomet's women. The record, the projects and the plan, every figure sourced.",
+    "siteName": "Joyce Korir · MP candidate, Bomet Central 2027",
+    "description": "Hon. Joyce Chepkoech Korir — back to work for Bomet Central. Her record, her projects and her plan, every figure sourced.",
     "titleSuffix": "Joyce Korir 2027"
   },
   "skipLink": "Skip to main content",
   "brand": {
     "name": "Joyce Korir",
-    "office": "for Woman Rep · Bomet",
-    "home": "Joyce Korir for Woman Rep — home"
+    "office": "for MP · Bomet Central",
+    "home": "Joyce Korir for MP — home"
   },
   "nav": {
     "label": "Main",
@@ -16,8 +16,8 @@
     "story": "Joyce's Story",
     "record": "Joyce's Record",
     "plan": "Joyce's Plan",
-    "county": "Bomet",
-    "countyPage": "Bomet County",
+    "county": "Bomet Central",
+    "countyPage": "Bomet Central",
     "map": "The Map",
     "projects": "Projects",
     "getInvolved": "Get Involved",
@@ -29,7 +29,8 @@
     "donate": "Donate now",
     "privacy": "Privacy",
     "openMenu": "Open menu",
-    "closeMenu": "Close menu"
+    "closeMenu": "Close menu",
+    "countyAll": "Bomet County"
   },
   "countdown": {
     "bar": "Election Day · 10 August 2027",
@@ -72,7 +73,7 @@
     "pending": "Photo to come"
   },
   "footer": {
-    "tagline": "Joyce Korir — candidate for Woman Representative, Bomet County. Back to work for Bomet's women.",
+    "tagline": "Joyce Korir — candidate for Member of Parliament, Bomet Central. Back to work for Bomet Central.",
     "party": "Party: UDA [[TO CONFIRM: 2027 UDA ticket (IEBC candidate nominations 29 May – 11 Jun 2027)]]",
     "authorisedBy": "[[TO CONFIRM: authorised-by line — agent name and address]]",
     "credits": "Photo credits",

@@ -21,13 +21,13 @@ export default async function OpengraphImage({ params }: { params: Promise<{ loc
         ))}
         <div style={{ position: "absolute", left: 64, right: 64, bottom: 64, top: 64, display: "flex", flexDirection: "column", justifyContent: "space-between", background: "rgba(20,32,26,0.92)", padding: 56 }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", color: "#F5C400", fontSize: 26, letterSpacing: 3 }}>
-            <span>{sw ? "MGOMBEA WA MWAKILISHI WA WANAWAKE · BOMET" : "WOMAN REP CANDIDATE · BOMET"}</span>
+            <span>{sw ? "MGOMBEA WA UBUNGE · BOMET CENTRAL" : "MP CANDIDATE · BOMET CENTRAL"}</span>
             <span style={{ background: "#F5C400", color: "#14201A", padding: "8px 20px", borderRadius: 999 }}>10.08.2027</span>
           </div>
           <div style={{ display: "flex", flexDirection: "column", color: "#F6F1E7" }}>
             <span style={{ fontSize: 104, fontWeight: 700, lineHeight: 1 }}>Mama Arudi Kazini.</span>
             <span style={{ fontSize: 36, color: "#D9DED8", marginTop: 18 }}>
-              {sw ? "Joyce Korir — Arudi kazini kwa wanawake wa Bomet" : "Joyce Korir — Back to work for Bomet's women"}
+              {sw ? "Joyce Korir — Mama Arudi Kazini, Bomet Central" : "Joyce Korir — Back to work for Bomet Central"}
             </span>
           </div>
           <span style={{ fontSize: 26, color: "#D9DED8" }}>

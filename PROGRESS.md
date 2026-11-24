@@ -51,6 +51,11 @@
 ### Phase 4 quality gate (2026-11-24)
 - **Checks:** lint ✅ · typecheck ✅ · unit 10/10 ✅ · build ✅ · e2e 18/18 ✅.
 
+## Race corrected to MP, Bomet Central (2026-11-24)
+- All titles, hero, share card, calendar invite, footer, nav (Bomet Central dropdown), county and donate copy switched to MP, Bomet Central (EN/SW). Past Woman Rep record kept as history.
+- Plan rewritten for an MP; still DRAFT until the campaign signs off.
+- Follow-up offered: one page per Bomet Central ward (brief's MP structure) and NG-CDF Bomet Central allocations research.
+
 ## Client redesign (2026-11-24)
 - Rebuilt to the campaign's reference layout: white base, UDA green + gold, Outfit/Inter type, Senate seal + wordmark, pill navigation with dropdowns, gold Donate button, hero with photo + green scrim + sign-up form, live countdown (days/hours/minutes/seconds), real photographs in every slot (no placeholders).
 - **Public vs review build:** the public build omits every unverified item (no visible [[TO CONFIRM]] markers, and claims that depend on them are left out). Set  for an internal review build that shows them. The register below is unchanged.

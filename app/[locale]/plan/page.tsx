@@ -20,7 +20,7 @@ export default function PlanPage() {
       </p>
       <PageHeader kicker={t("kicker")} title={t("title")} photo="PLAN-01" />
       <Container className="flex flex-col">
-        <PromiseBlock k="one" n={1} sources={["mzalendo-senate-13th"]} />
+        <PromiseBlock k="one" n={1} sources={["parl-na-profile-2017", "parl-psc-vice-chair"]} />
         <PromiseBlock k="two" n={2} sources={["mzalendo-senate-13th"]} />
         <PromiseBlock k="three" n={3} sources={["mzalendo-bill-county-library", "mzalendo-senate-13th"]} />
       </Container>

@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Mama Arudi Kazini — Kazi kwa wanawake wa Bomet"
+    "title": "Mama Arudi Kazini — Bomet Central"
   },
   "hero": {
-    "kicker": "Mwakilishi wa Wanawake · Kaunti ya Bomet",
+    "kicker": "Mgombea wa Ubunge · Bomet Central",
     "title": "Mama Arudi Kazini.",
-    "sub": "Kutoka wadi ya Singorwet hadi Seneti, Joyce Korir amehudumia Bomet katika kila ngazi. Weka jina lako na usimame naye tarehe 10 Agosti 2027."
+    "sub": "Joyce Korir alianza kama diwani wa wadi ya Singorwet, hapa Bomet Central, na amehudumia Bomet katika kila ngazi tangu hapo. Weka jina lako na usimame naye tarehe 10 Agosti 2027."
   },
   "countdown": {
     "kicker": "Siku ya uchaguzi",
@@ -14,7 +14,7 @@
     "today": "Leo ni siku ya uchaguzi",
     "campaignOpens": "kipindi cha kampeni kinaanza",
     "addToCalendar": "Weka kwenye kalenda",
-    "icsSummary": "Uchaguzi Mkuu wa Kenya — mpigie kura Joyce Korir, Mwakilishi wa Wanawake Bomet",
+    "icsSummary": "Uchaguzi Mkuu wa Kenya — mpigie kura Joyce Korir, Mbunge wa Bomet Central",
     "icsDescription": "Beba kitambulisho chako.",
     "past": "Uchaguzi wa 2027 umeshafanyika",
     "lead": "Kila mpiga kura wa Bomet anaamua. Kumbuka tarehe na ubebe kitambulisho chako."
@@ -44,7 +44,7 @@
     "contributions": "michango katika Seneti",
     "bill": "mswada alioudhamini: Huduma za Maktaba za Kaunti",
     "whatsapp": "Shiriki takwimu hizi kwenye WhatsApp",
-    "whatsappText": "Joyce Korir alipata kura 205,964 (78.5%) kama Mwakilishi wa Wanawake Bomet mwaka 2017 (IEBC). Mama Arudi Kazini: {url}"
+    "whatsappText": "Joyce Korir alipata kura 205,964 (78.5%) katika Kaunti ya Bomet kama Mwakilishi wa Wanawake mwaka 2017 (IEBC). Mama Arudi Kazini, Bomet Central: {url}"
   },
   "projects": {
     "kicker": "Miradi · NGAAF",
@@ -66,24 +66,24 @@
   "plan": {
     "kicker": "Mpango wa Joyce",
     "draft": "Rasimu kwa ukaguzi wa kampeni",
-    "title": "Ahadi tatu kwa muhula ujao.",
+    "title": "Ahadi tatu kwa Bomet Central.",
     "one": {
-      "title": "NGAAF wazi",
-      "body": "Kila mgao uchapishwe kwa wadi, kila kikundi kiorodheshwe."
+      "title": "NG-CDF wazi",
+      "body": "Kila basari na kila mradi wa Bomet Central uchapishwe, wadi kwa wadi."
     },
     "two": {
-      "title": "Wasichana salama, nyumba salama",
-      "body": "Mpango wa kaunti nzima dhidi ya ukatili wa kijinsia na unajisi."
+      "title": "Shule, walimu na maktaba",
+      "body": "Basari zinazowaweka watoto shuleni, masharti bora kwa walimu, na maktaba ya umma kwa Bomet Central."
     },
     "three": {
-      "title": "Walimu na maktaba",
-      "body": "Ustawi wa walimu wa ECDE na maktaba za kaunti Bomet."
+      "title": "Bei ya haki kwa wakulima",
+      "body": "Mizani ya haki kwa chai, masoko bora kwa maziwa, na sauti Bungeni kwa wakulima wadogo."
     },
     "cta": "Soma mpango kamili"
   },
   "join": {
     "title": "Simama na Joyce.",
-    "body": "Ahidi kura yako, jitolee katika wadi yako, au saidia kampeni.",
+    "body": "Ahidi kura yako, jitolee katika wadi yako, au saidia kampeni Bomet Central.",
     "pledge": "Ahidi kura yako",
     "volunteer": "Jitolee",
     "donate": "Changia"
