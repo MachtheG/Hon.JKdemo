@@ -1,0 +1,21 @@
+{
+  "meta": { "title": "Jiunge" },
+  "kicker": "Jiunge",
+  "title": "Jiunge na kazi.",
+  "intro": "Njia tatu za kumsaidia Joyce kurudi kazini kwa wanawake wa Bomet.",
+  "pledge": {
+    "title": "Ahidi kura yako",
+    "body": "Tuambie utampigia Joyce kura tarehe 10 Agosti 2027. Tunahesabu ahadi kwa wadi ili tujue tufanye kampeni wapi."
+  },
+  "volunteer": {
+    "title": "Jitolee katika wadi yako",
+    "body": "Saidia kutembelea nyumba kwa nyumba, mikutano ya vikundi vya wanawake, au kazi ya wakala siku ya kura."
+  },
+  "whatsapp": {
+    "title": "Fuatilia kwenye WhatsApp",
+    "body": "Habari za kampeni, matukio na rekodi — moja kwa moja kwenye simu yako.",
+    "pending": "[[TO CONFIRM: official WhatsApp channel link]]"
+  },
+  "soon": "Usajili unafunguliwa hivi karibuni.",
+  "privacy": "Tunatumia taarifa zako kwa madhumuni unayochagua tu, kwa idhini yako. Soma taarifa yetu ya faragha."
+}

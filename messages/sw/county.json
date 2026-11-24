@@ -1,0 +1,39 @@
+{
+  "meta": { "title": "Kaunti ya Bomet" },
+  "kicker": "Kaunti ya Bomet",
+  "title": "Maeneo bunge matano. Wadi ishirini na tano. Kaunti moja.",
+  "intro": "Akiwa Mwakilishi wa Wanawake, Joyce anawakilisha Kaunti yote ya Bomet katika Bunge la Kitaifa. Hii ndiyo kaunti anayoihudumia, kwa takwimu rasmi.",
+  "stats": {
+    "title": "Bomet kwa takwimu",
+    "population": "watu (Sensa 2019)",
+    "women": "wanawake na wasichana (Sensa 2019)",
+    "households": "kaya (Sensa 2019)",
+    "voters2022": "wapiga kura waliosajiliwa (2022)",
+    "constituencies": "maeneo bunge",
+    "wards": "wadi za bunge la kaunti"
+  },
+  "constituencies": {
+    "title": "Maeneo bunge",
+    "population": "watu {n}",
+    "voters": "wapiga kura {n} (2022)",
+    "wards": "wadi {n}",
+    "open": "Fungua"
+  },
+  "ngaaf": {
+    "title": "Kazi ya Mwakilishi wa Wanawake kwa Bomet",
+    "body": "Mwakilishi wa Wanawake anakaa Bunge la Kitaifa kwa niaba ya kaunti nzima na husimamia Hazina ya Serikali ya Kitaifa ya Usawazishaji (NGAAF) Bomet — ruzuku kwa vikundi vya wanawake, vijana na watu wenye ulemavu, na msaada kwa kaya zilizo hatarini.",
+    "link": "Tazama miradi ya NGAAF"
+  },
+  "page": {
+    "kicker": "Eneo bunge la {name} · Kaunti ya Bomet",
+    "title": "{name}",
+    "wardsTitle": "Wadi za {name}",
+    "resultTitle": "Matokeo ya 2017 katika {name}",
+    "resultBody": "IEBC haijachapisha matokeo ya Mwakilishi wa Wanawake chini ya ngazi ya kaunti. Tutaongeza takwimu za {name} kutoka Fomu 37B baada ya kuthibitishwa — hatukadirii. Kwa kaunti nzima, Joyce alipata {share}% ya kura halali.",
+    "projectsTitle": "Miradi ya NGAAF katika {name}",
+    "projectsNone": "Bado hakuna miradi yenye chanzo katika {name}.",
+    "projectsLink": "Chuja miradi ya {name}",
+    "back": "Bomet yote",
+    "map": "Ramani ya {name} ndani ya Kaunti ya Bomet"
+  }
+}

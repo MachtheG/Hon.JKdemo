@@ -1,0 +1,36 @@
+{
+  "meta": { "title": "Mpango (rasimu)" },
+  "banner": "RASIMU — imetokana na rekodi, inasubiri idhini ya kampeni",
+  "kicker": "Mpango · 2027–2032",
+  "title": "Ahadi tatu. Kila moja inaanzia kazi iliyokwisha fanyika.",
+  "doLabel": "Atakachofanya",
+  "recordLabel": "Kutoka kwenye rekodi",
+  "cta": "Ahadi ipi ni muhimu zaidi kwako?",
+  "ctaButton": "Toa ahadi na utuambie",
+  "promises": {
+    "one": {
+      "title": "NGAAF wazi",
+      "audience": "Kwa vikundi vya wanawake na wafanyabiashara",
+      "do1": "Kuchapisha kila mgao wa NGAAF kwa wadi na mwaka wa fedha",
+      "do2": "Vipindi wazi na vilivyopangwa vya maombi kwa vikundi vya wanawake",
+      "do3": "Mikutano ya kutoa ripoti kila robo mwaka katika maeneo bunge yote matano",
+      "record": "Alisimamia NGAAF Bomet akiwa Mwakilishi wa Wanawake, 2017–2022. Aliibua suala la vipimo vya chai kwa wakulima wadogo Seneti (25 Mei 2023)."
+    },
+    "two": {
+      "title": "Wasichana salama, nyumba salama",
+      "audience": "Kwa wanawake, wasichana na wazee",
+      "do1": "Kushinikiza madawati ya kushughulikia ukatili wa kijinsia yanayofikika kutoka kila wadi",
+      "do2": "Kushirikiana na shule, machifu na wazee katika kuripoti unajisi",
+      "do3": "Kufuatilia kesi hadi mahakamani na kutangaza takwimu hadharani",
+      "record": "Alizitaka taasisi kuchukua hatua kuhusu unajisi na mimba za utotoni akiwa Mwakilishi wa Wanawake. Aliibua ukatili wa kijinsia Bomet Seneti (8 Oktoba 2026)."
+    },
+    "three": {
+      "title": "Walimu na maktaba",
+      "audience": "Kwa walimu, wanafunzi na wazazi",
+      "do1": "Kutetea ustawi na masharti ya kazi ya walimu wa ECDE",
+      "do2": "Kufuatilia sheria ya Huduma za Maktaba za Kaunti hadi maktaba zifike Bomet",
+      "do3": "Kuunga mkono basari zinazowaweka wasichana shuleni",
+      "record": "Alidhamini Mswada wa Huduma za Maktaba za Kaunti (ulipitishwa Seneti, 25 Februari 2026). Aliibua ustawi wa walimu wa ECDE Bomet (22 Februari 2024)."
+    }
+  }
+}

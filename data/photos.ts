@@ -104,7 +104,36 @@ export const photos = [
     approvedForPress: false,
     featured: false,
   },
+  ...(
+    [
+      ["RECORD-01", "16/9", "2400×1350", "parliament", "Joyce in the Senate chamber during debate (Parliament photo, with permission)", "Joyce katika ukumbi wa Seneti wakati wa mjadala (picha ya Bunge, kwa idhini)"],
+      ["PROJECTS-01", "16/9", "2400×1350", "projects", "Joyce visiting an NGAAF-funded women's group project", "Joyce akitembelea mradi wa kikundi cha wanawake uliofadhiliwa na NGAAF"],
+      ["MAP-01", "3/2", "1800×1200", "events", "Joyce greeting voters at a polling-day event (2017 or 2022 archive)", "Joyce akiwasalimu wapiga kura (picha za kumbukumbu 2017 au 2022)"],
+      ["PLAN-01", "3/2", "1800×1200", "community", "Joyce listening at a women's group meeting", "Joyce akisikiliza katika mkutano wa kikundi cha wanawake"],
+      ["STORY-01", "4/5", "1600×2000", "portrait", "Portrait of Joyce, outdoors at a tea farm, three-quarter view", "Picha ya Joyce, nje katika shamba la chai"],
+      ["STORY-02", "3/2", "1800×1200", "events", "Archive: Joyce as Mayor of Bomet Municipality (2011–2013), if available", "Kumbukumbu: Joyce akiwa Meya wa Manispaa ya Bomet (2011–2013), ikipatikana"],
+      ["COUNTY-01", "16/9", "2400×1350", "community", "Joyce with residents against Bomet's tea hills", "Joyce na wakazi mbele ya milima ya chai ya Bomet"],
+      ["CONST-SOTIK", "3/2", "1800×1200", "community", "Joyce in Sotik constituency — market or school visit", "Joyce katika eneo bunge la Sotik — soko au shule"],
+      ["CONST-CHEPALUNGU", "3/2", "1800×1200", "community", "Joyce in Chepalungu constituency — community meeting", "Joyce katika eneo bunge la Chepalungu — mkutano wa jamii"],
+      ["CONST-BOMET-EAST", "3/2", "1800×1200", "community", "Joyce in Bomet East constituency — women's group", "Joyce katika eneo bunge la Bomet Mashariki — kikundi cha wanawake"],
+      ["CONST-BOMET-CENTRAL", "3/2", "1800×1200", "community", "Joyce in Bomet Central — Singorwet or Silibwet", "Joyce katika Bomet ya Kati — Singorwet au Silibwet"],
+      ["CONST-KONOIN", "3/2", "1800×1200", "community", "Joyce in Konoin constituency — tea farmers", "Joyce katika eneo bunge la Konoin — wakulima wa chai"],
+      ["INVOLVED-01", "3/2", "1800×1200", "events", "Joyce with campaign volunteers", "Joyce na wanaojitolea katika kampeni"],
+      ["CONTACT-01", "3/2", "1800×1200", "portrait", "Joyce at her constituency office or a public baraza", "Joyce katika ofisi yake au baraza la umma"],
+    ] as const
+  ).map(([id, ratio, minSize, category, en, sw]) => ({
+    id,
+    file: null,
+    ratio,
+    minSize,
+    shot: { en, sw },
+    category,
+    approvedForPress: false,
+    featured: false,
+  })),
 ] as const satisfies readonly Photo[];
 
 export type PhotoId = (typeof photos)[number]["id"];
+/** The manifest widened to the Photo interface (optional fields visible). */
+export const photoList: readonly (Photo & { id: PhotoId })[] = photos;
 export const photoById = Object.fromEntries(photos.map((p) => [p.id, p])) as Record<PhotoId, Photo>;

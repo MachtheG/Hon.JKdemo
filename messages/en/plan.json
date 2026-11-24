@@ -1,0 +1,36 @@
+{
+  "meta": { "title": "The Plan (draft)" },
+  "banner": "DRAFT — drafted from the record, awaiting campaign sign-off",
+  "kicker": "The plan · 2027–2032",
+  "title": "Three promises. Each starts from work already done.",
+  "doLabel": "What she will do",
+  "recordLabel": "From the record",
+  "cta": "Which promise matters most to you?",
+  "ctaButton": "Pledge and tell us",
+  "promises": {
+    "one": {
+      "title": "Open NGAAF",
+      "audience": "For women's groups & traders",
+      "do1": "Publish every NGAAF allocation by ward and financial year",
+      "do2": "Open, scheduled application windows for women's groups",
+      "do3": "Quarterly report-backs in all five constituencies",
+      "record": "Oversaw NGAAF in Bomet as Woman Rep, 2017–2022. Raised tea weights and measures for smallholders in the Senate (25 May 2023)."
+    },
+    "two": {
+      "title": "Safe girls, safe homes",
+      "audience": "For women, girls & elders",
+      "do1": "Push for GBV response desks reachable from every ward",
+      "do2": "Work with schools, chiefs and elders on defilement reporting",
+      "do3": "Track cases to court and report the numbers publicly",
+      "record": "Pressed agencies on defilement and teen pregnancy as Woman Rep. Raised GBV in Bomet on the Senate floor (8 October 2026)."
+    },
+    "three": {
+      "title": "Teachers & libraries",
+      "audience": "For teachers, learners & parents",
+      "do1": "Champion ECDE teacher welfare and terms",
+      "do2": "Follow the County Library Services law through to libraries in Bomet",
+      "do3": "Back bursaries that keep girls in secondary school",
+      "record": "Sponsored the County Library Services Bill (passed the Senate, 25 February 2026). Raised Bomet ECDE teachers' welfare (22 February 2024)."
+    }
+  }
+}

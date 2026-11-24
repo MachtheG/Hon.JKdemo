@@ -1,0 +1,21 @@
+{
+  "meta": { "title": "Get involved" },
+  "kicker": "Get involved",
+  "title": "Join the work.",
+  "intro": "Three ways to help Joyce get back to work for Bomet's women.",
+  "pledge": {
+    "title": "Pledge your vote",
+    "body": "Tell us you'll vote for Joyce on 10 August 2027. We count pledges by ward so we know where to campaign."
+  },
+  "volunteer": {
+    "title": "Volunteer in your ward",
+    "body": "Help with door-to-door visits, women's group meetings, or polling-day work as an agent."
+  },
+  "whatsapp": {
+    "title": "Follow on WhatsApp",
+    "body": "Campaign updates, events and the record — straight to your phone.",
+    "pending": "[[TO CONFIRM: official WhatsApp channel link]]"
+  },
+  "soon": "Sign-up opens soon.",
+  "privacy": "We only use your details for the purpose you choose, with your consent. Read our privacy notice."
+}

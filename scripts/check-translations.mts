@@ -2,11 +2,15 @@
  * Translation check: every locale has every namespace file, with the same keys
  * (deep), and no empty strings. Run: node scripts/check-translations.ts
  */
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 
 const locales = ["en", "sw"];
-const namespaces = ["common", "home", "styleguide"];
+// Namespaces = every file in messages/en, plus every namespace the app loads.
+const routing = readFileSync("i18n/routing.ts", "utf8");
+const loaded = [...(routing.match(/namespaces = \[([\s\S]*?)\]/)?.[1].matchAll(/"(\w+)"/g) ?? [])].map((m) => m[1]);
+const onDisk = readdirSync(join("messages", "en")).map((f) => f.replace(/\.json$/, ""));
+const namespaces = [...new Set([...loaded, ...onDisk])];
 
 function keys(obj: unknown, prefix = ""): string[] {
   if (typeof obj !== "object" || obj === null) return [prefix];

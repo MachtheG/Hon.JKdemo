@@ -1,0 +1,39 @@
+{
+  "meta": { "title": "The Record" },
+  "kicker": "The record",
+  "title": "Four levels of office. One record.",
+  "intro": "Every line below links to an official or published source. Where a detail is still being checked, it says so.",
+  "ladder": {
+    "title": "The ladder",
+    "ward": "Ward",
+    "county": "County",
+    "national": "National",
+    "senate": "Senate",
+    "councillor": "Councillor, Singorwet Ward",
+    "councillorNote": "First woman Mayor of Bomet Municipality, 2011",
+    "mca": "MCA & Deputy Speaker",
+    "mcaNote": "Bomet County Assembly",
+    "wr": "Woman Rep, Bomet",
+    "wrNote": "205,964 votes · Cohesion & Equal Opportunity Committee",
+    "senator": "Senator (nominated)",
+    "senatorNote": "Vice-Chair, Parliamentary Service Commission"
+  },
+  "stats": {
+    "title": "In the Senate",
+    "contributions": "floor contributions",
+    "statements": "statements",
+    "papers": "papers laid",
+    "motions": "motions seconded",
+    "bill": "bill sponsored",
+    "note": "Source: Mzalendo Senate tracker, to 8 October 2026. Hansard counts for the 12th Parliament (2017–2022) are not published by Mzalendo.",
+    "committees": "Committees: Delegated Legislation; National Cohesion, Equal Opportunity & Regional Integration."
+  },
+  "floor": {
+    "title": "On the Senate floor for Bomet",
+    "kinds": { "statement": "Statement", "bill": "Bill", "motion": "Motion" }
+  },
+  "timeline": {
+    "title": "Full timeline",
+    "link": "Read her story"
+  }
+}

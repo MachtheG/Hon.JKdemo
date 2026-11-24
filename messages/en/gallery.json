@@ -1,0 +1,11 @@
+{
+  "meta": { "title": "Gallery" },
+  "kicker": "Gallery",
+  "title": "Joyce at work in Bomet.",
+  "intro": "Every photo here is real and credited. Until the campaign's photos arrive, each frame shows the shot it is waiting for.",
+  "filter": "Category",
+  "all": "All",
+  "categories": { "portrait": "Portraits", "community": "Community", "parliament": "Parliament", "projects": "Projects", "events": "Events" },
+  "credit": "Photo: {credit}",
+  "creditPending": "Photo credit to be confirmed"
+}

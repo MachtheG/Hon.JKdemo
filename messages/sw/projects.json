@@ -1,0 +1,74 @@
+{
+  "meta": { "title": "Miradi (NGAAF)" },
+  "kicker": "Miradi · NGAAF 2017–2022",
+  "title": "Kila shilingi, kwa kila wadi.",
+  "intro": "Akiwa Mwakilishi wa Wanawake, Joyce alisimamia Hazina ya Serikali ya Kitaifa ya Usawazishaji (NGAAF) Bomet. Kila mradi unaonyesha jukumu lake na kama kiasi ni mgao, malipo au matumizi.",
+  "filters": {
+    "label": "Chuja miradi",
+    "sector": "Sekta",
+    "constituency": "Eneo bunge",
+    "year": "Mwaka wa fedha",
+    "all": "Zote",
+    "clear": "Ondoa vichujio",
+    "showing": "{count, plural, =0 {Hakuna miradi} one {Mradi #} other {Miradi #}}"
+  },
+  "sectors": {
+    "education": "Elimu",
+    "health": "Afya",
+    "water": "Maji",
+    "roads": "Barabara",
+    "security": "Usalama",
+    "bursaries": "Basari",
+    "agriculture": "Kilimo",
+    "sports": "Michezo",
+    "environment": "Mazingira",
+    "women-empowerment": "Vikundi vya wanawake"
+  },
+  "roles": {
+    "title": "Jinsi tunavyoeleza jukumu lake",
+    "sponsored": "Alidhamini — yeye ndiye aliyependekeza.",
+    "lobbied": "Alipigania — alishinikiza; wengine waliamua.",
+    "allocated": "Alitenga — aliongoza au alipendekeza mgao.",
+    "oversaw": "Alisimamia — alifuatilia utekelezaji.",
+    "delivered": "Alitekeleza — tu pale chanzo kinaposema hivyo.",
+    "amounts": "Mgao ni fedha zilizoidhinishwa, si fedha zilizotumika."
+  },
+  "charts": {
+    "byYear": "Mgao wa NGAAF kwa mwaka wa fedha (KSh)",
+    "bySector": "Miradi kwa sekta",
+    "empty": "Bado hakuna takwimu zenye chanzo",
+    "table": "Onyesha kama jedwali",
+    "year": "Mwaka wa fedha",
+    "amount": "Mgao (KSh)",
+    "sector": "Sekta",
+    "count": "Miradi"
+  },
+  "empty": {
+    "title": "Tunasubiri nyaraka",
+    "body": "Hatujapata orodha rasmi ya umma ya miradi ya NGAAF Bomet ya 2017–2022, na hatuorodheshi chochote bila hati. Miradi itaonekana hapa baada ya kampeni kuwasilisha barua za mgao wa NGAAF, kumbukumbu za Kamati ya Kaunti au orodha za miradi iliyoidhinishwa.",
+    "need": "Nyaraka zinazohitajika: barua za mgao wa NGAAF (kwa kila mwaka) · orodha za miradi na vikundi vilivyoidhinishwa · rekodi za hundi · picha za makabidhiano."
+  },
+  "card": {
+    "role": "Jukumu: {role}",
+    "amount": "KSh {amount} · {kind}",
+    "status": "Hali: {status}",
+    "source": "Chanzo",
+    "view": "Tazama mradi"
+  },
+  "kinds": { "allocation": "mgao", "disbursement": "malipo", "expenditure": "matumizi" },
+  "statuses": { "approved": "umeidhinishwa", "ongoing": "unaendelea", "complete": "umekamilika" },
+  "roleNames": { "sponsored": "alidhamini", "lobbied": "alipigania", "allocated": "alitenga", "oversaw": "alisimamia", "delivered": "alitekeleza" },
+  "detail": {
+    "back": "Miradi yote",
+    "facts": "Taarifa za mradi",
+    "sector": "Sekta",
+    "place": "Wadi, eneo bunge",
+    "year": "Mwaka wa fedha",
+    "funding": "Chanzo cha fedha",
+    "amount": "Kiasi",
+    "status": "Hali",
+    "role": "Jukumu la Joyce",
+    "gallery": "Kabla na baada",
+    "noPhotos": "Picha za mradi huu bado hazijawasilishwa."
+  }
+}

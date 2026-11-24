@@ -1,0 +1,39 @@
+{
+  "meta": { "title": "Bomet County" },
+  "kicker": "Bomet County",
+  "title": "Five constituencies. Twenty-five wards. One county.",
+  "intro": "As Woman Representative, Joyce represents all of Bomet County in the National Assembly. Here is the county she serves, in official numbers.",
+  "stats": {
+    "title": "Bomet in numbers",
+    "population": "people (2019 Census)",
+    "women": "women and girls (2019 Census)",
+    "households": "households (2019 Census)",
+    "voters2022": "registered voters (2022)",
+    "constituencies": "constituencies",
+    "wards": "county assembly wards"
+  },
+  "constituencies": {
+    "title": "The constituencies",
+    "population": "{n} people",
+    "voters": "{n} voters (2022)",
+    "wards": "{n} wards",
+    "open": "Open"
+  },
+  "ngaaf": {
+    "title": "What a Woman Rep does for Bomet",
+    "body": "The Woman Representative sits in the National Assembly for the whole county and oversees the National Government Affirmative Action Fund (NGAAF) in Bomet — grants to women's, youth and disability groups, and support for vulnerable households.",
+    "link": "See NGAAF projects"
+  },
+  "page": {
+    "kicker": "{name} constituency · Bomet County",
+    "title": "{name}",
+    "wardsTitle": "Wards in {name}",
+    "resultTitle": "2017 result in {name}",
+    "resultBody": "IEBC has not published the Woman Rep result below county level. We will add {name}'s figures from Form 37B once verified — nothing is estimated. County-wide, Joyce won {share}% of valid votes.",
+    "projectsTitle": "NGAAF projects in {name}",
+    "projectsNone": "No sourced projects yet for {name}.",
+    "projectsLink": "Filter projects to {name}",
+    "back": "All of Bomet",
+    "map": "Map of {name} within Bomet County"
+  }
+}

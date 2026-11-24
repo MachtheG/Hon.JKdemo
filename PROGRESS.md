@@ -7,7 +7,17 @@
 | 3 — Creative direction & canvases | ✅ Approved — Hero A | 2026-11-24 |
 | 4 — Scaffold, design system, shell, /styleguide | ✅ Quality gate passed | 2026-11-24 |
 | 5 — Home (Hero A, as approved) | ✅ Quality gate passed | 2026-11-24 |
-| 6–7 — Build | — | |
+| 6 — Record, Projects, Map, Plan, all tabs, county + constituency pages | ✅ Quality gate passed | 2026-11-24 |
+| 7 — Forms, SEO, a11y, Lighthouse, agents | — | |
+
+### Phase 6 quality gate (2026-11-24)
+- lint ✅ · typecheck ✅ · unit 13/13 ✅ · build ✅ (all static/PPR) · sources ✅ (78 refs) · translations ✅ (16 namespaces × en/sw)
+- e2e 108/108 ✅ at 375 / 768 / 1440 — every page: 200, clean hydration, no sideways scroll; map selection/keyboard/wards; URL filters; 404 placeholder; TO CONFIRM markers visible. Screenshots in docs/screenshots/phase-6/
+- **Map:** lightweight server-rendered SVG (brief allows SVG for a small area) from geoBoundaries KEN ADM2/ADM3 — licences in data/credits.ts. Rebuild with `npm run map`. Works with no JS and in lite mode. MapLibre not needed.
+- **Charts:** hand-built single-series SVG bars (tea), with hover and keyboard tooltips and a table view. No Recharts dependency yet; data is empty until NGAAF documents arrive.
+- **Shading is county-level only** (the only level IEBC published); every constituency and ward panel says "Pending Form 37B/37A".
+- Excluded ward "Chaik" (Kericho) that overlapped Konoin after boundary simplification.
+- New TO CONFIRM items: WhatsApp channel link; campaign office/phone/email; data controller name and ODPC registration; processors list; retention period.
 
 ### Phase 5 quality gate (2026-11-24)
 - lint ✅ · typecheck ✅ · unit 10/10 ✅ · build ✅ (static/PPR) · sources ✅ (67 refs) · translations ✅

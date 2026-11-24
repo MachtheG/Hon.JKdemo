@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "title": "The Map — Where we led in 2017"
+  },
+  "kicker": "The map · Woman Rep 2017 · IEBC",
+  "title": "Where we led in 2017",
+  "summary": "Joyce led Bomet County with {votes} votes ({share}% of valid votes) in 2017. IEBC publishes this race at county level only; constituency and ward results will be added from Forms 37B and 37A once verified. Nothing is estimated.",
+  "controls": {
+    "level": "Map level",
+    "constituencies": "Constituencies",
+    "wards": "Wards",
+    "projects": "Projects overlay",
+    "on": "on",
+    "off": "off",
+    "projectsNone": "No sourced projects yet — pins appear when NGAAF documents are supplied."
+  },
+  "legend": {
+    "title": "Joyce's vote share, 2017",
+    "lt40": "Under 40%",
+    "b4060": "40–60%",
+    "b6075": "60–75%",
+    "gte75": "75% and over",
+    "led": "Led (accent outline)",
+    "countyOnly": "Shading is the county-wide result; it does not show constituency or ward results."
+  },
+  "panel": {
+    "county": "Bomet County · 2017",
+    "constituency": "Constituency",
+    "ward": "Ward",
+    "votes": "Joyce's votes",
+    "share": "Vote share",
+    "margin": "Margin over runner-up",
+    "valid": "Valid votes cast",
+    "registered": "Registered voters (2017)",
+    "turnout": "Valid votes ÷ registered",
+    "pending": "Pending Form {form}",
+    "pendingNote": "IEBC has not published this race below county level. We will add these figures from the official forms — we do not estimate.",
+    "context": "Context",
+    "population": "Population (2019 Census)",
+    "voters2022": "Registered voters (2022)",
+    "showCounty": "Show county total",
+    "open": "Open {name} page",
+    "countyName": "Bomet County"
+  },
+  "table": {
+    "title": "Results table",
+    "caption": "2017 County Woman Member results, Bomet. Source: IEBC 2017 Data Report, p.137 and p.19.",
+    "area": "Area",
+    "votes": "Joyce",
+    "share": "Share",
+    "valid": "Valid votes",
+    "registered": "Registered",
+    "pending": "Pending Form 37B"
+  },
+  "boundaries": "Boundaries: IEBC/OCHA (CC BY 3.0 IGO) and Omare & Omare (CC BY 4.0) via geoBoundaries.",
+  "creditsLink": "Data credits"
+}

@@ -1,0 +1,14 @@
+{
+  "meta": { "title": "Contact" },
+  "kicker": "Contact",
+  "title": "Talk to the campaign.",
+  "intro": "Questions, invitations to events, or press requests.",
+  "details": {
+    "title": "Campaign office",
+    "office": "[[TO CONFIRM: campaign office address]]",
+    "phone": "[[TO CONFIRM: campaign phone]]",
+    "email": "[[TO CONFIRM: campaign email]]",
+    "press": "Press: please include your outlet and deadline."
+  },
+  "soon": "The contact form opens soon. Until then, please use the details above."
+}

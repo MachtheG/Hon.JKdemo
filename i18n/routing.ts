@@ -13,7 +13,24 @@ export const routing = defineRouting({
  * One message file per tab: messages/<locale>/<namespace>.json.
  * Add a namespace here when a new tab is created.
  */
-export const namespaces = ["common", "home", "styleguide"] as const;
+export const namespaces = [
+  "common",
+  "home",
+  "styleguide",
+  "record",
+  "projects",
+  "map",
+  "plan",
+  "story",
+  "county",
+  "gallery",
+  "news",
+  "getInvolved",
+  "contact",
+  "privacy",
+  "sources",
+  "credits",
+] as const;
 export type Namespace = (typeof namespaces)[number];
 
 export function isLocale(value: string | undefined): value is AppLocale {

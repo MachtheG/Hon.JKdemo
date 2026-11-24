@@ -1,0 +1,10 @@
+{
+  "meta": { "title": "Credits" },
+  "kicker": "Credits",
+  "title": "Photos, maps and type.",
+  "intro": "Thanks to everyone whose work appears on this site.",
+  "photos": "Photographs",
+  "photosNone": "No photographs have been published yet. Each will be credited here with its photographer and licence.",
+  "data": "Maps, data and fonts",
+  "licence": "Licence: {licence}"
+}

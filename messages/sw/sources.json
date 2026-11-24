@@ -1,0 +1,9 @@
+{
+  "meta": { "title": "Vyanzo" },
+  "kicker": "Vyanzo",
+  "title": "Kila takwimu inatoka wapi.",
+  "intro": "Kila nambari, tarehe na nukuu kwenye tovuti hii ina kiungo cha moja ya vyanzo hivi. Vyanzo rasmi vinatangulia. Vyanzo vya marejeo vimeorodheshwa kwa uwazi lakini havitumiki peke yake kwa takwimu yoyote.",
+  "tiers": { "official": "Rasmi", "secondary": "Vyombo vya habari na wafuatiliaji wa kiraia", "tertiary": "Marejeo tu (havinukuliwi peke yake)" },
+  "accessed": "Ilifikiwa {date}",
+  "open": "Fungua"
+}

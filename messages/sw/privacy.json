@@ -1,0 +1,48 @@
+{
+  "meta": { "title": "Taarifa ya faragha" },
+  "kicker": "Faragha · Sheria ya Ulinzi wa Data, 2019",
+  "title": "Jinsi tunavyoshughulikia taarifa zako binafsi.",
+  "intro": "Taarifa hii inaeleza tunachokusanya kupitia tovuti hii, kwa nini, na haki zako chini ya Sheria ya Ulinzi wa Data ya Kenya, 2019. Ilisasishwa: 24 Novemba 2026.",
+  "sections": {
+    "controller": {
+      "title": "1. Anayewajibika",
+      "body": "Mdhibiti wa data ni kampeni ya Joyce Korir 2027. [[TO CONFIRM: campaign legal name, postal address, email and ODPC registration number]]."
+    },
+    "collect": {
+      "title": "2. Tunachokusanya",
+      "body": "Kile tu unachotupa kwenye fomu: jina lako, nambari ya simu, wadi, na kwa hiari barua pepe, jinsi ungependa kusaidia, na ujumbe wowote. Hatukusanyi nambari ya kitambulisho, na hatununui wala kupokea orodha za wapiga kura."
+    },
+    "why": {
+      "title": "3. Kwa nini tunakusanya",
+      "body": "Kuhesabu ahadi kwa wadi, kupanga wanaojitolea, kujibu ujumbe wako na — tu ukichagua — kukutumia habari za kampeni kwa SMS au WhatsApp. Hatutumii taarifa zako kwa madhumuni mengine."
+    },
+    "basis": {
+      "title": "4. Msingi wetu wa kisheria",
+      "body": "Idhini yako (vifungu 30 na 32 vya Sheria). Kwa kuwa ahadi inaonyesha chaguo la kisiasa, tunaishughulikia kwa uangalifu sawa na data nyeti. Unaweza kuondoa idhini wakati wowote; kuondoa hakuathiri uchakataji uliokwisha fanyika."
+    },
+    "share": {
+      "title": "5. Tunaoshiriki nao",
+      "body": "Hakuna mtu nje ya kampeni, isipokuwa watoa huduma wanaohifadhi au kutuma ujumbe kwa niaba yetu chini ya makubaliano ya maandishi. Hatuuzi wala kukodisha data yako. Baadhi ya watoa huduma huhifadhi data nje ya Kenya; wanapofanya hivyo, tunategemea kinga chini ya vifungu 48–50 vya Sheria. [[TO CONFIRM: final list of processors and their locations]]."
+    },
+    "keep": {
+      "title": "6. Muda tunaohifadhi",
+      "body": "Hadi tarehe 30 Novemba 2027, kisha tunaifuta, isipokuwa sheria ikitutaka kuihifadhi zaidi. [[TO CONFIRM: retention period]]."
+    },
+    "rights": {
+      "title": "7. Haki zako",
+      "body": "Chini ya kifungu 26 una haki ya kujulishwa jinsi data yako inavyotumika, kuipata, kupinga uchakataji wake, na kutuomba kuirekebisha au kuifuta. Wasiliana nasi kupitia maelezo yaliyo hapa chini na tutajibu ndani ya muda unaotakiwa na sheria."
+    },
+    "complain": {
+      "title": "8. Malalamiko",
+      "body": "Ikiwa hujaridhika na jinsi tunavyoshughulikia data yako, unaweza kulalamika kwa Ofisi ya Kamishna wa Ulinzi wa Data (ODPC) kupitia www.odpc.go.ke."
+    },
+    "cookies": {
+      "title": "9. Vidakuzi na ufuatiliaji",
+      "body": "Tovuti hii haiweki vidakuzi vya matangazo wala vya ufuatiliaji. Inakumbuka tu chaguo lako la hali nyepesi kwenye kivinjari chako."
+    },
+    "children": {
+      "title": "10. Watoto",
+      "body": "Fomu zetu ni za watu wenye umri wa miaka 18 na zaidi. Tafadhali usijaze fomu ikiwa una umri chini ya miaka 18."
+    }
+  }
+}

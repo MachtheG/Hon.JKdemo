@@ -1,0 +1,11 @@
+{
+  "meta": { "title": "Picha" },
+  "kicker": "Picha",
+  "title": "Joyce kazini Bomet.",
+  "intro": "Kila picha hapa ni halisi na ina jina la mpiga picha. Hadi picha za kampeni zifike, kila fremu inaonyesha picha inayosubiriwa.",
+  "filter": "Aina",
+  "all": "Zote",
+  "categories": { "portrait": "Picha za Joyce", "community": "Jamii", "parliament": "Bunge", "projects": "Miradi", "events": "Matukio" },
+  "credit": "Picha: {credit}",
+  "creditPending": "Mpiga picha atathibitishwa"
+}

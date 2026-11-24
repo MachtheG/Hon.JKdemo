@@ -20,7 +20,7 @@ for (const p of pages) {
     expect(overflow).toBeLessThanOrEqual(0);
 
     await page.screenshot({
-      path: `docs/screenshots/phase-5/${p.name}-${info.project.name}.png`,
+      path: `docs/screenshots/phase-6/${p.name}-${info.project.name}.png`,
       fullPage: true,
     });
   });

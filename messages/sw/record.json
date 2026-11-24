@@ -1,0 +1,39 @@
+{
+  "meta": { "title": "Rekodi" },
+  "kicker": "Rekodi",
+  "title": "Ngazi nne za uongozi. Rekodi moja.",
+  "intro": "Kila mstari hapa chini una kiungo cha chanzo rasmi au kilichochapishwa. Pale ambapo jambo bado linathibitishwa, imeelezwa.",
+  "ladder": {
+    "title": "Ngazi",
+    "ward": "Wadi",
+    "county": "Kaunti",
+    "national": "Kitaifa",
+    "senate": "Seneti",
+    "councillor": "Diwani, Wadi ya Singorwet",
+    "councillorNote": "Meya wa kwanza mwanamke wa Manispaa ya Bomet, 2011",
+    "mca": "MCA na Naibu Spika",
+    "mcaNote": "Bunge la Kaunti ya Bomet",
+    "wr": "Mwakilishi wa Wanawake, Bomet",
+    "wrNote": "Kura 205,964 · Kamati ya Utangamano na Fursa Sawa",
+    "senator": "Seneta (aliyeteuliwa)",
+    "senatorNote": "Makamu Mwenyekiti, Tume ya Huduma za Bunge"
+  },
+  "stats": {
+    "title": "Katika Seneti",
+    "contributions": "michango bungeni",
+    "statements": "taarifa",
+    "papers": "nyaraka zilizowasilishwa",
+    "motions": "hoja alizounga mkono",
+    "bill": "mswada aliodhamini",
+    "note": "Chanzo: Mzalendo, hadi 8 Oktoba 2026. Takwimu za Hansard za Bunge la 12 (2017–2022) hazijachapishwa na Mzalendo.",
+    "committees": "Kamati: Sheria Ndogo; Utangamano wa Kitaifa, Fursa Sawa na Ushirikiano wa Kikanda."
+  },
+  "floor": {
+    "title": "Katika Seneti kwa ajili ya Bomet",
+    "kinds": { "statement": "Taarifa", "bill": "Mswada", "motion": "Hoja" }
+  },
+  "timeline": {
+    "title": "Historia kamili",
+    "link": "Soma safari yake"
+  }
+}

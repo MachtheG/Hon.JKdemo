@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "title": "Ramani — Tulipoongoza mwaka 2017"
+  },
+  "kicker": "Ramani · Mwakilishi wa Wanawake 2017 · IEBC",
+  "title": "Tulipoongoza mwaka 2017",
+  "summary": "Joyce aliongoza Kaunti ya Bomet kwa kura {votes} ({share}% ya kura halali) mwaka 2017. IEBC inachapisha matokeo ya kiti hiki kwa ngazi ya kaunti pekee; matokeo ya maeneo bunge na wadi yataongezwa kutoka Fomu 37B na 37A baada ya kuthibitishwa. Hatukadirii chochote.",
+  "controls": {
+    "level": "Ngazi ya ramani",
+    "constituencies": "Maeneo bunge",
+    "wards": "Wadi",
+    "projects": "Miradi kwenye ramani",
+    "on": "imewashwa",
+    "off": "imezimwa",
+    "projectsNone": "Bado hakuna miradi yenye chanzo — alama zitaonekana nyaraka za NGAAF zikiwasilishwa."
+  },
+  "legend": {
+    "title": "Asilimia ya kura za Joyce, 2017",
+    "lt40": "Chini ya 40%",
+    "b4060": "40–60%",
+    "b6075": "60–75%",
+    "gte75": "75% na zaidi",
+    "led": "Aliongoza (mstari wa manjano)",
+    "countyOnly": "Rangi inaonyesha matokeo ya kaunti nzima; haionyeshi matokeo ya eneo bunge au wadi."
+  },
+  "panel": {
+    "county": "Kaunti ya Bomet · 2017",
+    "constituency": "Eneo bunge",
+    "ward": "Wadi",
+    "votes": "Kura za Joyce",
+    "share": "Asilimia ya kura",
+    "margin": "Tofauti na wa pili",
+    "valid": "Kura halali",
+    "registered": "Wapiga kura waliosajiliwa (2017)",
+    "turnout": "Kura halali ÷ waliosajiliwa",
+    "pending": "Inasubiri Fomu {form}",
+    "pendingNote": "IEBC haijachapisha matokeo ya kiti hiki chini ya ngazi ya kaunti. Tutaongeza takwimu hizi kutoka fomu rasmi — hatukadirii.",
+    "context": "Muktadha",
+    "population": "Idadi ya watu (Sensa 2019)",
+    "voters2022": "Wapiga kura waliosajiliwa (2022)",
+    "showCounty": "Onyesha jumla ya kaunti",
+    "open": "Fungua ukurasa wa {name}",
+    "countyName": "Kaunti ya Bomet"
+  },
+  "table": {
+    "title": "Jedwali la matokeo",
+    "caption": "Matokeo ya Mwakilishi wa Wanawake 2017, Bomet. Chanzo: Ripoti ya Takwimu ya IEBC 2017, uk.137 na uk.19.",
+    "area": "Eneo",
+    "votes": "Joyce",
+    "share": "Asilimia",
+    "valid": "Kura halali",
+    "registered": "Waliosajiliwa",
+    "pending": "Inasubiri Fomu 37B"
+  },
+  "boundaries": "Mipaka: IEBC/OCHA (CC BY 3.0 IGO) na Omare & Omare (CC BY 4.0) kupitia geoBoundaries.",
+  "creditsLink": "Vyanzo vya data"
+}

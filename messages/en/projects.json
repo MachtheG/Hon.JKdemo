@@ -1,0 +1,74 @@
+{
+  "meta": { "title": "Projects (NGAAF)" },
+  "kicker": "Projects · NGAAF 2017–2022",
+  "title": "Every shilling, by ward.",
+  "intro": "As Woman Rep, Joyce oversaw the National Government Affirmative Action Fund (NGAAF) in Bomet. Each project lists her role and whether a figure is an allocation, a disbursement or spending.",
+  "filters": {
+    "label": "Filter projects",
+    "sector": "Sector",
+    "constituency": "Constituency",
+    "year": "Financial year",
+    "all": "All",
+    "clear": "Clear filters",
+    "showing": "{count, plural, =0 {No projects} one {# project} other {# projects}}"
+  },
+  "sectors": {
+    "education": "Education",
+    "health": "Health",
+    "water": "Water",
+    "roads": "Roads",
+    "security": "Security",
+    "bursaries": "Bursaries",
+    "agriculture": "Agriculture",
+    "sports": "Sports",
+    "environment": "Environment",
+    "women-empowerment": "Women's groups"
+  },
+  "roles": {
+    "title": "How we describe her role",
+    "sponsored": "Sponsored — she proposed it.",
+    "lobbied": "Lobbied — she pushed for it; others decided.",
+    "allocated": "Allocated — she chaired or recommended the allocation.",
+    "oversaw": "Oversaw — she monitored delivery.",
+    "delivered": "Delivered — only when a source says so.",
+    "amounts": "An allocation is money approved, not money spent."
+  },
+  "charts": {
+    "byYear": "NGAAF allocations by financial year (KSh)",
+    "bySector": "Projects by sector",
+    "empty": "No sourced figures yet",
+    "table": "Show as table",
+    "year": "Financial year",
+    "amount": "Allocated (KSh)",
+    "sector": "Sector",
+    "count": "Projects"
+  },
+  "empty": {
+    "title": "Awaiting documents",
+    "body": "We have not found a public, official list of Bomet NGAAF projects for 2017–2022, and we do not list anything without a document. Projects will appear here once the campaign supplies NGAAF allocation letters, County Committee minutes or approved project lists.",
+    "need": "Documents needed: NGAAF allocation letters (per financial year) · approved project and group lists · cheque-issue records · photos of handovers."
+  },
+  "card": {
+    "role": "Role: {role}",
+    "amount": "KSh {amount} · {kind}",
+    "status": "Status: {status}",
+    "source": "Source",
+    "view": "View project"
+  },
+  "kinds": { "allocation": "allocation", "disbursement": "disbursement", "expenditure": "spending" },
+  "statuses": { "approved": "approved", "ongoing": "ongoing", "complete": "complete" },
+  "roleNames": { "sponsored": "sponsored", "lobbied": "lobbied", "allocated": "allocated", "oversaw": "oversaw", "delivered": "delivered" },
+  "detail": {
+    "back": "All projects",
+    "facts": "Project facts",
+    "sector": "Sector",
+    "place": "Ward, constituency",
+    "year": "Financial year",
+    "funding": "Funding source",
+    "amount": "Amount",
+    "status": "Status",
+    "role": "Joyce's role",
+    "gallery": "Before and after",
+    "noPhotos": "Photos of this project have not been supplied yet."
+  }
+}

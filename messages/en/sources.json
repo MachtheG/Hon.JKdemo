@@ -1,0 +1,9 @@
+{
+  "meta": { "title": "Sources" },
+  "kicker": "Sources",
+  "title": "Where every figure comes from.",
+  "intro": "Every number, date and quote on this site links back to one of these. Official sources come first. Aggregators are listed for transparency but are never the only source for a published figure.",
+  "tiers": { "official": "Official", "secondary": "Media & civic trackers", "tertiary": "Reference only (not cited alone)" },
+  "accessed": "Accessed {date}",
+  "open": "Open"
+}

@@ -1,0 +1,10 @@
+{
+  "meta": { "title": "Shukrani" },
+  "kicker": "Shukrani",
+  "title": "Picha, ramani na maandishi.",
+  "intro": "Shukrani kwa kila mtu ambaye kazi yake inaonekana kwenye tovuti hii.",
+  "photos": "Picha",
+  "photosNone": "Bado hakuna picha zilizochapishwa. Kila moja itatajwa hapa na mpiga picha wake na leseni.",
+  "data": "Ramani, data na fonti",
+  "licence": "Leseni: {licence}"
+}

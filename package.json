@@ -12,7 +12,8 @@
     "test:e2e": "playwright test",
     "check:sources": "node scripts/check-sources.mts",
     "check:translations": "node scripts/check-translations.mts",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "map": "node scripts/build-map.mts"
   },
   "dependencies": {
     "@hookform/resolvers": "^7.0.8",
